@@ -6,10 +6,12 @@ import { useGameStore } from "@/store/game-store";
 import { useGetCharacters, useSubmitRound, RoundChoiceChoice } from "@workspace/api-client-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Loader2, AlertCircle } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
 
 export default function Game() {
   const [, setLocation] = useLocation();
   const { genderFilter, setLastRoundData } = useGameStore();
+  const { toast } = useToast();
   
   // Local state for choices
   const [choices, setChoices] = useState<Record<number, RoundChoiceChoice>>({});
@@ -74,7 +76,11 @@ export default function Game() {
       },
       onError: (err) => {
         console.error("Failed to submit round", err);
-        // Show a toast here ideally, but for now simple logging
+        toast({
+          title: "Submission Failed",
+          description: "The multiverse rejected your choices. Please try again.",
+          variant: "destructive",
+        });
       }
     });
   };
@@ -101,7 +107,7 @@ export default function Game() {
           <p className="font-heading text-muted-foreground text-xl">Failed to retrieve characters. The portals are unstable.</p>
           <button 
             onClick={() => refetch()}
-            className="mt-6 px-8 py-3 bg-white text-black font-heading font-bold uppercase tracking-widest border-4 border-black comic-shadow-sm hover:-translate-y-1 transition-transform"
+            className="mt-6 px-8 py-3 bg-primary text-white font-heading font-bold uppercase tracking-widest border-4 border-black comic-shadow-sm hover:-translate-y-1 transition-transform"
           >
             Try Again
           </button>

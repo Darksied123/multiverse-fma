@@ -1,4 +1,4 @@
-import { pgTable, serial, text, varchar } from "drizzle-orm/pg-core";
+import { pgTable, serial, text, varchar, index } from "drizzle-orm/pg-core";
 import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod/v4";
 
@@ -9,7 +9,10 @@ export const charactersTable = pgTable("characters", {
   gender: varchar("gender", { length: 10 }).notNull(),
   imageUrl: text("image_url").notNull(),
   ageNote: varchar("age_note", { length: 255 }),
-});
+}, (table) => [
+  index("idx_characters_gender").on(table.gender),
+  index("idx_characters_universe").on(table.universe),
+]);
 
 export const insertCharacterSchema = createInsertSchema(charactersTable).omit({ id: true });
 export type InsertCharacter = z.infer<typeof insertCharacterSchema>;
