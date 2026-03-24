@@ -32,7 +32,7 @@
 
   /* Game Specific Neon Accents */
   --color-marry: hsl(var(--marry));
-  --color-fuck: hsl(var(--fuck));
+  --color-date: hsl(var(--date));
   --color-avoid: hsl(var(--avoid));
   
   --color-border: hsl(var(--border));
@@ -73,7 +73,7 @@
 
   /* The MFA colors */
   --marry: 48 100% 50%; /* Neon Gold */
-  --fuck: 335 100% 55%; /* Neon Pink/Red */
+  --date: 335 100% 55%; /* Neon Pink/Red */
   --avoid: 195 100% 50%; /* Neon Cyan */
   
   --border: 240 10% 20%;
@@ -108,8 +108,8 @@
   .comic-shadow-glow-marry {
     box-shadow: 0 0 20px 2px hsla(var(--marry) / 0.4), 4px 4px 0px 0px rgba(0, 0, 0, 1);
   }
-  .comic-shadow-glow-fuck {
-    box-shadow: 0 0 20px 2px hsla(var(--fuck) / 0.4), 4px 4px 0px 0px rgba(0, 0, 0, 1);
+  .comic-shadow-glow-date {
+    box-shadow: 0 0 20px 2px hsla(var(--date) / 0.4), 4px 4px 0px 0px rgba(0, 0, 0, 1);
   }
   .comic-shadow-glow-avoid {
     box-shadow: 0 0 20px 2px hsla(var(--avoid) / 0.4), 4px 4px 0px 0px rgba(0, 0, 0, 1);

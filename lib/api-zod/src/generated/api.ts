@@ -67,7 +67,7 @@ export const SubmitRoundBody = zod.object({
     .array(
       zod.object({
         characterId: zod.number(),
-        choice: zod.enum(["marry", "fuck", "avoid"]),
+        choice: zod.enum(["marry", "date", "avoid"]),
       }),
     )
     .min(submitRoundBodyChoicesMin)
@@ -81,11 +81,11 @@ export const SubmitRoundResponse = zod.object({
       characterId: zod.number(),
       characterName: zod.string(),
       marryCount: zod.number(),
-      fuckCount: zod.number(),
+      dateCount: zod.number(),
       avoidCount: zod.number(),
       totalVotes: zod.number(),
       marryPercent: zod.number(),
-      fuckPercent: zod.number(),
+      datePercent: zod.number(),
       avoidPercent: zod.number(),
     }),
   ),
@@ -106,7 +106,7 @@ export const GetGlobalStatsResponse = zod.object({
       totalVotes: zod.number(),
     }),
   ),
-  topFucked: zod.array(
+  topDated: zod.array(
     zod.object({
       characterId: zod.number(),
       characterName: zod.string(),
@@ -142,10 +142,10 @@ export const GetCharacterStatsResponse = zod.object({
   characterId: zod.number(),
   characterName: zod.string(),
   marryCount: zod.number(),
-  fuckCount: zod.number(),
+  dateCount: zod.number(),
   avoidCount: zod.number(),
   totalVotes: zod.number(),
   marryPercent: zod.number(),
-  fuckPercent: zod.number(),
+  datePercent: zod.number(),
   avoidPercent: zod.number(),
 });

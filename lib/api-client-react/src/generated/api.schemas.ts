@@ -31,7 +31,7 @@ export type RoundChoiceChoice =
 
 export const RoundChoiceChoice = {
   marry: "marry",
-  fuck: "fuck",
+  date: "date",
   avoid: "avoid",
 } as const;
 
@@ -52,11 +52,11 @@ export interface CharacterStats {
   characterId: number;
   characterName: string;
   marryCount: number;
-  fuckCount: number;
+  dateCount: number;
   avoidCount: number;
   totalVotes: number;
   marryPercent: number;
-  fuckPercent: number;
+  datePercent: number;
   avoidPercent: number;
 }
 
@@ -77,7 +77,7 @@ export interface LeaderboardEntry {
 
 export interface GlobalStats {
   topMarried: LeaderboardEntry[];
-  topFucked: LeaderboardEntry[];
+  topDated: LeaderboardEntry[];
   topAvoided: LeaderboardEntry[];
   totalRounds: number;
 }

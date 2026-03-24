@@ -55,7 +55,7 @@ export default function Results() {
                 showStats={true}
                 stats={stats ? {
                   marry: stats.marryPercent,
-                  fuck: stats.fuckPercent,
+                  date: stats.datePercent,
                   avoid: stats.avoidPercent
                 } : undefined}
               />

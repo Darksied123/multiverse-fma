@@ -40,7 +40,7 @@ export default function Home() {
         >
           Who Will You <br />
           <span className="text-marry">Marry</span>, 
-          <span className="text-fuck"> F***</span>, 
+          <span className="text-date"> Date</span>, 
           <span className="text-avoid"> Avoid</span>?
         </motion.h1>
 

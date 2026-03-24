@@ -115,12 +115,12 @@ function ImageWithFallback({ character }: { character: Character }) {
 
 interface CharacterCardProps {
   character: Character;
-  choice?: 'marry' | 'fuck' | 'avoid';
-  onChoice?: (choice: 'marry' | 'fuck' | 'avoid') => void;
-  disabledChoices?: ('marry' | 'fuck' | 'avoid')[];
+  choice?: 'marry' | 'date' | 'avoid';
+  onChoice?: (choice: 'marry' | 'date' | 'avoid') => void;
+  disabledChoices?: ('marry' | 'date' | 'avoid')[];
   index: number;
   showStats?: boolean;
-  stats?: { marry: number; fuck: number; avoid: number };
+  stats?: { marry: number; date: number; avoid: number };
 }
 
 export function CharacterCard({ 
@@ -135,7 +135,7 @@ export function CharacterCard({
   
   const getShadowClass = () => {
     if (choice === 'marry') return 'comic-shadow-glow-marry border-marry';
-    if (choice === 'fuck') return 'comic-shadow-glow-fuck border-fuck';
+    if (choice === 'date') return 'comic-shadow-glow-date border-date';
     if (choice === 'avoid') return 'comic-shadow-glow-avoid border-avoid';
     return 'comic-shadow border-black hover:-translate-y-2 hover:comic-shadow-glow-primary transition-all duration-300';
   };
@@ -173,7 +173,7 @@ export function CharacterCard({
                  className={cn(
                    "text-6xl font-display uppercase border-4 px-6 py-2 bg-black transform -skew-y-6",
                    choice === 'marry' ? "text-marry border-marry" :
-                   choice === 'fuck' ? "text-fuck border-fuck" :
+                   choice === 'date' ? "text-date border-date" :
                    "text-avoid border-avoid"
                  )}
                >
@@ -199,7 +199,7 @@ export function CharacterCard({
           {showStats && stats && (
             <div className="mt-4 pt-4 border-t-2 border-zinc-800 space-y-2">
               <StatBar label="Marry" percent={stats.marry} colorClass="bg-marry" />
-              <StatBar label="F***" percent={stats.fuck} colorClass="bg-fuck" />
+              <StatBar label="Date" percent={stats.date} colorClass="bg-date" />
               <StatBar label="Avoid" percent={stats.avoid} colorClass="bg-avoid" />
             </div>
           )}
@@ -217,10 +217,10 @@ export function CharacterCard({
             icon={<Heart className="w-5 h-5" />}
           />
           <ChoiceButton 
-            type="fuck" 
-            active={choice === 'fuck'} 
-            disabled={disabledChoices.includes('fuck') && choice !== 'fuck'}
-            onClick={() => onChoice('fuck')}
+            type="date" 
+            active={choice === 'date'} 
+            disabled={disabledChoices.includes('date') && choice !== 'date'}
+            onClick={() => onChoice('date')}
             icon={<Skull className="w-5 h-5" />}
           />
           <ChoiceButton 
@@ -260,7 +260,7 @@ function ChoiceButton({
   onClick, 
   icon 
 }: { 
-  type: 'marry' | 'fuck' | 'avoid', 
+  type: 'marry' | 'date' | 'avoid', 
   active: boolean, 
   disabled: boolean, 
   onClick: () => void,
@@ -269,13 +269,13 @@ function ChoiceButton({
   
   const baseColors = {
     marry: "text-marry border-marry hover:bg-marry hover:text-black",
-    fuck: "text-fuck border-fuck hover:bg-fuck hover:text-black",
+    date: "text-date border-date hover:bg-date hover:text-black",
     avoid: "text-avoid border-avoid hover:bg-avoid hover:text-black"
   };
   
   const activeColors = {
     marry: "bg-marry text-black comic-shadow border-black",
-    fuck: "bg-fuck text-black comic-shadow border-black",
+    date: "bg-date text-black comic-shadow border-black",
     avoid: "bg-avoid text-black comic-shadow border-black"
   };
 
@@ -291,7 +291,7 @@ function ChoiceButton({
       )}
     >
       <div className="mb-1">{icon}</div>
-      {type === 'fuck' ? 'F***' : type}
+      {type}
     </button>
   );
 }

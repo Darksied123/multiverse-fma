@@ -9,7 +9,7 @@ const router: IRouter = Router();
 
 const roundChoiceSchema = z.object({
   characterId: z.number().int().positive(),
-  choice: z.enum(["marry", "fuck", "avoid"]),
+  choice: z.enum(["marry", "date", "avoid"]),
 });
 
 const roundSubmissionSchema = z.object({
@@ -57,22 +57,22 @@ router.post("/stats/submit", async (req, res) => {
       .where(eq(votesTable.characterId, charId))
       .groupBy(votesTable.choice);
 
-    const counts = { marry: 0, fuck: 0, avoid: 0 };
+    const counts = { marry: 0, date: 0, avoid: 0 };
     for (const row of voteCounts) {
       counts[row.choice as keyof typeof counts] = row.count;
     }
 
-    const total = counts.marry + counts.fuck + counts.avoid;
+    const total = counts.marry + counts.date + counts.avoid;
 
     return {
       characterId: charId,
       characterName: charName,
       marryCount: counts.marry,
-      fuckCount: counts.fuck,
+      dateCount: counts.date,
       avoidCount: counts.avoid,
       totalVotes: total,
       marryPercent: total > 0 ? Math.round((counts.marry / total) * 100) : 0,
-      fuckPercent: total > 0 ? Math.round((counts.fuck / total) * 100) : 0,
+      datePercent: total > 0 ? Math.round((counts.date / total) * 100) : 0,
       avoidPercent: total > 0 ? Math.round((counts.avoid / total) * 100) : 0,
     };
   });
@@ -110,13 +110,13 @@ router.get("/stats/global", async (_req, res) => {
     }));
   };
 
-  const [topMarried, topFucked, topAvoided] = await Promise.all([
+  const [topMarried, topDated, topAvoided] = await Promise.all([
     buildLeaderboard("marry"),
-    buildLeaderboard("fuck"),
+    buildLeaderboard("date"),
     buildLeaderboard("avoid"),
   ]);
 
-  res.json({ topMarried, topFucked, topAvoided, totalRounds });
+  res.json({ topMarried, topDated, topAvoided, totalRounds });
 });
 
 router.get("/stats/character/:characterId", async (req, res) => {
@@ -141,22 +141,22 @@ router.get("/stats/character/:characterId", async (req, res) => {
     .where(eq(votesTable.characterId, charId))
     .groupBy(votesTable.choice);
 
-  const counts = { marry: 0, fuck: 0, avoid: 0 };
+  const counts = { marry: 0, date: 0, avoid: 0 };
   for (const row of voteCounts) {
     counts[row.choice as keyof typeof counts] = row.count;
   }
 
-  const total = counts.marry + counts.fuck + counts.avoid;
+  const total = counts.marry + counts.date + counts.avoid;
 
   res.json({
     characterId: charId,
     characterName: char[0].name,
     marryCount: counts.marry,
-    fuckCount: counts.fuck,
+    dateCount: counts.date,
     avoidCount: counts.avoid,
     totalVotes: total,
     marryPercent: total > 0 ? Math.round((counts.marry / total) * 100) : 0,
-    fuckPercent: total > 0 ? Math.round((counts.fuck / total) * 100) : 0,
+    datePercent: total > 0 ? Math.round((counts.date / total) * 100) : 0,
     avoidPercent: total > 0 ? Math.round((counts.avoid / total) * 100) : 0,
   });
 });

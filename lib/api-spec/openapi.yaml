@@ -164,7 +164,7 @@ components:
           type: integer
         choice:
           type: string
-          enum: [marry, fuck, avoid]
+          enum: [marry, date, avoid]
       required:
         - characterId
         - choice
@@ -203,7 +203,7 @@ components:
           type: string
         marryCount:
           type: integer
-        fuckCount:
+        dateCount:
           type: integer
         avoidCount:
           type: integer
@@ -211,7 +211,7 @@ components:
           type: integer
         marryPercent:
           type: number
-        fuckPercent:
+        datePercent:
           type: number
         avoidPercent:
           type: number
@@ -219,11 +219,11 @@ components:
         - characterId
         - characterName
         - marryCount
-        - fuckCount
+        - dateCount
         - avoidCount
         - totalVotes
         - marryPercent
-        - fuckPercent
+        - datePercent
         - avoidPercent
 
     LeaderboardEntry:
@@ -259,7 +259,7 @@ components:
           type: array
           items:
             $ref: "#/components/schemas/LeaderboardEntry"
-        topFucked:
+        topDated:
           type: array
           items:
             $ref: "#/components/schemas/LeaderboardEntry"
@@ -271,6 +271,6 @@ components:
           type: integer
       required:
         - topMarried
-        - topFucked
+        - topDated
         - topAvoided
         - totalRounds

@@ -11,6 +11,6 @@ export type RoundChoiceChoice =
 
 export const RoundChoiceChoice = {
   marry: "marry",
-  fuck: "fuck",
+  date: "date",
   avoid: "avoid",
 } as const;

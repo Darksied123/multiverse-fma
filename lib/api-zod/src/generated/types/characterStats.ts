@@ -10,10 +10,10 @@ export interface CharacterStats {
   characterId: number;
   characterName: string;
   marryCount: number;
-  fuckCount: number;
+  dateCount: number;
   avoidCount: number;
   totalVotes: number;
   marryPercent: number;
-  fuckPercent: number;
+  datePercent: number;
   avoidPercent: number;
 }

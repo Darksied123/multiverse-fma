@@ -3,7 +3,7 @@ import { persist } from 'zustand/middleware';
 import { GetCharactersGender, SubmitResult, Character } from '@workspace/api-client-react';
 
 interface RoundCharacter extends Character {
-  choiceAssigned?: 'marry' | 'fuck' | 'avoid';
+  choiceAssigned?: 'marry' | 'date' | 'avoid';
 }
 
 interface GameState {

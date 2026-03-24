@@ -9,7 +9,7 @@ import type { LeaderboardEntry } from "./leaderboardEntry";
 
 export interface GlobalStats {
   topMarried: LeaderboardEntry[];
-  topFucked: LeaderboardEntry[];
+  topDated: LeaderboardEntry[];
   topAvoided: LeaderboardEntry[];
   totalRounds: number;
 }

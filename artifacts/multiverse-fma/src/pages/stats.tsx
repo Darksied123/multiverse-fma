@@ -56,12 +56,12 @@ export default function Stats() {
             entries={data.topMarried}
           />
           <LeaderboardColumn 
-            title="Most F***ed" 
+            title="Most Dated" 
             icon={<Skull className="w-6 h-6" />}
-            colorClass="text-fuck"
-            borderColorClass="border-fuck"
-            bgHeaderClass="bg-fuck"
-            entries={data.topFucked}
+            colorClass="text-date"
+            borderColorClass="border-date"
+            bgHeaderClass="bg-date"
+            entries={data.topDated}
           />
           <LeaderboardColumn 
             title="Most Avoided" 
