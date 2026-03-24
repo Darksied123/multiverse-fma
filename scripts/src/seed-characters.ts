@@ -152,7 +152,7 @@ const characters = [
   { name: "Zhongli", universe: "Genshin Impact", gender: "male", imageUrl: GI("Zhongli"), ageNote: "Adult (6000+ year old archon)" },
   { name: "Diluc", universe: "Genshin Impact", gender: "male", imageUrl: GI("Diluc"), ageNote: "Adult (22)" },
   { name: "Kaeya", universe: "Genshin Impact", gender: "male", imageUrl: GI("Kaeya"), ageNote: "Adult" },
-  { name: "Alhaitham", universe: "Genshin Impact", gender: "male", imageUrl: GI("Alhatham"), ageNote: "Adult" },
+  { name: "Alhaitham", universe: "Genshin Impact", gender: "male", imageUrl: GI("Alhatham"), ageNote: "Adult" }, // NOTE: "Alhatham" is the verified Genshin game asset key (HTTP 200, 95 KB); "Alhaitham" returns 404
   { name: "Wriothesley", universe: "Genshin Impact", gender: "male", imageUrl: GIE("Wriothesley"), ageNote: "Adult" },
   { name: "Neuvillette", universe: "Genshin Impact", gender: "male", imageUrl: GIE("Neuvillette"), ageNote: "Adult (ancient hydro dragon)" },
 
