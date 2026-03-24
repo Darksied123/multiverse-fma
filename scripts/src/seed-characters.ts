@@ -30,10 +30,19 @@ const OW = (hero: string) =>
 const AK = (id: string) =>
   `https://raw.githubusercontent.com/ArknightsAssets/ArknightsAssets/cn/assets/torappu/dynamicassets/arts/charportraits/${id}.png`;
 
+// Marvel Comics — i.annihil.us official CDN (requires proxy; paths sourced from Marvel API)
+// Verified HTTP 200 paths (portrait_incredible = 216×324px portrait):
+// Thor: 5/a0/537bc7036ab02 | Iron Man: 3/40/4bb4680432f73 | Captain America: 3/50/537ba56d31087
+// Remaining character paths require Marvel API key to retrieve (not publicly guessable)
+const MV = (path: string) =>
+  `https://i.annihil.us/u/prod/marvel/i/mg/${path}/portrait_incredible.jpg`;
+
 // Real image URLs sourced from official wikis and CDNs
 // All characters are verified adults (18+)
 const characters = [
   // ── MARVEL ──────────────────────────────────────────────────────────────────
+  // i.annihil.us CDN — only paths that return HTTP 200 are hardcoded (verified);
+  // remaining chars need Marvel API key to retrieve unique hash paths (not guessable) → keep placeholder
   { name: "Black Widow", universe: "Marvel", gender: "female", imageUrl: P("Black Widow"), ageNote: "Adult" },
   { name: "Storm", universe: "Marvel", gender: "female", imageUrl: P("Storm"), ageNote: "Adult" },
   { name: "Scarlet Witch", universe: "Marvel", gender: "female", imageUrl: P("Scarlet Witch"), ageNote: "Adult" },
@@ -42,9 +51,9 @@ const characters = [
   { name: "Psylocke", universe: "Marvel", gender: "female", imageUrl: P("Psylocke"), ageNote: "Adult" },
   { name: "Rogue", universe: "Marvel", gender: "female", imageUrl: P("Rogue"), ageNote: "Adult" },
   { name: "Spider-Woman", universe: "Marvel", gender: "female", imageUrl: P("Spider-Woman"), ageNote: "Adult" },
-  { name: "Thor", universe: "Marvel", gender: "male", imageUrl: P("Thor"), ageNote: "Adult" },
-  { name: "Iron Man", universe: "Marvel", gender: "male", imageUrl: P("Iron Man"), ageNote: "Adult" },
-  { name: "Captain America", universe: "Marvel", gender: "male", imageUrl: P("Captain America"), ageNote: "Adult" },
+  { name: "Thor", universe: "Marvel", gender: "male", imageUrl: MV("5/a0/537bc7036ab02"), ageNote: "Adult" },
+  { name: "Iron Man", universe: "Marvel", gender: "male", imageUrl: MV("3/40/4bb4680432f73"), ageNote: "Adult" },
+  { name: "Captain America", universe: "Marvel", gender: "male", imageUrl: MV("3/50/537ba56d31087"), ageNote: "Adult" },
   { name: "Wolverine", universe: "Marvel", gender: "male", imageUrl: P("Wolverine"), ageNote: "Adult" },
   { name: "Deadpool", universe: "Marvel", gender: "male", imageUrl: P("Deadpool"), ageNote: "Adult" },
   { name: "Black Panther", universe: "Marvel", gender: "male", imageUrl: P("Black Panther"), ageNote: "Adult" },
@@ -52,6 +61,8 @@ const characters = [
   { name: "Gambit", universe: "Marvel", gender: "male", imageUrl: P("Gambit"), ageNote: "Adult" },
 
   // ── DC ──────────────────────────────────────────────────────────────────────
+  // DC has no public image CDN — dc.com renders with JS, dc.fandom.com URLs are not stable,
+  // static.wikia.nocookie.net requires wiki-specific paths that change. Neon placeholder used.
   { name: "Wonder Woman", universe: "DC", gender: "female", imageUrl: P("Wonder Woman"), ageNote: "Adult" },
   { name: "Zatanna", universe: "DC", gender: "female", imageUrl: P("Zatanna"), ageNote: "Adult" },
   { name: "Starfire", universe: "DC", gender: "female", imageUrl: P("Starfire"), ageNote: "Adult" },
@@ -337,6 +348,9 @@ const characters = [
   { name: "Hellagur", universe: "Arknights", gender: "male", imageUrl: AK("char_188_helage_2"), ageNote: "Adult" },
 
   // ── ZENLESS ZONE ZERO ─────────────────────────────────────────────────────────
+  // ZZZ image research: HoYoverse CDN (act-webstatic.hoyoverse.com) returns 403; enka.network
+  // has no ZZZ support; m4urlclo0/ZZZ-Assets and ZZZure/ZenlessRes GitHub repos don't match
+  // expected path structures. No reliable public CDN found. Neon placeholder used.
   { name: "Nicole Demara", universe: "Zenless Zone Zero", gender: "female", imageUrl: P("Nicole ZZZ"), ageNote: "Adult" },
   { name: "Zhu Yuan", universe: "Zenless Zone Zero", gender: "female", imageUrl: P("Zhu Yuan ZZZ"), ageNote: "Adult" },
   { name: "Ellen Joe", universe: "Zenless Zone Zero", gender: "female", imageUrl: P("Ellen Joe ZZZ"), ageNote: "Adult" },
@@ -364,6 +378,8 @@ const characters = [
   { name: "Jing Yuan", universe: "Honkai: Star Rail", gender: "male", imageUrl: HSR_ID(1204), ageNote: "Adult" },
 
   // ── GODDESS OF VICTORY: NIKKE ─────────────────────────────────────────────────
+  // NIKKE image research: nikke-db.pages.dev returns 526-byte stub responses (not real images);
+  // no GitHub community repo with accessible portrait CDN found. Neon placeholder used.
   { name: "Rapi", universe: "NIKKE", gender: "female", imageUrl: P("Rapi NIKKE"), ageNote: "Adult android" },
   { name: "Anis", universe: "NIKKE", gender: "female", imageUrl: P("Anis NIKKE"), ageNote: "Adult android" },
   { name: "Neon", universe: "NIKKE", gender: "female", imageUrl: P("Neon NIKKE"), ageNote: "Adult android" },
@@ -395,6 +411,9 @@ const characters = [
   { name: "Baek Yoonho", universe: "Solo Leveling: Arise", gender: "male", imageUrl: P("Baek Yoonho SLA"), ageNote: "Adult" },
 
   // ── WUTHERING WAVES ───────────────────────────────────────────────────────────
+  // WuWa image research: api.resonance.rest is unreachable (HTTP 000); wuwa-assets GitHub repo
+  // doesn't match expected path structure; wutheringwaves.gg CDN returns 404. No public CDN found.
+  // Neon placeholder used.
   { name: "Yinlin", universe: "Wuthering Waves", gender: "female", imageUrl: P("Yinlin WW"), ageNote: "Adult" },
   { name: "Jianxin", universe: "Wuthering Waves", gender: "female", imageUrl: P("Jianxin WW"), ageNote: "Adult" },
   { name: "Changli", universe: "Wuthering Waves", gender: "female", imageUrl: P("Changli WW"), ageNote: "Adult" },

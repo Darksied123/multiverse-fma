@@ -34,6 +34,8 @@ const ALLOWED_HOSTS = [
   "enka.network",
   // Blizzard Overwatch CloudFront CDN
   "d1u1mce87gyfbn.cloudfront.net",
+  // Marvel Comics i.annihil.us — official CDN for Marvel character portrait images
+  "i.annihil.us",
 ];
 
 router.get("/proxy/image", (req, res) => {
