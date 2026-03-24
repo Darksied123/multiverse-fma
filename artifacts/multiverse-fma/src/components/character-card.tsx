@@ -5,7 +5,25 @@ import { Heart, Skull, Ban } from "lucide-react";
 import { useState } from "react";
 
 const isPlaceholderUrl = (url: string) =>
-  url.includes("ui-avatars.com") || !url || url === "";
+  !url || url === "" || url.includes("ui-avatars.com");
+
+// CDNs that support open CORS — load directly without proxying
+const DIRECT_HOSTS = [
+  "ddragon.leagueoflegends.com",
+  "raw.communitydragon.org",
+  "cdn.communitydragon.org",
+];
+
+function buildImageSrc(url: string): string {
+  if (isPlaceholderUrl(url)) return url;
+  try {
+    const { hostname } = new URL(url);
+    if (DIRECT_HOSTS.includes(hostname)) return url;
+  } catch {
+    return url;
+  }
+  return `/api/proxy/image?url=${encodeURIComponent(url)}`;
+}
 
 function NeonPortrait({ character }: { character: Character }) {
   const initials = character.name
