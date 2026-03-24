@@ -1,22 +1,24 @@
 openapi: 3.1.0
 info:
-  # Do not change the title, if the title changes, the import paths will be broken
   title: Api
   version: 0.1.0
-  description: API specification
+  description: Multiverse FMA API
 servers:
   - url: /api
     description: Base API path
 tags:
   - name: health
     description: Health operations
+  - name: characters
+    description: Character operations
+  - name: stats
+    description: Stats operations
 paths:
   /healthz:
     get:
       operationId: healthCheck
       tags: [health]
       summary: Health check
-      description: Returns server health status
       responses:
         "200":
           description: Healthy
@@ -24,6 +26,104 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+
+  /characters:
+    get:
+      operationId: getCharacters
+      tags: [characters]
+      summary: Get random characters for a round
+      parameters:
+        - name: gender
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [male, female, mixed]
+            default: mixed
+      responses:
+        "200":
+          description: Three random characters
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Character"
+
+  /characters/all:
+    get:
+      operationId: getAllCharacters
+      tags: [characters]
+      summary: Get all characters
+      parameters:
+        - name: gender
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [male, female, mixed]
+            default: mixed
+      responses:
+        "200":
+          description: All characters
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Character"
+
+  /stats/submit:
+    post:
+      operationId: submitRound
+      tags: [stats]
+      summary: Submit the results of a round
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RoundSubmission"
+      responses:
+        "200":
+          description: Round submitted successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SubmitResult"
+
+  /stats/global:
+    get:
+      operationId: getGlobalStats
+      tags: [stats]
+      summary: Get global leaderboard stats
+      responses:
+        "200":
+          description: Global stats
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GlobalStats"
+
+  /stats/character/{characterId}:
+    get:
+      operationId: getCharacterStats
+      tags: [stats]
+      summary: Get stats for a specific character
+      parameters:
+        - name: characterId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Character stats
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CharacterStats"
+
 components:
   schemas:
     HealthStatus:
@@ -34,3 +134,143 @@ components:
       required:
         - status
 
+    Character:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        universe:
+          type: string
+        gender:
+          type: string
+          enum: [male, female]
+        imageUrl:
+          type: string
+        ageNote:
+          type: string
+      required:
+        - id
+        - name
+        - universe
+        - gender
+        - imageUrl
+
+    RoundChoice:
+      type: object
+      properties:
+        characterId:
+          type: integer
+        choice:
+          type: string
+          enum: [marry, fuck, avoid]
+      required:
+        - characterId
+        - choice
+
+    RoundSubmission:
+      type: object
+      properties:
+        choices:
+          type: array
+          items:
+            $ref: "#/components/schemas/RoundChoice"
+          minItems: 3
+          maxItems: 3
+      required:
+        - choices
+
+    SubmitResult:
+      type: object
+      properties:
+        success:
+          type: boolean
+        characterStats:
+          type: array
+          items:
+            $ref: "#/components/schemas/CharacterStats"
+      required:
+        - success
+        - characterStats
+
+    CharacterStats:
+      type: object
+      properties:
+        characterId:
+          type: integer
+        characterName:
+          type: string
+        marryCount:
+          type: integer
+        fuckCount:
+          type: integer
+        avoidCount:
+          type: integer
+        totalVotes:
+          type: integer
+        marryPercent:
+          type: number
+        fuckPercent:
+          type: number
+        avoidPercent:
+          type: number
+      required:
+        - characterId
+        - characterName
+        - marryCount
+        - fuckCount
+        - avoidCount
+        - totalVotes
+        - marryPercent
+        - fuckPercent
+        - avoidPercent
+
+    LeaderboardEntry:
+      type: object
+      properties:
+        characterId:
+          type: integer
+        characterName:
+          type: string
+        universe:
+          type: string
+        imageUrl:
+          type: string
+        count:
+          type: integer
+        percent:
+          type: number
+        totalVotes:
+          type: integer
+      required:
+        - characterId
+        - characterName
+        - universe
+        - imageUrl
+        - count
+        - percent
+        - totalVotes
+
+    GlobalStats:
+      type: object
+      properties:
+        topMarried:
+          type: array
+          items:
+            $ref: "#/components/schemas/LeaderboardEntry"
+        topFucked:
+          type: array
+          items:
+            $ref: "#/components/schemas/LeaderboardEntry"
+        topAvoided:
+          type: array
+          items:
+            $ref: "#/components/schemas/LeaderboardEntry"
+        totalRounds:
+          type: integer
+      required:
+        - topMarried
+        - topFucked
+        - topAvoided
+        - totalRounds

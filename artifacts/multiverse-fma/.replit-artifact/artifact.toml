@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Multiverse FMA"
+version = "1.0.0"
+id = "artifacts/multiverse-fma"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19336
+
+[services.development]
+run = "pnpm --filter @workspace/multiverse-fma run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/multiverse-fma", "run", "build" ]
+publicDir = "artifacts/multiverse-fma/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19336"
+BASE_PATH = "/"
