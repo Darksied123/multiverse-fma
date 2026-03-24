@@ -2,6 +2,96 @@ import { Character } from "@workspace/api-client-react";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { Heart, Skull, Ban } from "lucide-react";
+import { useState } from "react";
+
+const isPlaceholderUrl = (url: string) =>
+  url.includes("ui-avatars.com") || !url || url === "";
+
+function NeonPortrait({ character }: { character: Character }) {
+  const initials = character.name
+    .split(/[\s\-_]/)
+    .map((w) => w[0])
+    .join("")
+    .slice(0, 2)
+    .toUpperCase();
+
+  const hue = character.name
+    .split("")
+    .reduce((acc, c) => acc + c.charCodeAt(0), 0) % 360;
+
+  return (
+    <div
+      className="w-full h-full flex flex-col items-center justify-center relative"
+      style={{ background: `linear-gradient(135deg, hsl(${hue},60%,8%) 0%, hsl(${hue},40%,18%) 100%)` }}
+    >
+      {/* Comic halftone dots bg */}
+      <div
+        className="absolute inset-0 opacity-10"
+        style={{
+          backgroundImage: `radial-gradient(circle, hsl(${hue},80%,70%) 1px, transparent 1px)`,
+          backgroundSize: "18px 18px",
+        }}
+      />
+      {/* Diagonal comic lines */}
+      <div
+        className="absolute inset-0 opacity-5"
+        style={{
+          backgroundImage: `repeating-linear-gradient(45deg, hsl(${hue},80%,70%) 0px, hsl(${hue},80%,70%) 1px, transparent 1px, transparent 12px)`,
+        }}
+      />
+      {/* Initials badge */}
+      <div
+        className="relative z-10 flex items-center justify-center rounded-full border-4 shadow-2xl"
+        style={{
+          width: 110,
+          height: 110,
+          borderColor: `hsl(${hue},80%,55%)`,
+          background: `radial-gradient(circle at 35% 35%, hsl(${hue},60%,25%), hsl(${hue},60%,8%))`,
+          boxShadow: `0 0 30px hsl(${hue},80%,50%), 0 0 70px hsl(${hue},60%,25%), inset 0 0 20px hsl(${hue},40%,15%)`,
+        }}
+      >
+        <span
+          className="font-black text-5xl tracking-tighter select-none"
+          style={{
+            color: `hsl(${hue},95%,80%)`,
+            textShadow: `0 0 15px hsl(${hue},90%,70%), 0 0 30px hsl(${hue},80%,50%)`,
+          }}
+        >
+          {initials}
+        </span>
+      </div>
+      <div className="relative z-10 mt-5 px-3 text-center">
+        <p
+          className="font-heading font-black text-sm uppercase tracking-widest leading-tight"
+          style={{
+            color: `hsl(${hue},80%,80%)`,
+            textShadow: `0 0 8px hsl(${hue},80%,60%)`,
+          }}
+        >
+          {character.name}
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function ImageWithFallback({ character }: { character: Character }) {
+  const [failed, setFailed] = useState(false);
+
+  if (isPlaceholderUrl(character.imageUrl) || failed) {
+    return <NeonPortrait character={character} />;
+  }
+
+  return (
+    <img
+      src={character.imageUrl}
+      alt={character.name}
+      className="w-full h-full object-cover object-top opacity-90 hover:opacity-100 transition-opacity"
+      loading="lazy"
+      onError={() => setFailed(true)}
+    />
+  );
+}
 
 interface CharacterCardProps {
   character: Character;
@@ -44,17 +134,7 @@ export function CharacterCard({
       )}>
         {/* Image Container */}
         <div className="relative aspect-[3/4] w-full bg-black border-b-4 border-black overflow-hidden">
-          <img 
-            src={character.imageUrl} 
-            alt={character.name}
-            className="w-full h-full object-cover object-top opacity-90 hover:opacity-100 transition-opacity"
-            loading="lazy"
-            onError={(e) => {
-              const target = e.currentTarget;
-              target.onerror = null;
-              target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(character.name)}&size=400&background=1a1a2e&color=e040fb&bold=true&format=svg&font-size=0.25`;
-            }}
-          />
+          <ImageWithFallback character={character} />
           {/* Halftone overlay effect */}
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0)_60%,rgba(0,0,0,0.8)_100%)] pointer-events-none" />
           
