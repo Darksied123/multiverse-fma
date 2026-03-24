@@ -1,0 +1,17 @@
+packages:
+  "framer-motion": "For fluid card animations and satisfying comic-book style interactions"
+  "zustand": "For managing global game state (gender filters, round results) cleanly"
+  "clsx": "Utility for conditional classes needed by UI components"
+  "tailwind-merge": "Utility for merging tailwind classes needed by UI components"
+
+images:
+  - path: "artifacts/multiverse-fma/public/images/comic-bg.png"
+    description: "Dark comic book style background with subtle halftone dot patterns in deep indigo and black, very moody and atmospheric"
+    aspect_ratio: "16:9"
+  - path: "artifacts/multiverse-fma/public/images/logo-mark.png"
+    description: "A bold neon comic-book style logo mark featuring a stylized broken heart and an elegant ring intersecting, glowing against dark background"
+    aspect_ratio: "1:1"
+
+notes:
+  - Using @workspace/api-client-react for all data fetching
+  - App enforces dark mode persistently
