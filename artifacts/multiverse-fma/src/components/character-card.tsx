@@ -12,6 +12,8 @@ const DIRECT_HOSTS = [
   "ddragon.leagueoflegends.com",
   "raw.communitydragon.org",
   "cdn.communitydragon.org",
+  // Arknights assets — GitHub raw has CORS: * so loads directly without proxy
+  "raw.githubusercontent.com",
 ];
 
 function buildImageSrc(url: string): string {

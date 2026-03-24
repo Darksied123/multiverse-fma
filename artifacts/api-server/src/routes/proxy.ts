@@ -24,6 +24,16 @@ const ALLOWED_HOSTS = [
   "g.ddragon.leagueoflegends.com",
   "zzz.gg",
   "ak.gamepress.gg",
+  // HoYoverse official game record CDN — serves character icons for Genshin and HSR
+  "upload-os-bbs.mihoyo.com",
+  "sg-public-data-api.hoyoverse.com",
+  "fastcdn.hoyoverse.com",
+  // jsDelivr CDN — open GitHub CDN, serves game asset repos (StarRailRes, etc.)
+  "cdn.jsdelivr.net",
+  // Enka.Network — community CDN for Genshin Impact game assets
+  "enka.network",
+  // Blizzard Overwatch CloudFront CDN
+  "d1u1mce87gyfbn.cloudfront.net",
 ];
 
 router.get("/proxy/image", (req, res) => {

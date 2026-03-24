@@ -10,6 +10,26 @@ const P = (name: string) =>
 const DDragon = (champName: string) =>
   `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champName}_0.jpg`;
 
+// Genshin Impact — miHoYo game record CDN (3.x and earlier characters)
+const GI = (n: string) =>
+  `https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_${n}.png`;
+
+// Genshin Impact — enka.network CDN (4.x+ characters)
+const GIE = (n: string) =>
+  `https://enka.network/ui/UI_AvatarIcon_${n}.png`;
+
+// Honkai: Star Rail — jsDelivr/StarRailRes by character ID
+const HSR_ID = (id: number) =>
+  `https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/${id}.png`;
+
+// Overwatch — Blizzard CloudFront CDN hero portrait
+const OW = (hero: string) =>
+  `https://d1u1mce87gyfbn.cloudfront.net/hero/${hero}/hero-select-portrait.png`;
+
+// Arknights — ArknightsAssets GitHub raw (CORS: *) by internal char ID
+const AK = (id: string) =>
+  `https://raw.githubusercontent.com/ArknightsAssets/ArknightsAssets/cn/assets/torappu/dynamicassets/arts/charportraits/${id}.png`;
+
 // Real image URLs sourced from official wikis and CDNs
 // All characters are verified adults (18+)
 const characters = [
@@ -107,32 +127,33 @@ const characters = [
   { name: "Esdeath", universe: "Akame ga Kill", gender: "female", imageUrl: P("Esdeath"), ageNote: "Adult" },
 
   // ── GENSHIN IMPACT ───────────────────────────────────────────────────────────
-  { name: "Raiden Shogun", universe: "Genshin Impact", gender: "female", imageUrl: P("Raiden Shogun"), ageNote: "Adult (millennia old deity)" },
-  { name: "Ningguang", universe: "Genshin Impact", gender: "female", imageUrl: P("Ningguang"), ageNote: "Adult" },
-  { name: "Hu Tao", universe: "Genshin Impact", gender: "female", imageUrl: P("Hu Tao"), ageNote: "Adult (20)" },
-  { name: "Ganyu", universe: "Genshin Impact", gender: "female", imageUrl: P("Ganyu"), ageNote: "Adult (3000+ years old adeptus)" },
-  { name: "Yelan", universe: "Genshin Impact", gender: "female", imageUrl: P("Yelan"), ageNote: "Adult" },
-  { name: "Beidou", universe: "Genshin Impact", gender: "female", imageUrl: P("Beidou"), ageNote: "Adult" },
-  { name: "Yae Miko", universe: "Genshin Impact", gender: "female", imageUrl: P("Yae Miko"), ageNote: "Adult (ancient kitsune)" },
-  { name: "Shenhe", universe: "Genshin Impact", gender: "female", imageUrl: P("Shenhe"), ageNote: "Adult" },
-  { name: "Navia", universe: "Genshin Impact", gender: "female", imageUrl: P("Navia"), ageNote: "Adult" },
-  { name: "Furina", universe: "Genshin Impact", gender: "female", imageUrl: P("Furina"), ageNote: "Adult (500+ years)" },
-  { name: "Zhongli", universe: "Genshin Impact", gender: "male", imageUrl: P("Zhongli"), ageNote: "Adult (6000+ year old archon)" },
-  { name: "Diluc", universe: "Genshin Impact", gender: "male", imageUrl: P("Diluc"), ageNote: "Adult (22)" },
-  { name: "Kaeya", universe: "Genshin Impact", gender: "male", imageUrl: P("Kaeya"), ageNote: "Adult" },
-  { name: "Alhaitham", universe: "Genshin Impact", gender: "male", imageUrl: P("Alhaitham"), ageNote: "Adult" },
-  { name: "Wriothesley", universe: "Genshin Impact", gender: "male", imageUrl: P("Wriothesley"), ageNote: "Adult" },
-  { name: "Neuvillette", universe: "Genshin Impact", gender: "male", imageUrl: P("Neuvillette"), ageNote: "Adult (ancient hydro dragon)" },
+  // 3.x and older: miHoYo game record CDN  |  4.x+: enka.network CDN
+  { name: "Raiden Shogun", universe: "Genshin Impact", gender: "female", imageUrl: GI("Shougun"), ageNote: "Adult (millennia old deity)" },
+  { name: "Ningguang", universe: "Genshin Impact", gender: "female", imageUrl: GI("Ningguang"), ageNote: "Adult" },
+  { name: "Hu Tao", universe: "Genshin Impact", gender: "female", imageUrl: GI("Hutao"), ageNote: "Adult (20)" },
+  { name: "Ganyu", universe: "Genshin Impact", gender: "female", imageUrl: GI("Ganyu"), ageNote: "Adult (3000+ years old adeptus)" },
+  { name: "Yelan", universe: "Genshin Impact", gender: "female", imageUrl: GI("Yelan"), ageNote: "Adult" },
+  { name: "Beidou", universe: "Genshin Impact", gender: "female", imageUrl: GI("Beidou"), ageNote: "Adult" },
+  { name: "Yae Miko", universe: "Genshin Impact", gender: "female", imageUrl: GI("Yae"), ageNote: "Adult (ancient kitsune)" },
+  { name: "Shenhe", universe: "Genshin Impact", gender: "female", imageUrl: GI("Shenhe"), ageNote: "Adult" },
+  { name: "Navia", universe: "Genshin Impact", gender: "female", imageUrl: GIE("Navia"), ageNote: "Adult" },
+  { name: "Furina", universe: "Genshin Impact", gender: "female", imageUrl: GIE("Furina"), ageNote: "Adult (500+ years)" },
+  { name: "Zhongli", universe: "Genshin Impact", gender: "male", imageUrl: GI("Zhongli"), ageNote: "Adult (6000+ year old archon)" },
+  { name: "Diluc", universe: "Genshin Impact", gender: "male", imageUrl: GI("Diluc"), ageNote: "Adult (22)" },
+  { name: "Kaeya", universe: "Genshin Impact", gender: "male", imageUrl: GI("Kaeya"), ageNote: "Adult" },
+  { name: "Alhaitham", universe: "Genshin Impact", gender: "male", imageUrl: GI("Alhatham"), ageNote: "Adult" },
+  { name: "Wriothesley", universe: "Genshin Impact", gender: "male", imageUrl: GIE("Wriothesley"), ageNote: "Adult" },
+  { name: "Neuvillette", universe: "Genshin Impact", gender: "male", imageUrl: GIE("Neuvillette"), ageNote: "Adult (ancient hydro dragon)" },
 
   // ── HONKAI IMPACT 3rd / STAR RAIL ────────────────────────────────────────────
   { name: "Kiana Kaslana", universe: "Honkai Impact 3rd", gender: "female", imageUrl: P("Kiana"), ageNote: "Adult (18)" },
   { name: "Elysia", universe: "Honkai Impact 3rd", gender: "female", imageUrl: P("Elysia"), ageNote: "Adult" },
   { name: "Bronya Zaychik", universe: "Honkai Impact 3rd", gender: "female", imageUrl: P("Bronya"), ageNote: "Adult" },
-  { name: "Kafka", universe: "Honkai: Star Rail", gender: "female", imageUrl: P("Kafka HSR"), ageNote: "Adult" },
-  { name: "Acheron", universe: "Honkai: Star Rail", gender: "female", imageUrl: P("Acheron HSR"), ageNote: "Adult" },
-  { name: "Jade", universe: "Honkai: Star Rail", gender: "female", imageUrl: P("Jade HSR"), ageNote: "Adult" },
-  { name: "Aventurine", universe: "Honkai: Star Rail", gender: "male", imageUrl: P("Aventurine"), ageNote: "Adult" },
-  { name: "Dr. Ratio", universe: "Honkai: Star Rail", gender: "male", imageUrl: P("Dr Ratio"), ageNote: "Adult" },
+  { name: "Kafka", universe: "Honkai: Star Rail", gender: "female", imageUrl: HSR_ID(1005), ageNote: "Adult" },
+  { name: "Acheron", universe: "Honkai: Star Rail", gender: "female", imageUrl: HSR_ID(1308), ageNote: "Adult" },
+  { name: "Jade", universe: "Honkai: Star Rail", gender: "female", imageUrl: HSR_ID(1314), ageNote: "Adult" },
+  { name: "Aventurine", universe: "Honkai: Star Rail", gender: "male", imageUrl: HSR_ID(1304), ageNote: "Adult" },
+  { name: "Dr. Ratio", universe: "Honkai: Star Rail", gender: "male", imageUrl: HSR_ID(1305), ageNote: "Adult" },
 
   // ── AZUR LANE ────────────────────────────────────────────────────────────────
   // All are adult ship-girl entities
@@ -267,16 +288,17 @@ const characters = [
   { name: "Braum", universe: "League of Legends", gender: "male", imageUrl: DDragon("Braum"), ageNote: "Adult" },
 
   // ── OVERWATCH ─────────────────────────────────────────────────────────────────
-  { name: "Widowmaker", universe: "Overwatch", gender: "female", imageUrl: P("Widowmaker OW"), ageNote: "Adult (33)" },
-  { name: "Mercy", universe: "Overwatch", gender: "female", imageUrl: P("Mercy OW"), ageNote: "Adult (37)" },
-  { name: "Pharah", universe: "Overwatch", gender: "female", imageUrl: P("Pharah OW"), ageNote: "Adult (32)" },
-  { name: "D.Va", universe: "Overwatch", gender: "female", imageUrl: P("DVa OW"), ageNote: "Adult (19)" },
-  { name: "Ashe", universe: "Overwatch", gender: "female", imageUrl: P("Ashe OW"), ageNote: "Adult (39)" },
-  { name: "Moira", universe: "Overwatch", gender: "female", imageUrl: P("Moira OW"), ageNote: "Adult (48)" },
-  { name: "Brigitte", universe: "Overwatch", gender: "female", imageUrl: P("Brigitte OW"), ageNote: "Adult (23)" },
-  { name: "Tracer", universe: "Overwatch", gender: "female", imageUrl: P("Tracer OW"), ageNote: "Adult (26)" },
-  { name: "Soldier: 76", universe: "Overwatch", gender: "male", imageUrl: P("Soldier 76 OW"), ageNote: "Adult" },
-  { name: "Reaper", universe: "Overwatch", gender: "male", imageUrl: P("Reaper OW"), ageNote: "Adult" },
+  // Blizzard CloudFront CDN — hero select portraits
+  { name: "Widowmaker", universe: "Overwatch", gender: "female", imageUrl: OW("widowmaker"), ageNote: "Adult (33)" },
+  { name: "Mercy", universe: "Overwatch", gender: "female", imageUrl: OW("mercy"), ageNote: "Adult (37)" },
+  { name: "Pharah", universe: "Overwatch", gender: "female", imageUrl: OW("pharah"), ageNote: "Adult (32)" },
+  { name: "D.Va", universe: "Overwatch", gender: "female", imageUrl: OW("dva"), ageNote: "Adult (19)" },
+  { name: "Ashe", universe: "Overwatch", gender: "female", imageUrl: OW("ashe"), ageNote: "Adult (39)" },
+  { name: "Moira", universe: "Overwatch", gender: "female", imageUrl: OW("moira"), ageNote: "Adult (48)" },
+  { name: "Brigitte", universe: "Overwatch", gender: "female", imageUrl: OW("brigitte"), ageNote: "Adult (23)" },
+  { name: "Tracer", universe: "Overwatch", gender: "female", imageUrl: OW("tracer"), ageNote: "Adult (26)" },
+  { name: "Soldier: 76", universe: "Overwatch", gender: "male", imageUrl: OW("soldier-76"), ageNote: "Adult" },
+  { name: "Reaper", universe: "Overwatch", gender: "male", imageUrl: OW("reaper"), ageNote: "Adult" },
 
   // ── SMITE ─────────────────────────────────────────────────────────────────────
   { name: "Aphrodite", universe: "Smite", gender: "female", imageUrl: P("Aphrodite Smite"), ageNote: "Adult goddess" },
@@ -301,17 +323,18 @@ const characters = [
   { name: "Kanami", universe: "Aether Gazer", gender: "female", imageUrl: P("Kanami AG"), ageNote: "Adult" },
 
   // ── ARKNIGHTS ─────────────────────────────────────────────────────────────────
-  { name: "Skadi", universe: "Arknights", gender: "female", imageUrl: P("Skadi AK"), ageNote: "Adult" },
-  { name: "Texas", universe: "Arknights", gender: "female", imageUrl: P("Texas AK"), ageNote: "Adult" },
-  { name: "Ch'en", universe: "Arknights", gender: "female", imageUrl: P("Chen AK"), ageNote: "Adult" },
-  { name: "Surtr", universe: "Arknights", gender: "female", imageUrl: P("Surtr AK"), ageNote: "Adult" },
-  { name: "W", universe: "Arknights", gender: "female", imageUrl: P("W AK"), ageNote: "Adult" },
-  { name: "Mudrock", universe: "Arknights", gender: "female", imageUrl: P("Mudrock AK"), ageNote: "Adult" },
-  { name: "Nearl", universe: "Arknights", gender: "female", imageUrl: P("Nearl AK"), ageNote: "Adult" },
-  { name: "Specter", universe: "Arknights", gender: "female", imageUrl: P("Specter AK"), ageNote: "Adult" },
-  { name: "Eyjafjalla", universe: "Arknights", gender: "female", imageUrl: P("Eyjafjalla AK"), ageNote: "Adult" },
-  { name: "Silverash", universe: "Arknights", gender: "male", imageUrl: P("Silverash AK"), ageNote: "Adult" },
-  { name: "Hellagur", universe: "Arknights", gender: "male", imageUrl: P("Hellagur AK"), ageNote: "Adult" },
+  // ArknightsAssets GitHub raw CDN (CORS: *, loads directly in browser)
+  { name: "Skadi", universe: "Arknights", gender: "female", imageUrl: AK("char_263_skadi_2"), ageNote: "Adult" },
+  { name: "Texas", universe: "Arknights", gender: "female", imageUrl: AK("char_102_texas_2"), ageNote: "Adult" },
+  { name: "Ch'en", universe: "Arknights", gender: "female", imageUrl: AK("char_010_chen_2"), ageNote: "Adult" },
+  { name: "Surtr", universe: "Arknights", gender: "female", imageUrl: AK("char_350_surtr_2"), ageNote: "Adult" },
+  { name: "W", universe: "Arknights", gender: "female", imageUrl: AK("char_113_cqbw_2"), ageNote: "Adult" },
+  { name: "Mudrock", universe: "Arknights", gender: "female", imageUrl: AK("char_311_mudrok_2"), ageNote: "Adult" },
+  { name: "Nearl", universe: "Arknights", gender: "female", imageUrl: AK("char_148_nearl_2"), ageNote: "Adult" },
+  { name: "Specter", universe: "Arknights", gender: "female", imageUrl: AK("char_143_ghost_2"), ageNote: "Adult" },
+  { name: "Eyjafjalla", universe: "Arknights", gender: "female", imageUrl: AK("char_103_angel_2"), ageNote: "Adult" },
+  { name: "Silverash", universe: "Arknights", gender: "male", imageUrl: AK("char_172_svrash_2"), ageNote: "Adult" },
+  { name: "Hellagur", universe: "Arknights", gender: "male", imageUrl: AK("char_188_helage_2"), ageNote: "Adult" },
 
   // ── ZENLESS ZONE ZERO ─────────────────────────────────────────────────────────
   { name: "Nicole Demara", universe: "Zenless Zone Zero", gender: "female", imageUrl: P("Nicole ZZZ"), ageNote: "Adult" },
@@ -328,16 +351,17 @@ const characters = [
   { name: "Soldier 11", universe: "Zenless Zone Zero", gender: "female", imageUrl: P("Soldier 11 ZZZ"), ageNote: "Adult" },
 
   // ── HONKAI: STAR RAIL (expanded) ─────────────────────────────────────────────
-  { name: "Himeko", universe: "Honkai: Star Rail", gender: "female", imageUrl: P("Himeko HSR"), ageNote: "Adult" },
-  { name: "Bronya (Star Rail)", universe: "Honkai: Star Rail", gender: "female", imageUrl: P("Bronya HSR"), ageNote: "Adult" },
-  { name: "Pela", universe: "Honkai: Star Rail", gender: "female", imageUrl: P("Pela HSR"), ageNote: "Adult" },
-  { name: "Serval", universe: "Honkai: Star Rail", gender: "female", imageUrl: P("Serval HSR"), ageNote: "Adult" },
-  { name: "Topaz", universe: "Honkai: Star Rail", gender: "female", imageUrl: P("Topaz HSR"), ageNote: "Adult" },
-  { name: "Robin", universe: "Honkai: Star Rail", gender: "female", imageUrl: P("Robin HSR"), ageNote: "Adult" },
-  { name: "Sparkle", universe: "Honkai: Star Rail", gender: "female", imageUrl: P("Sparkle HSR"), ageNote: "Adult" },
-  { name: "Welt", universe: "Honkai: Star Rail", gender: "male", imageUrl: P("Welt HSR"), ageNote: "Adult" },
-  { name: "Blade", universe: "Honkai: Star Rail", gender: "male", imageUrl: P("Blade HSR"), ageNote: "Adult" },
-  { name: "Jing Yuan", universe: "Honkai: Star Rail", gender: "male", imageUrl: P("Jing Yuan HSR"), ageNote: "Adult" },
+  // jsDelivr / StarRailRes by numeric character ID
+  { name: "Himeko", universe: "Honkai: Star Rail", gender: "female", imageUrl: HSR_ID(1003), ageNote: "Adult" },
+  { name: "Bronya (Star Rail)", universe: "Honkai: Star Rail", gender: "female", imageUrl: HSR_ID(1101), ageNote: "Adult" },
+  { name: "Pela", universe: "Honkai: Star Rail", gender: "female", imageUrl: HSR_ID(1106), ageNote: "Adult" },
+  { name: "Serval", universe: "Honkai: Star Rail", gender: "female", imageUrl: HSR_ID(1103), ageNote: "Adult" },
+  { name: "Topaz", universe: "Honkai: Star Rail", gender: "female", imageUrl: HSR_ID(1112), ageNote: "Adult" },
+  { name: "Robin", universe: "Honkai: Star Rail", gender: "female", imageUrl: HSR_ID(1309), ageNote: "Adult" },
+  { name: "Sparkle", universe: "Honkai: Star Rail", gender: "female", imageUrl: HSR_ID(1306), ageNote: "Adult" },
+  { name: "Welt", universe: "Honkai: Star Rail", gender: "male", imageUrl: HSR_ID(1004), ageNote: "Adult" },
+  { name: "Blade", universe: "Honkai: Star Rail", gender: "male", imageUrl: HSR_ID(1205), ageNote: "Adult" },
+  { name: "Jing Yuan", universe: "Honkai: Star Rail", gender: "male", imageUrl: HSR_ID(1204), ageNote: "Adult" },
 
   // ── GODDESS OF VICTORY: NIKKE ─────────────────────────────────────────────────
   { name: "Rapi", universe: "NIKKE", gender: "female", imageUrl: P("Rapi NIKKE"), ageNote: "Adult android" },
