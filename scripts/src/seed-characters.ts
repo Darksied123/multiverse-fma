@@ -364,6 +364,57 @@ const characters = [
   { name: "Lee Juhee", universe: "Solo Leveling: Arise", gender: "female", imageUrl: P("Lee Juhee SLA"), ageNote: "Adult" },
   { name: "Min Byung-gyu", universe: "Solo Leveling: Arise", gender: "male", imageUrl: P("Min Byung SLA"), ageNote: "Adult" },
   { name: "Baek Yoonho", universe: "Solo Leveling: Arise", gender: "male", imageUrl: P("Baek Yoonho SLA"), ageNote: "Adult" },
+
+  // ── WUTHERING WAVES ───────────────────────────────────────────────────────────
+  { name: "Yinlin", universe: "Wuthering Waves", gender: "female", imageUrl: P("Yinlin WW"), ageNote: "Adult" },
+  { name: "Jianxin", universe: "Wuthering Waves", gender: "female", imageUrl: P("Jianxin WW"), ageNote: "Adult" },
+  { name: "Changli", universe: "Wuthering Waves", gender: "female", imageUrl: P("Changli WW"), ageNote: "Adult" },
+  { name: "Verina", universe: "Wuthering Waves", gender: "female", imageUrl: P("Verina WW"), ageNote: "Adult" },
+  { name: "Zhezhi", universe: "Wuthering Waves", gender: "female", imageUrl: P("Zhezhi WW"), ageNote: "Adult" },
+  { name: "Carlotta", universe: "Wuthering Waves", gender: "female", imageUrl: P("Carlotta WW"), ageNote: "Adult" },
+  { name: "Shorekeeper", universe: "Wuthering Waves", gender: "female", imageUrl: P("Shorekeeper WW"), ageNote: "Adult (ancient entity)" },
+  { name: "Camellya", universe: "Wuthering Waves", gender: "female", imageUrl: P("Camellya WW"), ageNote: "Adult" },
+  { name: "Roccia", universe: "Wuthering Waves", gender: "female", imageUrl: P("Roccia WW"), ageNote: "Adult" },
+  { name: "Phoebe", universe: "Wuthering Waves", gender: "female", imageUrl: P("Phoebe WW"), ageNote: "Adult" },
+  { name: "Danjin", universe: "Wuthering Waves", gender: "female", imageUrl: P("Danjin WW"), ageNote: "Adult" },
+  { name: "Jinhsi", universe: "Wuthering Waves", gender: "female", imageUrl: P("Jinhsi WW"), ageNote: "Adult" },
+  { name: "Calcharo", universe: "Wuthering Waves", gender: "male", imageUrl: P("Calcharo WW"), ageNote: "Adult" },
+  { name: "Jiyan", universe: "Wuthering Waves", gender: "male", imageUrl: P("Jiyan WW"), ageNote: "Adult" },
+  { name: "Brant", universe: "Wuthering Waves", gender: "male", imageUrl: P("Brant WW"), ageNote: "Adult" },
+  { name: "Xiangli Yao", universe: "Wuthering Waves", gender: "male", imageUrl: P("Xiangli Yao WW"), ageNote: "Adult" },
+
+  // ── CHAOS ZERO: NIGHTMARE ─────────────────────────────────────────────────────
+  { name: "Livia", universe: "Chaos Zero: Nightmare", gender: "female", imageUrl: P("Livia CZN"), ageNote: "Adult" },
+  { name: "Selene", universe: "Chaos Zero: Nightmare", gender: "female", imageUrl: P("Selene CZN"), ageNote: "Adult" },
+  { name: "Nadia", universe: "Chaos Zero: Nightmare", gender: "female", imageUrl: P("Nadia CZN"), ageNote: "Adult" },
+  { name: "Morrigan", universe: "Chaos Zero: Nightmare", gender: "female", imageUrl: P("Morrigan CZN"), ageNote: "Adult" },
+  { name: "Isadora", universe: "Chaos Zero: Nightmare", gender: "female", imageUrl: P("Isadora CZN"), ageNote: "Adult" },
+  { name: "Vesper", universe: "Chaos Zero: Nightmare", gender: "female", imageUrl: P("Vesper CZN"), ageNote: "Adult" },
+  { name: "Kael", universe: "Chaos Zero: Nightmare", gender: "male", imageUrl: P("Kael CZN"), ageNote: "Adult" },
+  { name: "Zephyr", universe: "Chaos Zero: Nightmare", gender: "male", imageUrl: P("Zephyr CZN"), ageNote: "Adult" },
+
+  // ── LOST SWORD ────────────────────────────────────────────────────────────────
+  { name: "Alicia", universe: "Lost Sword", gender: "female", imageUrl: P("Alicia LS"), ageNote: "Adult" },
+  { name: "Luna", universe: "Lost Sword", gender: "female", imageUrl: P("Luna LS"), ageNote: "Adult" },
+  { name: "Serena", universe: "Lost Sword", gender: "female", imageUrl: P("Serena LS"), ageNote: "Adult" },
+  { name: "Valeria", universe: "Lost Sword", gender: "female", imageUrl: P("Valeria LS"), ageNote: "Adult" },
+  { name: "Iris", universe: "Lost Sword", gender: "female", imageUrl: P("Iris LS"), ageNote: "Adult" },
+  { name: "Elena", universe: "Lost Sword", gender: "female", imageUrl: P("Elena LS"), ageNote: "Adult" },
+  { name: "Aria", universe: "Lost Sword", gender: "female", imageUrl: P("Aria LS"), ageNote: "Adult" },
+  { name: "Rein", universe: "Lost Sword", gender: "male", imageUrl: P("Rein LS"), ageNote: "Adult" },
+  { name: "Siegfried", universe: "Lost Sword", gender: "male", imageUrl: P("Siegfried LS"), ageNote: "Adult" },
+
+  // ── SWORD MASTER STORY ────────────────────────────────────────────────────────
+  { name: "Athena", universe: "Sword Master Story", gender: "female", imageUrl: P("Athena SMS"), ageNote: "Adult goddess" },
+  { name: "Medusa", universe: "Sword Master Story", gender: "female", imageUrl: P("Medusa SMS"), ageNote: "Adult" },
+  { name: "Vivian", universe: "Sword Master Story", gender: "female", imageUrl: P("Vivian SMS"), ageNote: "Adult" },
+  { name: "Rebecca", universe: "Sword Master Story", gender: "female", imageUrl: P("Rebecca SMS"), ageNote: "Adult" },
+  { name: "Kanna", universe: "Sword Master Story", gender: "female", imageUrl: P("Kanna SMS"), ageNote: "Adult" },
+  { name: "Aurora", universe: "Sword Master Story", gender: "female", imageUrl: P("Aurora SMS"), ageNote: "Adult" },
+  { name: "Liliana", universe: "Sword Master Story", gender: "female", imageUrl: P("Liliana SMS"), ageNote: "Adult" },
+  { name: "Freesia", universe: "Sword Master Story", gender: "female", imageUrl: P("Freesia SMS"), ageNote: "Adult" },
+  { name: "Scarlett", universe: "Sword Master Story", gender: "female", imageUrl: P("Scarlett SMS"), ageNote: "Adult" },
+  { name: "Kaito", universe: "Sword Master Story", gender: "male", imageUrl: P("Kaito SMS"), ageNote: "Adult" },
 ];
 
 async function seed() {
