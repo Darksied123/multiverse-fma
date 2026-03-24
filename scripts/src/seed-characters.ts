@@ -1,10 +1,14 @@
 import { db } from "@workspace/db";
 import { charactersTable, votesTable } from "@workspace/db/schema";
 
-// All characters use a placeholder URL that triggers the styled neon fallback card
-// The ImageWithFallback React component renders a beautiful neon portrait card as fallback
+// Placeholder URL that triggers the styled neon fallback card in the React component
 const P = (name: string) =>
   `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&size=400&background=0d0d1a&color=e040fb&bold=true&font-size=0.22&length=2`;
+
+// Riot Games Data Dragon — portrait-oriented loading screen art (308×560px)
+// These load directly in the browser without CORS proxy
+const DDragon = (champName: string) =>
+  `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champName}_0.jpg`;
 
 // Real image URLs sourced from official wikis and CDNs
 // All characters are verified adults (18+)
@@ -246,20 +250,21 @@ const characters = [
   { name: "Felix Hugo Fraldarius", universe: "Fire Emblem", gender: "male", imageUrl: P("Felix FE"), ageNote: "Adult (20)" },
 
   // ── LEAGUE OF LEGENDS ─────────────────────────────────────────────────────────
-  { name: "Ahri", universe: "League of Legends", gender: "female", imageUrl: P("Ahri LoL"), ageNote: "Adult (ancient spirit)" },
-  { name: "Miss Fortune", universe: "League of Legends", gender: "female", imageUrl: P("Miss Fortune LoL"), ageNote: "Adult" },
-  { name: "Katarina", universe: "League of Legends", gender: "female", imageUrl: P("Katarina LoL"), ageNote: "Adult" },
-  { name: "Nidalee", universe: "League of Legends", gender: "female", imageUrl: P("Nidalee LoL"), ageNote: "Adult" },
-  { name: "Caitlyn", universe: "League of Legends", gender: "female", imageUrl: P("Caitlyn LoL"), ageNote: "Adult" },
-  { name: "Morgana", universe: "League of Legends", gender: "female", imageUrl: P("Morgana LoL"), ageNote: "Adult (ancient)" },
-  { name: "Sona", universe: "League of Legends", gender: "female", imageUrl: P("Sona LoL"), ageNote: "Adult" },
-  { name: "Kai'Sa", universe: "League of Legends", gender: "female", imageUrl: P("KaiSa LoL"), ageNote: "Adult" },
-  { name: "Lux", universe: "League of Legends", gender: "female", imageUrl: P("Lux LoL"), ageNote: "Adult (19)" },
-  { name: "Vi", universe: "League of Legends", gender: "female", imageUrl: P("Vi LoL"), ageNote: "Adult" },
-  { name: "Sivir", universe: "League of Legends", gender: "female", imageUrl: P("Sivir LoL"), ageNote: "Adult" },
-  { name: "Yasuo", universe: "League of Legends", gender: "male", imageUrl: P("Yasuo LoL"), ageNote: "Adult" },
-  { name: "Garen", universe: "League of Legends", gender: "male", imageUrl: P("Garen LoL"), ageNote: "Adult" },
-  { name: "Braum", universe: "League of Legends", gender: "male", imageUrl: P("Braum LoL"), ageNote: "Adult" },
+  // Loading screen art from Riot Data Dragon CDN (confirmed CORS-open, portrait orientation)
+  { name: "Ahri", universe: "League of Legends", gender: "female", imageUrl: DDragon("Ahri"), ageNote: "Adult (ancient spirit)" },
+  { name: "Miss Fortune", universe: "League of Legends", gender: "female", imageUrl: DDragon("MissFortune"), ageNote: "Adult" },
+  { name: "Katarina", universe: "League of Legends", gender: "female", imageUrl: DDragon("Katarina"), ageNote: "Adult" },
+  { name: "Nidalee", universe: "League of Legends", gender: "female", imageUrl: DDragon("Nidalee"), ageNote: "Adult" },
+  { name: "Caitlyn", universe: "League of Legends", gender: "female", imageUrl: DDragon("Caitlyn"), ageNote: "Adult" },
+  { name: "Morgana", universe: "League of Legends", gender: "female", imageUrl: DDragon("Morgana"), ageNote: "Adult (ancient)" },
+  { name: "Sona", universe: "League of Legends", gender: "female", imageUrl: DDragon("Sona"), ageNote: "Adult" },
+  { name: "Kai'Sa", universe: "League of Legends", gender: "female", imageUrl: DDragon("Kaisa"), ageNote: "Adult" },
+  { name: "Lux", universe: "League of Legends", gender: "female", imageUrl: DDragon("Lux"), ageNote: "Adult (19)" },
+  { name: "Vi", universe: "League of Legends", gender: "female", imageUrl: DDragon("Vi"), ageNote: "Adult" },
+  { name: "Sivir", universe: "League of Legends", gender: "female", imageUrl: DDragon("Sivir"), ageNote: "Adult" },
+  { name: "Yasuo", universe: "League of Legends", gender: "male", imageUrl: DDragon("Yasuo"), ageNote: "Adult" },
+  { name: "Garen", universe: "League of Legends", gender: "male", imageUrl: DDragon("Garen"), ageNote: "Adult" },
+  { name: "Braum", universe: "League of Legends", gender: "male", imageUrl: DDragon("Braum"), ageNote: "Adult" },
 
   // ── OVERWATCH ─────────────────────────────────────────────────────────────────
   { name: "Widowmaker", universe: "Overwatch", gender: "female", imageUrl: P("Widowmaker OW"), ageNote: "Adult (33)" },

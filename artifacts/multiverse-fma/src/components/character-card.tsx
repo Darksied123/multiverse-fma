@@ -102,7 +102,7 @@ function ImageWithFallback({ character }: { character: Character }) {
 
   return (
     <img
-      src={character.imageUrl}
+      src={buildImageSrc(character.imageUrl)}
       alt={character.name}
       className="w-full h-full object-cover object-top opacity-90 hover:opacity-100 transition-opacity"
       loading="lazy"
