@@ -243,7 +243,7 @@ const characters = [
   { name: "Aventurine", universe: "Honkai: Star Rail", gender: "male", imageUrl: HSR_ID(1304), ageNote: "Adult" },
   { name: "Blade", universe: "Honkai: Star Rail", gender: "male", imageUrl: HSR_ID(1205), ageNote: "Adult" },
 
-  // ── AZUR LANE (11) ────────────────────────────────────────────────────────
+  // ── AZUR LANE (10) ────────────────────────────────────────────────────────
   { name: "Enterprise", universe: "Azur Lane", gender: "female", imageUrl: FW("azur-lane", "a/af/Enterprise_intro.png/revision/latest/scale-to-width-down/500?cb=20230811183854"), ageNote: "Adult ship girl" },
   { name: "Belfast", universe: "Azur Lane", gender: "female", imageUrl: FW("azur-lane", "d/d1/Belfast_intro.png/revision/latest/scale-to-width-down/500?cb=20230811183812"), ageNote: "Adult ship girl" },
   { name: "Illustrious", universe: "Azur Lane", gender: "female", imageUrl: FW("azur-lane", "e/e6/Illustrious_intro.png/revision/latest/scale-to-width-down/500?cb=20230811183915"), ageNote: "Adult ship girl" },
@@ -254,7 +254,6 @@ const characters = [
   { name: "Kaga", universe: "Azur Lane", gender: "female", imageUrl: FW("azur-lane", "6/6c/Kaga_intro.png/revision/latest/scale-to-width-down/500?cb=20230811184444"), ageNote: "Adult ship girl" },
   { name: "Hood", universe: "Azur Lane", gender: "female", imageUrl: FW("azur-lane", "8/84/Hood_intro.png/revision/latest/scale-to-width-down/500?cb=20191219144856"), ageNote: "Adult ship girl" },
   { name: "Prinz Eugen", universe: "Azur Lane", gender: "female", imageUrl: FW("azur-lane", "0/00/Prinz_eugen_intro.png/revision/latest/scale-to-width-down/500?cb=20230811184248"), ageNote: "Adult ship girl" },
-  { name: "Belfast", universe: "Azur Lane", gender: "female", imageUrl: "https://static.wikia.nocookie.net/azur-lane/images/d/d1/Belfast_intro.png/revision/latest/scale-to-width-down/500?cb=20230811183812", ageNote: "Adult ship girl" },
 
   // ── GIRLS FRONTLINE (13) ──────────────────────────────────────────────────
   { name: "HK416", universe: "Girls Frontline", gender: "female", imageUrl: FW("girlsfrontline", "2/2f/Clukay_default.png/revision/latest/scale-to-width-down/500?cb=20230419184239"), ageNote: "Adult T-Doll" },
@@ -283,11 +282,12 @@ const characters = [
   { name: "Arbiter Vildred", universe: "Epic Seven", gender: "male", imageUrl: FW("epic-seven", "8/83/Arbiter_Vildred_Profile.png/revision/latest?cb=20190831160510"), ageNote: "Adult" },
   { name: "Fallen Cecilia", universe: "Epic Seven", gender: "female", imageUrl: FW("epic-seven", "9/99/Fallen_Cecilia_Profile.png/revision/latest?cb=20190831155634"), ageNote: "Adult" },
 
-  // ── SOLO LEVELING (4) ─────────────────────────────────────────────────────
+  // ── SOLO LEVELING (5) ─────────────────────────────────────────────────────
   { name: "Cha Hae-In", universe: "Solo Leveling", gender: "female", imageUrl: FW("solo-leveling", "9/91/Cha_Hae-In.png/revision/latest/scale-to-width-down/313?cb=20240119133508"), ageNote: "Adult (24)" },
   { name: "Sung Jinwoo", universe: "Solo Leveling", gender: "male", imageUrl: FW("solo-leveling", "8/8b/Jinwoo4.jpg/revision/latest/scale-to-width-down/393?cb=20250411080707"), ageNote: "Adult (24)" },
   { name: "Woo Jinchul", universe: "Solo Leveling", gender: "male", imageUrl: FW("solo-leveling", "5/56/Jinchul23.jpg/revision/latest/scale-to-width-down/367?cb=20240129235659"), ageNote: "Adult" },
   { name: "Thomas Andre", universe: "Solo Leveling", gender: "male", imageUrl: FW("solo-leveling", "2/23/Andre1.jpg/revision/latest/scale-to-width-down/376?cb=20211103151323"), ageNote: "Adult" },
+  { name: "Go Gunhee", universe: "Solo Leveling", gender: "male", imageUrl: "https://static.wikia.nocookie.net/solo-leveling/images/c/c3/Gunhee1.jpg/revision/latest/scale-to-width-down/394?cb=20210310223812", ageNote: "Adult (60+)" },
 
   // ── GAME OF THRONES (3) ───────────────────────────────────────────────────
   { name: "Daenerys Targaryen", universe: "Game of Thrones", gender: "female", imageUrl: FW("gameofthrones", "4/4f/Daenerys_Season_8.jpg/revision/latest/scale-to-width-down/301?cb=20190415212013"), ageNote: "Adult" },
@@ -475,19 +475,15 @@ const characters = [
   { name: "Fiona Frost", universe: "Spy x Family", gender: "female", imageUrl: "https://static.wikia.nocookie.net/spy-x-family9171/images/6/60/Fiona_Frost_Anime.png/revision/latest/scale-to-width-down/500?cb=20230506085700", ageNote: "Adult" },
   { name: "Sylvia Sherwood", universe: "Spy x Family", gender: "female", imageUrl: "https://static.wikia.nocookie.net/spy-x-family9171/images/6/6d/Sylvia_Sherwood_Anime.png/revision/latest/scale-to-width-down/500?cb=20220507014507", ageNote: "Adult" },
 
-  // ── BLACK CLOVER EXPANSION (+3) ──────────────────────────────────────────
-  { name: "Noelle Silva", universe: "Black Clover", gender: "female", imageUrl: "https://static.wikia.nocookie.net/blackclover/images/0/00/Noelle_after_Heart_Kingdom_training.png/revision/latest/scale-to-width-down/186?cb=20191117231002", ageNote: "Adult (19)" },
-  { name: "Mimosa Vermillion", universe: "Black Clover", gender: "female", imageUrl: "https://static.wikia.nocookie.net/blackclover/images/c/c2/Mimosa_after_Heart_Kingdom_training.png/revision/latest/scale-to-width-down/228?cb=20191117230857", ageNote: "Adult (18)" },
+  // ── BLACK CLOVER EXPANSION (+1) ──────────────────────────────────────────
   { name: "Yami Sukehiro", universe: "Black Clover", gender: "male", imageUrl: "https://static.wikia.nocookie.net/blackclover/images/f/fb/Yami_after_timeskip.png/revision/latest/scale-to-width-down/366?cb=20201007182129", ageNote: "Adult (29)" },
 
   // ── TOWER OF GOD EXPANSION (+2) ──────────────────────────────────────────
   { name: "Bam (Twenty-Fifth)", universe: "Tower of God", gender: "male", imageUrl: "https://static.wikia.nocookie.net/towerofgod/images/4/4f/EpisodeHead29.jpg/revision/latest/scale-to-width-down/500?cb=20130508090730", ageNote: "Adult" },
   { name: "Khun Aguero Agnes", universe: "Tower of God", gender: "male", imageUrl: "https://static.wikia.nocookie.net/towerofgod/images/0/02/574_-_Khun_1.png/revision/latest/scale-to-width-down/347?cb=20230829121720", ageNote: "Adult" },
 
-  // ── BLEACH EXPANSION (+3) ─────────────────────────────────────────────────
-  { name: "Yoruichi Shihoin", universe: "Bleach", gender: "female", imageUrl: "https://static.wikia.nocookie.net/bleach/images/6/62/Ep246YoruichiShih%C5%8Din.png/revision/latest/scale-to-width-down/500?cb=20231105202606&path-prefix=en", ageNote: "Adult" },
+  // ── BLEACH EXPANSION (+1) ─────────────────────────────────────────────────
   { name: "Byakuya Kuchiki", universe: "Bleach", gender: "male", imageUrl: "https://static.wikia.nocookie.net/bleach/images/f/f2/686Byakuya_profile.png/revision/latest?cb=20200322080959&path-prefix=en", ageNote: "Adult" },
-  { name: "Nelliel Tu Odelschwanck", universe: "Bleach", gender: "female", imageUrl: "https://static.wikia.nocookie.net/bleach/images/a/a3/Ep398NellielProfile.png/revision/latest/scale-to-width-down/411?cb=20241110032104&path-prefix=en", ageNote: "Adult" },
 
 
   // ═══════════════════════════════════════════════════════════════════════════
@@ -501,13 +497,20 @@ const characters = [
   { name: "Lee Hyunsung", universe: "Omniscient Reader", gender: "male", imageUrl: "https://static.wikia.nocookie.net/omniscient-readers-viewpoint/images/7/78/Lee_Hyunsung_Webnovel.png/revision/latest/scale-to-width-down/400?cb=20220818095712", ageNote: "Adult" },
   { name: "Jung Heewon", universe: "Omniscient Reader", gender: "female", imageUrl: "https://static.wikia.nocookie.net/omniscient-readers-viewpoint/images/7/74/Jung_Heewon_Webnovel.png/revision/latest/scale-to-width-down/400?cb=20220811111418", ageNote: "Adult" },
 
-  // ── SECOND LIFE RANKER (4) ─────────────────────────────────────────────────
+  // ── SECOND LIFE RANKER (8) ─────────────────────────────────────────────────
   { name: "Yeon-woo", universe: "Second Life Ranker", gender: "male", imageUrl: "https://static.wikia.nocookie.net/second-life-ranker/images/0/03/5.jpg/revision/latest/scale-to-width-down/400?cb=20200817053021", ageNote: "Adult (25)" },
   { name: "Rebecca Cha", universe: "Second Life Ranker", gender: "female", imageUrl: "https://static.wikia.nocookie.net/second-life-ranker/images/7/77/Chapter_111_-_Sol_Luna.png/revision/latest/scale-to-width-down/400?cb=20211231084921", ageNote: "Adult" },
   { name: "Edora", universe: "Second Life Ranker", gender: "female", imageUrl: "https://static.wikia.nocookie.net/second-life-ranker/images/b/b6/Edora-0.jpg/revision/latest/scale-to-width-down/400?cb=20201020091912", ageNote: "Adult" },
   { name: "Shanon", universe: "Second Life Ranker", gender: "male", imageUrl: "https://static.wikia.nocookie.net/second-life-ranker/images/0/08/Shanon_Chapter_70.jpg/revision/latest/scale-to-width-down/400?cb=20210430070919", ageNote: "Adult" },
+  { name: "Cha Jeong-woo", universe: "Second Life Ranker", gender: "male", imageUrl: "https://static.wikia.nocookie.net/second-life-ranker/images/a/af/Cha_Jeong-Woo.png/revision/latest/scale-to-width-down/441?cb=20210903214706", ageNote: "Adult" },
+  { name: "Summer Queen", universe: "Second Life Ranker", gender: "female", imageUrl: "https://static.wikia.nocookie.net/second-life-ranker/images/d/d6/Summer_Queen_-_Dragon_Form_-_Chapter_83.jpg/revision/latest/scale-to-width-down/257?cb=20210503150656", ageNote: "Adult (ancient)" },
+  { name: "Galliard", universe: "Second Life Ranker", gender: "male", imageUrl: "https://static.wikia.nocookie.net/second-life-ranker/images/e/e3/Ch.129_-Galliard.jpg/revision/latest/scale-to-width-down/398?cb=20240728063659", ageNote: "Adult" },
+  { name: "Ananta", universe: "Second Life Ranker", gender: "female", imageUrl: "https://static.wikia.nocookie.net/second-life-ranker/images/5/52/Chapter_136_-_Ananta.jpg/revision/latest/scale-to-width-down/352?cb=20221009061145", ageNote: "Adult (ancient)" },
 
-  // ── RETURN OF THE MAD DEMON (4) ──────────────────────────────────────────
+  // ── RETURN OF THE MAD DEMON (2) ──────────────────────────────────────────
+  // Image source: MyAnimeList CDN (no Fandom wiki exists for this manhwa)
+  { name: "Jaha Lee", universe: "Return of the Mad Demon", gender: "female", imageUrl: "https://cdn.myanimelist.net/images/characters/12/480879.jpg", ageNote: "Adult" },
+  { name: "Cha Seongtae", universe: "Return of the Mad Demon", gender: "male", imageUrl: "https://cdn.myanimelist.net/images/characters/12/611933.jpg", ageNote: "Adult" },
 
   // ═══════════════════════════════════════════════════════════════════════════
   // VIDEO GAMES
@@ -595,12 +598,15 @@ const characters = [
   { name: "Casca", universe: "Berserk", gender: "female", imageUrl: "https://static.wikia.nocookie.net/berserk/images/d/d0/BTCG_Casca_and_Puck.png/revision/latest/scale-to-width-down/400?cb=20170923104942", ageNote: "Adult (22+)" },
   { name: "Farnese de Vandimion", universe: "Berserk", gender: "female", imageUrl: "https://static.wikia.nocookie.net/berserk/images/9/9e/Farnese_de_Vandimion_Manga.jpg/revision/latest/scale-to-width-down/400?cb=20160918013313", ageNote: "Adult (18+)" },
 
-  // ── FULLMETAL ALCHEMIST (5) ────────────────────────────────────────────────
+  // ── FULLMETAL ALCHEMIST (8) ────────────────────────────────────────────────
   { name: "Roy Mustang", universe: "Fullmetal Alchemist", gender: "male", imageUrl: "https://static.wikia.nocookie.net/fma/images/5/5b/MustangManga.png/revision/latest/scale-to-width-down/400?cb=20250220111436", ageNote: "Adult (29)" },
   { name: "Riza Hawkeye", universe: "Fullmetal Alchemist", gender: "female", imageUrl: "https://static.wikia.nocookie.net/fma/images/b/ba/RizaManga.png/revision/latest/scale-to-width-down/400?cb=20250220112828", ageNote: "Adult" },
   { name: "Olivier Mira Armstrong", universe: "Fullmetal Alchemist", gender: "female", imageUrl: "https://static.wikia.nocookie.net/fma/images/e/e6/Avatar_olivier.png/revision/latest/scale-to-width-down/400?cb=20160812165045", ageNote: "Adult" },
   { name: "Izumi Curtis", universe: "Fullmetal Alchemist", gender: "female", imageUrl: "https://static.wikia.nocookie.net/fma/images/2/26/Avatar_harnet.png/revision/latest/scale-to-width-down/400?cb=20171031131954", ageNote: "Adult" },
   { name: "Alex Louis Armstrong", universe: "Fullmetal Alchemist", gender: "male", imageUrl: "https://static.wikia.nocookie.net/fma/images/4/44/Avatar_alex0.png/revision/latest/scale-to-width-down/400?cb=20180418142334", ageNote: "Adult" },
+  { name: "Winry Rockbell", universe: "Fullmetal Alchemist", gender: "female", imageUrl: "https://static.wikia.nocookie.net/fma/images/0/03/WinryManga.png/revision/latest/scale-to-width-down/500?cb=20250220111001", ageNote: "Adult (18)" },
+  { name: "Ling Yao", universe: "Fullmetal Alchemist", gender: "male", imageUrl: "https://static.wikia.nocookie.net/fma/images/b/b5/Ling-profile.png/revision/latest/scale-to-width-down/500?cb=20130602150614", ageNote: "Adult (18)" },
+  { name: "Lan Fan", universe: "Fullmetal Alchemist", gender: "female", imageUrl: "https://static.wikia.nocookie.net/fma/images/9/95/Avatar_lanfan.png/revision/latest?cb=20200827013435", ageNote: "Adult" },
 
   // ── TOKYO GHOUL (4) ────────────────────────────────────────────────────────
   { name: "Ken Kaneki", universe: "Tokyo Ghoul", gender: "male", imageUrl: "https://static.wikia.nocookie.net/tokyoghoul/images/7/7d/Kaneki_Finale_HQ.png/revision/latest/scale-to-width-down/400?cb=20180706042331", ageNote: "Adult (18+)" },
