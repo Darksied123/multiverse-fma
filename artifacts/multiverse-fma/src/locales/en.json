@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "play": "Play",
+    "leaderboard": "Leaderboard",
+    "title": "Multiverse FMA"
+  },
+  "footer": {
+    "tagline": "Make your choices wisely. 18+ Characters Only."
+  },
+  "home": {
+    "headline": "Who Will You",
+    "marry": "Marry",
+    "date": "Date",
+    "avoid": "Avoid",
+    "subheadline": "Face three randomly selected characters from across the multiverse. Make your choices. See how your taste aligns with the rest of the world.",
+    "preferences": "Select Your Preferences",
+    "filter_mixed": "Mixed",
+    "filter_female": "All Female",
+    "filter_male": "All Male",
+    "start": "Start Game"
+  },
+  "game": {
+    "loading": "Loading characters...",
+    "error": "Failed to load characters",
+    "try_again": "Try Again",
+    "round_label": "Choose wisely",
+    "assign_all": "Assign all three choices to continue",
+    "submit": "Submit Choices",
+    "submitting": "Submitting...",
+    "swap_hint": "Tap again to swap"
+  },
+  "choices": {
+    "marry": "Marry",
+    "date": "Date",
+    "avoid": "Avoid"
+  },
+  "results": {
+    "title": "Your Results",
+    "married": "Married",
+    "dated": "Dated",
+    "avoided": "Avoided",
+    "global_stats": "Global Stats",
+    "marry_percent": "{{percent}}% would marry",
+    "date_percent": "{{percent}}% would date",
+    "avoid_percent": "{{percent}}% would avoid",
+    "play_again": "Play Again",
+    "view_leaderboard": "View Leaderboard",
+    "total_votes": "{{count}} votes"
+  },
+  "stats": {
+    "title": "Global Leaderboard",
+    "subtitle": "See who the multiverse wants to marry, date, or avoid",
+    "total_rounds": "Total Rounds Played",
+    "top_married": "Most Married",
+    "top_dated": "Most Dated",
+    "top_avoided": "Most Avoided",
+    "no_data": "No data yet. Play some rounds!",
+    "universe": "Universe",
+    "votes": "votes",
+    "percent": "{{percent}}%"
+  },
+  "notfound": {
+    "title": "404",
+    "subtitle": "Page Not Found",
+    "message": "This page doesn't exist in any universe.",
+    "back": "Return to Base"
+  },
+  "language": {
+    "label": "Language"
+  }
+}

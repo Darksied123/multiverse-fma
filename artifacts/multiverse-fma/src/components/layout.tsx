@@ -2,9 +2,12 @@ import { ReactNode } from "react";
 import { Link, useLocation } from "wouter";
 import { Skull, BarChart3, Home } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useTranslation } from "react-i18next";
+import { LanguageSelector } from "./language-selector";
 
 export function Layout({ children }: { children: ReactNode }) {
   const [location] = useLocation();
+  const { t } = useTranslation();
 
   return (
     <div className="min-h-screen flex flex-col relative overflow-hidden">
@@ -27,15 +30,16 @@ export function Layout({ children }: { children: ReactNode }) {
             </h1>
           </Link>
 
-          <nav className="flex items-center gap-2 sm:gap-4">
+          <nav className="flex items-center gap-2 sm:gap-3">
             <NavLink href="/" active={location === "/" || location === "/game" || location === "/results"}>
               <Home className="w-5 h-5 sm:mr-2" />
-              <span className="hidden sm:block font-heading font-bold tracking-wide uppercase text-lg">Play</span>
+              <span className="hidden sm:block font-heading font-bold tracking-wide uppercase text-lg">{t("nav.play")}</span>
             </NavLink>
             <NavLink href="/stats" active={location === "/stats"}>
               <BarChart3 className="w-5 h-5 sm:mr-2" />
-              <span className="hidden sm:block font-heading font-bold tracking-wide uppercase text-lg">Leaderboard</span>
+              <span className="hidden sm:block font-heading font-bold tracking-wide uppercase text-lg">{t("nav.leaderboard")}</span>
             </NavLink>
+            <LanguageSelector />
           </nav>
         </div>
       </header>
@@ -49,7 +53,7 @@ export function Layout({ children }: { children: ReactNode }) {
       <footer className="relative z-10 border-t-4 border-black bg-card/90 py-6">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <p className="font-heading text-muted-foreground uppercase tracking-widest text-sm">
-            Make your choices wisely. 18+ Characters Only.
+            {t("footer.tagline")}
           </p>
         </div>
       </footer>

@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "play": "プレイ",
+    "leaderboard": "ランキング",
+    "title": "マルチバース FMA"
+  },
+  "footer": {
+    "tagline": "賢く選択してください。18歳以上のキャラクターのみ。"
+  },
+  "home": {
+    "headline": "あなたはどうする？",
+    "marry": "結婚",
+    "date": "デート",
+    "avoid": "回避",
+    "subheadline": "マルチバース全体からランダムに選ばれた3人のキャラクターに直面します。選択をして、あなたの好みが世界とどう一致するか確認しましょう。",
+    "preferences": "フィルターを選択",
+    "filter_mixed": "ミックス",
+    "filter_female": "女性のみ",
+    "filter_male": "男性のみ",
+    "start": "ゲームスタート"
+  },
+  "game": {
+    "loading": "キャラクターを読み込み中...",
+    "error": "キャラクターの読み込みに失敗しました",
+    "try_again": "もう一度",
+    "round_label": "賢く選んでください",
+    "assign_all": "続行するには3つの選択をすべて割り当ててください",
+    "submit": "選択を送信",
+    "submitting": "送信中...",
+    "swap_hint": "もう一度タップして変更"
+  },
+  "choices": {
+    "marry": "結婚",
+    "date": "デート",
+    "avoid": "回避"
+  },
+  "results": {
+    "title": "あなたの結果",
+    "married": "結婚",
+    "dated": "デート",
+    "avoided": "回避",
+    "global_stats": "グローバル統計",
+    "marry_percent": "{{percent}}% が結婚したい",
+    "date_percent": "{{percent}}% がデートしたい",
+    "avoid_percent": "{{percent}}% が回避したい",
+    "play_again": "もう一度プレイ",
+    "view_leaderboard": "ランキングを見る",
+    "total_votes": "{{count}} 票"
+  },
+  "stats": {
+    "title": "グローバルランキング",
+    "subtitle": "マルチバースが誰と結婚、デート、回避したいかを見てみましょう",
+    "total_rounds": "総プレイラウンド数",
+    "top_married": "最も結婚された",
+    "top_dated": "最もデートされた",
+    "top_avoided": "最も回避された",
+    "no_data": "データがありません。ラウンドをプレイしてください！",
+    "universe": "ユニバース",
+    "votes": "票",
+    "percent": "{{percent}}%"
+  },
+  "notfound": {
+    "title": "404",
+    "subtitle": "ページが見つかりません",
+    "message": "このページはどのユニバースにも存在しません。",
+    "back": "ホームに戻る"
+  },
+  "language": {
+    "label": "言語"
+  }
+}

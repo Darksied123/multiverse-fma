@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "play": "Jugar",
+    "leaderboard": "Clasificación",
+    "title": "Multiverso FMA"
+  },
+  "footer": {
+    "tagline": "Elige con sabiduría. Solo personajes mayores de 18 años."
+  },
+  "home": {
+    "headline": "¿A quién",
+    "marry": "Casarías",
+    "date": "Saldrías",
+    "avoid": "Evitarías",
+    "subheadline": "Enfrenta tres personajes seleccionados aleatoriamente del multiverso. Toma tus decisiones. Ve cómo tus gustos se alinean con el resto del mundo.",
+    "preferences": "Selecciona tus preferencias",
+    "filter_mixed": "Mixto",
+    "filter_female": "Solo mujeres",
+    "filter_male": "Solo hombres",
+    "start": "Comenzar"
+  },
+  "game": {
+    "loading": "Cargando personajes...",
+    "error": "No se pudieron cargar los personajes",
+    "try_again": "Intentar de nuevo",
+    "round_label": "Elige con cuidado",
+    "assign_all": "Asigna las tres opciones para continuar",
+    "submit": "Enviar elecciones",
+    "submitting": "Enviando...",
+    "swap_hint": "Toca de nuevo para cambiar"
+  },
+  "choices": {
+    "marry": "Casar",
+    "date": "Salir",
+    "avoid": "Evitar"
+  },
+  "results": {
+    "title": "Tus resultados",
+    "married": "Casarías",
+    "dated": "Saldrías",
+    "avoided": "Evitarías",
+    "global_stats": "Estadísticas globales",
+    "marry_percent": "{{percent}}% casaría",
+    "date_percent": "{{percent}}% saldría",
+    "avoid_percent": "{{percent}}% evitaría",
+    "play_again": "Jugar de nuevo",
+    "view_leaderboard": "Ver clasificación",
+    "total_votes": "{{count}} votos"
+  },
+  "stats": {
+    "title": "Clasificación global",
+    "subtitle": "Ve a quién el multiverso quiere casar, salir o evitar",
+    "total_rounds": "Total de rondas jugadas",
+    "top_married": "Más casados",
+    "top_dated": "Más salidas",
+    "top_avoided": "Más evitados",
+    "no_data": "Sin datos aún. ¡Juega algunas rondas!",
+    "universe": "Universo",
+    "votes": "votos",
+    "percent": "{{percent}}%"
+  },
+  "notfound": {
+    "title": "404",
+    "subtitle": "Página no encontrada",
+    "message": "Esta página no existe en ningún universo.",
+    "back": "Volver al inicio"
+  },
+  "language": {
+    "label": "Idioma"
+  }
+}

@@ -3,9 +3,11 @@ import { useGetGlobalStats, LeaderboardEntry } from "@workspace/api-client-react
 import { motion } from "framer-motion";
 import { Loader2, Heart, Skull, Ban, Trophy } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useTranslation } from "react-i18next";
 
 export default function Stats() {
   const { data, isLoading, isError } = useGetGlobalStats();
+  const { t } = useTranslation();
 
   if (isLoading) {
     return (
@@ -24,7 +26,7 @@ export default function Stats() {
     return (
       <Layout>
         <div className="min-h-[70vh] flex items-center justify-center">
-          <h2 className="font-display text-4xl text-destructive uppercase">Failed to load leaderboard</h2>
+          <h2 className="font-display text-4xl text-destructive uppercase">{t("stats.no_data")}</h2>
         </div>
       </Layout>
     );
@@ -39,37 +41,40 @@ export default function Stats() {
             <Trophy className="w-10 h-10" />
           </div>
           <h2 className="font-display text-6xl md:text-8xl text-white tracking-widest uppercase text-glow">
-            Global Leaderboard
+            {t("stats.title")}
           </h2>
           <p className="font-heading text-xl text-primary uppercase tracking-widest mt-4">
-            Total Rounds Played: {data.totalRounds.toLocaleString()}
+            {t("stats.total_rounds")}: {data.totalRounds.toLocaleString()}
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <LeaderboardColumn 
-            title="Most Married" 
+            title={t("stats.top_married")}
             icon={<Heart className="w-6 h-6" />}
             colorClass="text-marry"
             borderColorClass="border-marry"
             bgHeaderClass="bg-marry"
             entries={data.topMarried}
+            noDataText={t("stats.no_data")}
           />
           <LeaderboardColumn 
-            title="Most Dated" 
+            title={t("stats.top_dated")}
             icon={<Skull className="w-6 h-6" />}
             colorClass="text-date"
             borderColorClass="border-date"
             bgHeaderClass="bg-date"
             entries={data.topDated}
+            noDataText={t("stats.no_data")}
           />
           <LeaderboardColumn 
-            title="Most Avoided" 
+            title={t("stats.top_avoided")}
             icon={<Ban className="w-6 h-6" />}
             colorClass="text-avoid"
             borderColorClass="border-avoid"
             bgHeaderClass="bg-avoid"
             entries={data.topAvoided}
+            noDataText={t("stats.no_data")}
           />
         </div>
 
@@ -84,14 +89,16 @@ function LeaderboardColumn({
   colorClass, 
   borderColorClass,
   bgHeaderClass,
-  entries 
+  entries,
+  noDataText
 }: { 
   title: string, 
   icon: React.ReactNode, 
   colorClass: string,
   borderColorClass: string,
   bgHeaderClass: string,
-  entries: LeaderboardEntry[] 
+  entries: LeaderboardEntry[],
+  noDataText: string
 }) {
   return (
     <motion.div 
@@ -106,7 +113,7 @@ function LeaderboardColumn({
       
       <div className="p-0 flex flex-col">
         {entries.length === 0 ? (
-          <div className="p-8 text-center text-muted-foreground font-heading uppercase">No data yet</div>
+          <div className="p-8 text-center text-muted-foreground font-heading uppercase">{noDataText}</div>
         ) : (
           entries.map((entry, idx) => (
             <div 

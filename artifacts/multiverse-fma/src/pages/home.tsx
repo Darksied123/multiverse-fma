@@ -1,18 +1,15 @@
 import { useLocation } from "wouter";
 import { Layout } from "@/components/layout";
 import { useGameStore } from "@/store/game-store";
-import { GetCharactersGender } from "@workspace/api-client-react";
 import { motion } from "framer-motion";
 import { Users, User, UserCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
   const [, setLocation] = useLocation();
   const { genderFilter, setGenderFilter } = useGameStore();
-
-  const handleStart = () => {
-    setLocation("/game");
-  };
+  const { t } = useTranslation();
 
   return (
     <Layout>
@@ -38,10 +35,10 @@ export default function Home() {
           transition={{ delay: 0.1 }}
           className="text-6xl md:text-8xl font-display text-white uppercase tracking-widest text-glow mb-6"
         >
-          Who Will You <br />
-          <span className="text-marry">Marry</span>, 
-          <span className="text-date"> Date</span>, 
-          <span className="text-avoid"> Avoid</span>?
+          {t("home.headline")} <br />
+          <span className="text-marry">{t("home.marry")}</span>,{" "}
+          <span className="text-date">{t("home.date")}</span>,{" "}
+          <span className="text-avoid">{t("home.avoid")}</span>?
         </motion.h1>
 
         <motion.p 
@@ -50,8 +47,7 @@ export default function Home() {
           transition={{ delay: 0.2 }}
           className="text-xl md:text-2xl text-muted-foreground font-heading tracking-wide max-w-2xl mb-12"
         >
-          Face three randomly selected characters from across the multiverse. 
-          Make your choices. See how your taste aligns with the rest of the world.
+          {t("home.subheadline")}
         </motion.p>
 
         <motion.div 
@@ -60,25 +56,25 @@ export default function Home() {
           transition={{ delay: 0.3 }}
           className="w-full max-w-md bg-card border-4 border-black p-6 rounded-2xl comic-shadow-sm mb-10"
         >
-          <h2 className="font-heading text-xl uppercase tracking-widest mb-4 text-white">Select Your Preferences</h2>
+          <h2 className="font-heading text-xl uppercase tracking-widest mb-4 text-white">{t("home.preferences")}</h2>
           <div className="grid grid-cols-3 gap-3">
             <FilterButton 
               active={genderFilter === 'mixed'} 
               onClick={() => setGenderFilter('mixed')}
               icon={<Users className="w-6 h-6 mb-2" />}
-              label="Mixed"
+              label={t("home.filter_mixed")}
             />
             <FilterButton 
               active={genderFilter === 'female'} 
               onClick={() => setGenderFilter('female')}
               icon={<User className="w-6 h-6 mb-2" />}
-              label="All Female"
+              label={t("home.filter_female")}
             />
             <FilterButton 
               active={genderFilter === 'male'} 
               onClick={() => setGenderFilter('male')}
               icon={<UserCircle className="w-6 h-6 mb-2" />}
-              label="All Male"
+              label={t("home.filter_male")}
             />
           </div>
         </motion.div>
@@ -89,10 +85,10 @@ export default function Home() {
           transition={{ delay: 0.4 }}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          onClick={handleStart}
+          onClick={() => setLocation("/game")}
           className="px-12 py-6 bg-primary text-black font-display text-4xl uppercase tracking-widest border-4 border-black comic-shadow-glow-primary rounded-xl"
         >
-          Start Game
+          {t("home.start")}
         </motion.button>
         
       </div>

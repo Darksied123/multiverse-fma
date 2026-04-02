@@ -71,6 +71,10 @@ const characters = [
   { name: "Roronoa Zoro", universe: "One Piece", gender: "male", imageUrl: FW("onepiece", "4/4d/Roronoa_Zoro_Anime_Infobox.png/revision/latest/scale-to-width-down/500?cb=20220430113929"), ageNote: "Adult (21)" },
   { name: "Trafalgar Law", universe: "One Piece", gender: "male", imageUrl: FW("onepiece", "9/9f/Trafalgar_D_Water_Law_Anime_Infobox.png/revision/latest/scale-to-width-down/500?cb=20220110012544"), ageNote: "Adult (26)" },
   { name: "Sanji", universe: "One Piece", gender: "male", imageUrl: FW("onepiece", "b/b6/Sanji_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/167?cb=20240122012744"), ageNote: "Adult (21)" },
+  { name: "Yamato", universe: "One Piece", gender: "female", imageUrl: FW("onepiece", "b/bd/Yamato_Anime_Infobox.png/revision/latest/scale-to-width-down/336?cb=20260126165014"), ageNote: "Adult (28)" },
+  { name: "Jewelry Bonney", universe: "One Piece", gender: "female", imageUrl: FW("onepiece", "6/62/Jewelry_Bonney_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/333?cb=20230123001318"), ageNote: "Adult (24)" },
+  { name: "Vinsmoke Reiju", universe: "One Piece", gender: "female", imageUrl: FW("onepiece", "a/a3/Vinsmoke_Reiju_Anime_Infobox.png/revision/latest/scale-to-width-down/209?cb=20231211104854"), ageNote: "Adult (24)" },
+  { name: "Portgas D. Ace", universe: "One Piece", gender: "male", imageUrl: FW("onepiece", "4/4f/Portgas_D._Ace_Anime_Infobox.png/revision/latest/scale-to-width-down/299?cb=20240629132600"), ageNote: "Adult (20)" },
 
   // ── ATTACK ON TITAN (3) ────────────────────────────────────────────────────
   { name: "Mikasa Ackerman", universe: "Attack on Titan", gender: "female", imageUrl: FW("attackontitan", "c/c4/Mikasa_Ackerman_character_image.png/revision/latest/scale-to-width-down/395?cb=20220221150924"), ageNote: "Adult (19)" },
@@ -102,12 +106,20 @@ const characters = [
   { name: "Orihime Inoue", universe: "Bleach", gender: "female", imageUrl: FW("bleach", "9/94/686Post-War_Orihime.png/revision/latest?cb=20190523143321&path-prefix=en"), ageNote: "Adult (18)" },
   { name: "Ichigo Kurosaki", universe: "Bleach", gender: "male", imageUrl: FW("bleach", "4/41/NBFHIchigo_profile.png/revision/latest/scale-to-width-down/377?cb=20230903192540&path-prefix=en"), ageNote: "Adult (18)" },
   { name: "Grimmjow Jaegerjaquez", universe: "Bleach", gender: "male", imageUrl: FW("bleach", "4/4c/Ep398GrimmjowProfile.png/revision/latest/scale-to-width-down/411?cb=20241110032104&path-prefix=en"), ageNote: "Adult" },
+  { name: "Rukia Kuchiki", universe: "Bleach", gender: "female", imageUrl: FW("bleach", "2/23/NBFHRukia_profile.png/revision/latest/scale-to-width-down/500?cb=20230903201912&path-prefix=en"), ageNote: "Adult (18)" },
+  { name: "Nelliel Tu Odelschwanck", universe: "Bleach", gender: "female", imageUrl: FW("bleach", "a/a3/Ep398NellielProfile.png/revision/latest/scale-to-width-down/411?cb=20241110032104&path-prefix=en"), ageNote: "Adult" },
+  { name: "Tier Harribel", universe: "Bleach", gender: "female", imageUrl: FW("bleach", "9/90/339Harribel_profile.png/revision/latest?cb=20201010155518&path-prefix=en"), ageNote: "Adult" },
+  { name: "Retsu Unohana", universe: "Bleach", gender: "female", imageUrl: FW("bleach", "e/ea/Ep206UnohanaProfile.png/revision/latest/scale-to-width-down/500?cb=20231105204710&path-prefix=en"), ageNote: "Adult" },
 
   // ── FAIRY TAIL (4) ─────────────────────────────────────────────────────────
   { name: "Erza Scarlet", universe: "Fairy Tail", gender: "female", imageUrl: FW("fairytail", "c/c3/Erza%27s_picture.png/revision/latest/scale-to-width-down/500?cb=20190929085837"), ageNote: "Adult (19)" },
   { name: "Lucy Heartfilia", universe: "Fairy Tail", gender: "female", imageUrl: FW("fairytail", "9/9c/Lucy_X792_image.png/revision/latest/scale-to-width-down/500?cb=20190106110751"), ageNote: "Adult (18)" },
   { name: "Mirajane Strauss", universe: "Fairy Tail", gender: "female", imageUrl: FW("fairytail", "d/d1/Mirajane_proposal.png/revision/latest/scale-to-width-down/500?cb=20130105145713"), ageNote: "Adult (19)" },
   { name: "Gray Fullbuster", universe: "Fairy Tail", gender: "male", imageUrl: FW("fairytail", "c/c6/Gray_in_Alvarez_Empire_arc.png/revision/latest/scale-to-width-down/500?cb=20190519091455"), ageNote: "Adult (18)" },
+  { name: "Juvia Lockser", universe: "Fairy Tail", gender: "female", imageUrl: FW("fairytail", "f/ff/Juvia_Lockser_profile.png/revision/latest/scale-to-width-down/474?cb=20140426102005"), ageNote: "Adult (18)" },
+  { name: "Cana Alberona", universe: "Fairy Tail", gender: "female", imageUrl: FW("fairytail", "8/86/Cana_X792.png/revision/latest/scale-to-width-down/500?cb=20190423071457"), ageNote: "Adult (19)" },
+  { name: "Natsu Dragneel", universe: "Fairy Tail", gender: "male", imageUrl: FW("fairytail", "c/ca/Natsu_X792.png/revision/latest/scale-to-width-down/500?cb=20181111122101"), ageNote: "Adult (18)" },
+  { name: "Laxus Dreyar", universe: "Fairy Tail", gender: "male", imageUrl: FW("fairytail", "d/db/Laxus_profile_image.png/revision/latest?cb=20140614035154"), ageNote: "Adult (23)" },
 
   // ── HIGH SCHOOL DxD (2) ───────────────────────────────────────────────────
   { name: "Rias Gremory", universe: "High School DxD", gender: "female", imageUrl: FW("highschooldxd", "6/61/Volume_20_-_Rias.jpg/revision/latest/scale-to-width-down/379?cb=20230512014330"), ageNote: "Adult (18+)" },
@@ -242,7 +254,7 @@ const characters = [
   { name: "Kaga", universe: "Azur Lane", gender: "female", imageUrl: FW("azur-lane", "6/6c/Kaga_intro.png/revision/latest/scale-to-width-down/500?cb=20230811184444"), ageNote: "Adult ship girl" },
   { name: "Hood", universe: "Azur Lane", gender: "female", imageUrl: FW("azur-lane", "8/84/Hood_intro.png/revision/latest/scale-to-width-down/500?cb=20191219144856"), ageNote: "Adult ship girl" },
   { name: "Prinz Eugen", universe: "Azur Lane", gender: "female", imageUrl: FW("azur-lane", "0/00/Prinz_eugen_intro.png/revision/latest/scale-to-width-down/500?cb=20230811184248"), ageNote: "Adult ship girl" },
-  { name: "Formidable", universe: "Azur Lane", gender: "female", imageUrl: P("Formidable"), ageNote: "Adult ship girl" },
+  { name: "Formidable", universe: "Azur Lane", gender: "female", imageUrl: FW("azurlane", "8/8a/Formidable_Intro.png/revision/latest/scale-to-width-down/500?cb=20200130121213"), ageNote: "Adult ship girl" },
 
   // ── GIRLS FRONTLINE (13) ──────────────────────────────────────────────────
   { name: "HK416", universe: "Girls Frontline", gender: "female", imageUrl: FW("girlsfrontline", "2/2f/Clukay_default.png/revision/latest/scale-to-width-down/500?cb=20230419184239"), ageNote: "Adult T-Doll" },
@@ -271,9 +283,11 @@ const characters = [
   { name: "Arbiter Vildred", universe: "Epic Seven", gender: "male", imageUrl: FW("epic-seven", "8/83/Arbiter_Vildred_Profile.png/revision/latest?cb=20190831160510"), ageNote: "Adult" },
   { name: "Fallen Cecilia", universe: "Epic Seven", gender: "female", imageUrl: FW("epic-seven", "9/99/Fallen_Cecilia_Profile.png/revision/latest?cb=20190831155634"), ageNote: "Adult" },
 
-  // ── SOLO LEVELING (2) ─────────────────────────────────────────────────────
+  // ── SOLO LEVELING (4) ─────────────────────────────────────────────────────
   { name: "Cha Hae-In", universe: "Solo Leveling", gender: "female", imageUrl: FW("solo-leveling", "9/91/Cha_Hae-In.png/revision/latest/scale-to-width-down/313?cb=20240119133508"), ageNote: "Adult (24)" },
   { name: "Sung Jinwoo", universe: "Solo Leveling", gender: "male", imageUrl: FW("solo-leveling", "8/8b/Jinwoo4.jpg/revision/latest/scale-to-width-down/393?cb=20250411080707"), ageNote: "Adult (24)" },
+  { name: "Woo Jinchul", universe: "Solo Leveling", gender: "male", imageUrl: FW("solo-leveling", "5/56/Jinchul23.jpg/revision/latest/scale-to-width-down/367?cb=20240129235659"), ageNote: "Adult" },
+  { name: "Thomas Andre", universe: "Solo Leveling", gender: "male", imageUrl: FW("solo-leveling", "2/23/Andre1.jpg/revision/latest/scale-to-width-down/376?cb=20211103151323"), ageNote: "Adult" },
 
   // ── GAME OF THRONES (3) ───────────────────────────────────────────────────
   { name: "Daenerys Targaryen", universe: "Game of Thrones", gender: "female", imageUrl: FW("gameofthrones", "4/4f/Daenerys_Season_8.jpg/revision/latest/scale-to-width-down/301?cb=20190415212013"), ageNote: "Adult" },
@@ -415,6 +429,66 @@ const characters = [
   { name: "Jiyan", universe: "Wuthering Waves", gender: "male", imageUrl: FW("wutheringwaves", "0/0d/Jiyan_Card.png/revision/latest/scale-to-width-down/281?cb=20240509102627"), ageNote: "Adult" },
   { name: "Brant", universe: "Wuthering Waves", gender: "male", imageUrl: FW("wutheringwaves", "2/2d/Brant_Card.png/revision/latest/scale-to-width-down/281?cb=20251015115249"), ageNote: "Adult" },
   { name: "Xiangli Yao", universe: "Wuthering Waves", gender: "male", imageUrl: FW("wutheringwaves", "e/e9/Xiangli_Yao_Card.png/revision/latest/scale-to-width-down/281?cb=20240708200915"), ageNote: "Adult" },
+  // ── DANMACHI (8) ──────────────────────────────────────────────────────────────────────────
+  { name: "Bell Cranel", universe: "DanMachi", gender: "male", imageUrl: FW("danmachi", "2/2b/Bell_Crannel_Anime_SeasonV.jpg/revision/latest/scale-to-width-down/500?cb=20260129132229"), ageNote: "Adult (18)" },
+  { name: "Hestia", universe: "DanMachi", gender: "female", imageUrl: FW("danmachi", "5/5a/Hestia_Anime.png/revision/latest/scale-to-width-down/500?cb=20150602195700"), ageNote: "Adult goddess" },
+  { name: "Freya", universe: "DanMachi", gender: "female", imageUrl: FW("danmachi", "f/f4/Freya_Anime_3.png/revision/latest/scale-to-width-down/500?cb=20240523192009"), ageNote: "Adult goddess" },
+  { name: "Ais Wallenstein", universe: "DanMachi", gender: "female", imageUrl: FW("danmachi", "8/89/Ais_Wall_S5.png/revision/latest/scale-to-width-down/500?cb=20260207042804"), ageNote: "Adult (18)" },
+  { name: "Riveria Ljos Alf", universe: "DanMachi", gender: "female", imageUrl: FW("danmachi", "f/f5/Riveria_Ljos_Alf.png/revision/latest/scale-to-width-down/500?cb=20170415002736"), ageNote: "Adult (elf, ancient)" },
+  { name: "Tiona Hiryute", universe: "DanMachi", gender: "female", imageUrl: FW("danmachi", "a/a6/Tiona_Hiryute_Anime.png/revision/latest/scale-to-width-down/500?cb=20150522221203"), ageNote: "Adult (19)" },
+  { name: "Tione Hiryute", universe: "DanMachi", gender: "female", imageUrl: FW("danmachi", "f/f7/Tione_Hiryute_Anime.png/revision/latest/scale-to-width-down/321?cb=20150522233109"), ageNote: "Adult (19)" },
+  { name: "Eina Tulle", universe: "DanMachi", gender: "female", imageUrl: FW("danmachi", "f/f6/Eina_Tulle_Anime.png/revision/latest/scale-to-width-down/500?cb=20151001201807"), ageNote: "Adult (18)" },
+
+  // ── LEVELING WITH THE GODS (4) ─────────────────────────────────────────────────────────
+  { name: "Kim YuWon", universe: "Leveling with the Gods", gender: "male", imageUrl: FW("leveling-with-the-gods", "b/b8/Kim_Yuwon.png/revision/latest/scale-to-width-down/345?cb=20240411063602"), ageNote: "Adult" },
+  { name: "Odin", universe: "Leveling with the Gods", gender: "male", imageUrl: FW("leveling-with-the-gods", "8/85/Odin.jpg/revision/latest/scale-to-width-down/368?cb=20220324034641"), ageNote: "Adult god" },
+  { name: "Hercules", universe: "Leveling with the Gods", gender: "male", imageUrl: FW("leveling-with-the-gods", "7/76/Hercules.png/revision/latest/scale-to-width-down/270?cb=20240411063514"), ageNote: "Adult god" },
+  { name: "Zeus", universe: "Leveling with the Gods", gender: "male", imageUrl: FW("leveling-with-the-gods", "f/f8/Zeus_Younger.jpg/revision/latest/scale-to-width-down/287?cb=20240404034035"), ageNote: "Adult god" },
+
+  // ── THE BEGINNING AFTER THE END (3) ─────────────────────────────────────────────────────────
+  { name: "Arthur Leywin", universe: "The Beginning After the End", gender: "male", imageUrl: FW("thebate", "3/35/Arthur_Vol_10.png/revision/latest/scale-to-width-down/348?cb=20250318204554"), ageNote: "Adult (reincarnated)" },
+  { name: "Tessia Eralith", universe: "The Beginning After the End", gender: "female", imageUrl: FW("thebate", "9/9e/Tess_Full.png/revision/latest/scale-to-width-down/292?cb=20250318210009"), ageNote: "Adult (18+)" },
+  { name: "Sylvie", universe: "The Beginning After the End", gender: "female", imageUrl: FW("thebate", "f/f8/Sylvie_Human_Form.png/revision/latest/scale-to-width-down/294?cb=20241023225908"), ageNote: "Adult (ancient dragon)" },
+
+
+  // ── ATTACK ON TITAN EXPANSION (+3) ──────────────────────────────────────────
+  { name: "Historia Reiss", universe: "Attack on Titan", gender: "female", imageUrl: "https://static.wikia.nocookie.net/attackontitan/images/5/52/Historia_Reiss_character_image.png/revision/latest/scale-to-width-down/395?cb=20220221150629", ageNote: "Adult (19)" },
+  { name: "Hange Zoe", universe: "Attack on Titan", gender: "female", imageUrl: "https://static.wikia.nocookie.net/attackontitan/images/c/c4/Hange_Zoe_character_image.png/revision/latest/scale-to-width-down/395?cb=20220221150704", ageNote: "Adult (30s)" },
+  { name: "Annie Leonhart", universe: "Attack on Titan", gender: "female", imageUrl: "https://static.wikia.nocookie.net/attackontitan/images/8/85/Annie_Leonhart_character_image.png/revision/latest/scale-to-width-down/395?cb=20220221150511", ageNote: "Adult (24)" },
+
+  // ── NARUTO EXPANSION (+4) ─────────────────────────────────────────────────
+  { name: "Tsunade", universe: "Naruto", gender: "female", imageUrl: "https://static.wikia.nocookie.net/naruto/images/f/f9/Tsunade_Part_II.png/revision/latest/scale-to-width-down/500?cb=20170716114327", ageNote: "Adult" },
+  { name: "Temari", universe: "Naruto", gender: "female", imageUrl: "https://static.wikia.nocookie.net/naruto/images/7/7c/Temari_Part_II.png/revision/latest/scale-to-width-down/500?cb=20170716134445", ageNote: "Adult (21)" },
+  { name: "Kakashi Hatake", universe: "Naruto", gender: "male", imageUrl: "https://static.wikia.nocookie.net/naruto/images/2/27/Kakashi_Hatake.png/revision/latest/scale-to-width-down/500?cb=20170716072345", ageNote: "Adult (30s)" },
+  { name: "Itachi Uchiha", universe: "Naruto", gender: "male", imageUrl: "https://static.wikia.nocookie.net/naruto/images/b/bb/Itachi_Uchiha.png/revision/latest/scale-to-width-down/500?cb=20170716072340", ageNote: "Adult (21)" },
+
+  // ── JUJUTSU KAISEN EXPANSION (+3) ────────────────────────────────────────
+  { name: "Mei Mei", universe: "Jujutsu Kaisen", gender: "female", imageUrl: "https://static.wikia.nocookie.net/jujutsu-kaisen/images/4/4d/Mei_Mei_%28Anime%29.png/revision/latest/scale-to-width-down/400?cb=20201102210039", ageNote: "Adult (28)" },
+  { name: "Utahime Iori", universe: "Jujutsu Kaisen", gender: "female", imageUrl: "https://static.wikia.nocookie.net/jujutsu-kaisen/images/9/90/Utahime_Iori_%28Anime%29.png/revision/latest/scale-to-width-down/400?cb=20201031230618", ageNote: "Adult (30s)" },
+  { name: "Kento Nanami", universe: "Jujutsu Kaisen", gender: "male", imageUrl: "https://static.wikia.nocookie.net/jujutsu-kaisen/images/5/5b/Kento_Nanami_%28Anime_2%29.png/revision/latest/scale-to-width-down/300?cb=20231018124319", ageNote: "Adult (28)" },
+
+  // ── ONE PUNCH MAN EXPANSION (+2) ─────────────────────────────────────────
+  { name: "Saitama", universe: "One Punch Man", gender: "male", imageUrl: "https://static.wikia.nocookie.net/onepunchman/images/d/df/Saitama_anime_profile.png/revision/latest/scale-to-width-down/348?cb=20220308011011", ageNote: "Adult (25)" },
+  { name: "Sonic", universe: "One Punch Man", gender: "male", imageUrl: "https://static.wikia.nocookie.net/onepunchman/images/2/24/Sonic_Manga_Profile.png/revision/latest/scale-to-width-down/348?cb=20200212093256", ageNote: "Adult" },
+
+  // ── SPY x FAMILY EXPANSION (+2) ──────────────────────────────────────────
+  { name: "Fiona Frost", universe: "Spy x Family", gender: "female", imageUrl: "https://static.wikia.nocookie.net/spy-x-family9171/images/b/b0/Fiona_Frost_Anime_2.png/revision/latest/scale-to-width-down/400?cb=20230915044803", ageNote: "Adult" },
+  { name: "Sylvia Sherwood", universe: "Spy x Family", gender: "female", imageUrl: "https://static.wikia.nocookie.net/spy-x-family9171/images/e/e5/Sylvia_Sherwood_Anime.png/revision/latest/scale-to-width-down/400?cb=20220507014507", ageNote: "Adult" },
+
+  // ── BLACK CLOVER EXPANSION (+3) ──────────────────────────────────────────
+  { name: "Noelle Silva", universe: "Black Clover", gender: "female", imageUrl: "https://static.wikia.nocookie.net/blackclover/images/8/8c/Noelle_Silva_Anime.png/revision/latest/scale-to-width-down/400?cb=20200808132319", ageNote: "Adult (19)" },
+  { name: "Mimosa Vermillion", universe: "Black Clover", gender: "female", imageUrl: "https://static.wikia.nocookie.net/blackclover/images/4/46/Mimosa_Vermillion_Anime.png/revision/latest/scale-to-width-down/400?cb=20200808132234", ageNote: "Adult (18)" },
+  { name: "Yami Sukehiro", universe: "Black Clover", gender: "male", imageUrl: "https://static.wikia.nocookie.net/blackclover/images/f/f0/Yami_Sukehiro_Anime.png/revision/latest/scale-to-width-down/400?cb=20200808132120", ageNote: "Adult (29)" },
+
+  // ── TOWER OF GOD EXPANSION (+2) ──────────────────────────────────────────
+  { name: "Bam (Twenty-Fifth)", universe: "Tower of God", gender: "male", imageUrl: "https://static.wikia.nocookie.net/towerofgod/images/1/14/Bam_Season_2.png/revision/latest/scale-to-width-down/400?cb=20210203162024", ageNote: "Adult" },
+  { name: "Khun Aguero Agnes", universe: "Tower of God", gender: "male", imageUrl: "https://static.wikia.nocookie.net/towerofgod/images/f/f9/Khun_Season_2.png/revision/latest/scale-to-width-down/400?cb=20210203162142", ageNote: "Adult" },
+
+  // ── BLEACH EXPANSION (+3) ─────────────────────────────────────────────────
+  { name: "Yoruichi Shihoin", universe: "Bleach", gender: "female", imageUrl: "https://static.wikia.nocookie.net/bleach/images/c/c4/Yoruichi_Shihoin.png/revision/latest/scale-to-width-down/400?cb=20220118105754", ageNote: "Adult" },
+  { name: "Byakuya Kuchiki", universe: "Bleach", gender: "male", imageUrl: "https://static.wikia.nocookie.net/bleach/images/5/59/Byakuya_Kuchiki.png/revision/latest/scale-to-width-down/400?cb=20220118110129", ageNote: "Adult" },
+  { name: "Nelliel Tu Odelschwanck", universe: "Bleach", gender: "female", imageUrl: "https://static.wikia.nocookie.net/bleach/images/6/6d/Nel_Tu.png/revision/latest/scale-to-width-down/400?cb=20220118122016", ageNote: "Adult" },
+
 ];
 
 async function seed() {

@@ -5,42 +5,45 @@ import { sql, eq, and } from "drizzle-orm";
 
 const router: IRouter = Router();
 
-router.get("/characters", async (req, res) => {
-  const gender = req.query.gender as string | undefined;
+router.get("/characters", async (req, res, next) => {
+  try {
+    const gender = req.query.gender as string | undefined;
 
-  let conditions = [];
-  if (gender === "male") {
-    conditions.push(eq(charactersTable.gender, "male"));
-  } else if (gender === "female") {
-    conditions.push(eq(charactersTable.gender, "female"));
+    const conditions = [];
+    if (gender === "male") conditions.push(eq(charactersTable.gender, "male"));
+    else if (gender === "female") conditions.push(eq(charactersTable.gender, "female"));
+
+    const whereClause = conditions.length > 0 ? and(...conditions) : undefined;
+
+    const characters = whereClause
+      ? await db.select().from(charactersTable).where(whereClause).orderBy(sql`RANDOM()`).limit(3)
+      : await db.select().from(charactersTable).orderBy(sql`RANDOM()`).limit(3);
+
+    res.json(characters);
+  } catch (err) {
+    next(err);
   }
-
-  const whereClause = conditions.length > 0 ? and(...conditions) : undefined;
-
-  const characters = whereClause
-    ? await db.select().from(charactersTable).where(whereClause).orderBy(sql`RANDOM()`).limit(3)
-    : await db.select().from(charactersTable).orderBy(sql`RANDOM()`).limit(3);
-
-  res.json(characters);
 });
 
-router.get("/characters/all", async (req, res) => {
-  const gender = req.query.gender as string | undefined;
+router.get("/characters/all", async (req, res, next) => {
+  try {
+    const gender = req.query.gender as string | undefined;
 
-  let conditions = [];
-  if (gender === "male") {
-    conditions.push(eq(charactersTable.gender, "male"));
-  } else if (gender === "female") {
-    conditions.push(eq(charactersTable.gender, "female"));
+    const conditions = [];
+    if (gender === "male") conditions.push(eq(charactersTable.gender, "male"));
+    else if (gender === "female") conditions.push(eq(charactersTable.gender, "female"));
+
+    const whereClause = conditions.length > 0 ? and(...conditions) : undefined;
+
+    const characters = whereClause
+      ? await db.select().from(charactersTable).where(whereClause).orderBy(charactersTable.name)
+      : await db.select().from(charactersTable).orderBy(charactersTable.name);
+
+    res.set("Cache-Control", "public, max-age=60");
+    res.json(characters);
+  } catch (err) {
+    next(err);
   }
-
-  const whereClause = conditions.length > 0 ? and(...conditions) : undefined;
-
-  const characters = whereClause
-    ? await db.select().from(charactersTable).where(whereClause).orderBy(charactersTable.name)
-    : await db.select().from(charactersTable).orderBy(charactersTable.name);
-
-  res.json(characters);
 });
 
 export default router;
