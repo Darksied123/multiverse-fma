@@ -110,11 +110,12 @@ All routes are mounted at `/api`:
 
 | Method | Endpoint | Description |
 |---|---|---|
-| `GET` | `/api/health` | Health check |
-| `GET` | `/api/characters/round` | Get 3 random characters for a round |
-| `POST` | `/api/votes` | Submit votes `{ roundId, votes: [{characterId, choice}] }` |
+| `GET` | `/api/healthz` | Health check |
+| `GET` | `/api/characters` | Get 3 random characters for a round |
+| `GET` | `/api/characters/all` | Get all characters |
+| `POST` | `/api/stats/submit` | Submit votes `{ roundId, votes: [{characterId, choice}] }` |
 | `GET` | `/api/stats/global` | Global leaderboard (top married/dated/avoided) |
-| `GET` | `/api/stats/character/:id` | Stats for a specific character |
+| `GET` | `/api/stats/character/:characterId` | Stats for a specific character |
 | `GET` | `/api/proxy/image?url=` | Proxy for external CDN images |
 
 ### Vote choices
