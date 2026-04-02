@@ -489,6 +489,131 @@ const characters = [
   { name: "Byakuya Kuchiki", universe: "Bleach", gender: "male", imageUrl: "https://static.wikia.nocookie.net/bleach/images/5/59/Byakuya_Kuchiki.png/revision/latest/scale-to-width-down/400?cb=20220118110129", ageNote: "Adult" },
   { name: "Nelliel Tu Odelschwanck", universe: "Bleach", gender: "female", imageUrl: "https://static.wikia.nocookie.net/bleach/images/6/6d/Nel_Tu.png/revision/latest/scale-to-width-down/400?cb=20220118122016", ageNote: "Adult" },
 
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // MANHWA
+  // ═══════════════════════════════════════════════════════════════════════════
+
+  // ── OMNISCIENT READER'S VIEWPOINT (5) ─────────────────────────────────────
+  { name: "Kim Dokja", universe: "Omniscient Reader", gender: "male", imageUrl: "https://static.wikia.nocookie.net/omniscient-readers-viewpoint/images/4/43/Kim_Dokja_Cover.jpg/revision/latest/scale-to-width-down/400?cb=20220817132702", ageNote: "Adult (28)" },
+  { name: "Yoo Joonghyuk", universe: "Omniscient Reader", gender: "male", imageUrl: "https://static.wikia.nocookie.net/omniscient-readers-viewpoint/images/b/bf/Yoo_Joonghyuk_%28Volume_3_cover%29.png/revision/latest/scale-to-width-down/400?cb=20191022181447", ageNote: "Adult" },
+  { name: "Han Sooyoung", universe: "Omniscient Reader", gender: "female", imageUrl: "https://static.wikia.nocookie.net/omniscient-readers-viewpoint/images/b/bc/Han_Sooyoung_%28Volume_3_cover%29.png/revision/latest/scale-to-width-down/400?cb=20191022204529", ageNote: "Adult" },
+  { name: "Lee Hyunsung", universe: "Omniscient Reader", gender: "male", imageUrl: "https://static.wikia.nocookie.net/omniscient-readers-viewpoint/images/7/78/Lee_Hyunsung_Webnovel.png/revision/latest/scale-to-width-down/400?cb=20220818095712", ageNote: "Adult" },
+  { name: "Jung Heewon", universe: "Omniscient Reader", gender: "female", imageUrl: "https://static.wikia.nocookie.net/omniscient-readers-viewpoint/images/7/74/Jung_Heewon_Webnovel.png/revision/latest/scale-to-width-down/400?cb=20220811111418", ageNote: "Adult" },
+
+  // ── SECOND LIFE RANKER (4) ─────────────────────────────────────────────────
+  { name: "Yeon-woo", universe: "Second Life Ranker", gender: "male", imageUrl: "https://static.wikia.nocookie.net/second-life-ranker/images/0/03/5.jpg/revision/latest/scale-to-width-down/400?cb=20200817053021", ageNote: "Adult (25)" },
+  { name: "Rebecca Cha", universe: "Second Life Ranker", gender: "female", imageUrl: "https://static.wikia.nocookie.net/second-life-ranker/images/7/77/Chapter_111_-_Sol_Luna.png/revision/latest/scale-to-width-down/400?cb=20211231084921", ageNote: "Adult" },
+  { name: "Edora", universe: "Second Life Ranker", gender: "female", imageUrl: "https://static.wikia.nocookie.net/second-life-ranker/images/b/b6/Edora-0.jpg/revision/latest/scale-to-width-down/400?cb=20201020091912", ageNote: "Adult" },
+  { name: "Shanon", universe: "Second Life Ranker", gender: "male", imageUrl: "https://static.wikia.nocookie.net/second-life-ranker/images/0/08/Shanon_Chapter_70.jpg/revision/latest/scale-to-width-down/400?cb=20210430070919", ageNote: "Adult" },
+
+  // ── RETURN OF THE MAD DEMON (4) ──────────────────────────────────────────
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // VIDEO GAMES
+  // ═══════════════════════════════════════════════════════════════════════════
+
+  // ── NIER: AUTOMATA (4) ─────────────────────────────────────────────────────
+  { name: "2B (YoRHa No.2 Type B)", universe: "NieR: Automata", gender: "female", imageUrl: "https://static.wikia.nocookie.net/nier/images/3/38/YoRHa_No.2_Type_B.png/revision/latest/scale-to-width-down/400?cb=20170322051325", ageNote: "Adult android" },
+  { name: "9S (YoRHa No.9 Type S)", universe: "NieR: Automata", gender: "male", imageUrl: "https://static.wikia.nocookie.net/nier/images/8/84/YoRHa_No.9_Type_S.png/revision/latest/scale-to-width-down/400?cb=20220205191546", ageNote: "Adult android" },
+  { name: "A2 (YoRHa Type A No.2)", universe: "NieR: Automata", gender: "female", imageUrl: "https://static.wikia.nocookie.net/nier/images/f/fe/YoRHa_No.2A.png/revision/latest/scale-to-width-down/400?cb=20170423025735", ageNote: "Adult android" },
+
+  // ── RESIDENT EVIL (5) ──────────────────────────────────────────────────────
+  { name: "Jill Valentine", universe: "Resident Evil", gender: "female", imageUrl: "https://static.wikia.nocookie.net/residentevil/images/0/0e/Jill_-_Death_Island_Render.png/revision/latest/scale-to-width-down/400?cb=20230706214935", ageNote: "Adult (23+)" },
+  { name: "Ada Wong", universe: "Resident Evil", gender: "female", imageUrl: "https://static.wikia.nocookie.net/residentevil/images/a/a7/Ada_Wong_RE6_render.png/revision/latest/scale-to-width-down/400?cb=20260116014956", ageNote: "Adult" },
+  { name: "Leon S. Kennedy", universe: "Resident Evil", gender: "male", imageUrl: "https://static.wikia.nocookie.net/residentevil/images/7/7d/RE9_-_Leon_Render.png/revision/latest/scale-to-width-down/400?cb=20251212111407", ageNote: "Adult (27)" },
+  { name: "Lady Dimitrescu", universe: "Resident Evil", gender: "female", imageUrl: "https://static.wikia.nocookie.net/residentevil/images/f/f8/ADimitrescuFull.png/revision/latest/scale-to-width-down/400?cb=20210523144240", ageNote: "Adult" },
+  { name: "Claire Redfield", universe: "Resident Evil", gender: "female", imageUrl: "https://static.wikia.nocookie.net/residentevil/images/9/9e/Claire_-_Death_Island_Render.png/revision/latest/scale-to-width-down/400?cb=20230703033607", ageNote: "Adult (19+)" },
+
+  // ── STREET FIGHTER (6) ─────────────────────────────────────────────────────
+  { name: "Chun-Li", universe: "Street Fighter", gender: "female", imageUrl: "https://static.wikia.nocookie.net/streetfighter/images/5/5b/Chun-Li_SF6_Render.png/revision/latest/scale-to-width-down/400?cb=20220603005535", ageNote: "Adult" },
+  { name: "Cammy White", universe: "Street Fighter", gender: "female", imageUrl: "https://static.wikia.nocookie.net/streetfighter/images/9/9a/SF6_Cammy.png/revision/latest/scale-to-width-down/400?cb=20220610000000", ageNote: "Adult (22)" },
+  { name: "Juri Han", universe: "Street Fighter", gender: "female", imageUrl: "https://static.wikia.nocookie.net/streetfighter/images/d/dc/Sf6-juri.png/revision/latest/scale-to-width-down/400?cb=20220808055222", ageNote: "Adult" },
+  { name: "Ryu", universe: "Street Fighter", gender: "male", imageUrl: "https://static.wikia.nocookie.net/streetfighter/images/3/3a/Sf6-ryu.png/revision/latest/scale-to-width-down/400?cb=20220603010542", ageNote: "Adult" },
+  { name: "Ken Masters", universe: "Street Fighter", gender: "male", imageUrl: "https://static.wikia.nocookie.net/streetfighter/images/1/14/Ken_SF6_Render.png/revision/latest/scale-to-width-down/400?cb=20220915164810", ageNote: "Adult" },
+  { name: "Karin Kanzuki", universe: "Street Fighter", gender: "female", imageUrl: "https://static.wikia.nocookie.net/streetfighter/images/6/65/Karin_Kanzuki_%28SFV%29.png/revision/latest/scale-to-width-down/400?cb=20160321000000", ageNote: "Adult (18)" },
+
+  // ── DEVIL MAY CRY (5) ──────────────────────────────────────────────────────
+  { name: "Dante", universe: "Devil May Cry", gender: "male", imageUrl: "https://static.wikia.nocookie.net/devilmaycry/images/c/c2/Dante_DMC5.png/revision/latest/scale-to-width-down/400?cb=20180922220047", ageNote: "Adult" },
+  { name: "Vergil", universe: "Devil May Cry", gender: "male", imageUrl: "https://static.wikia.nocookie.net/devilmaycry/images/4/4e/Vergil_DMC5.png/revision/latest/scale-to-width-down/400?cb=20240130212008", ageNote: "Adult" },
+  { name: "Lady", universe: "Devil May Cry", gender: "female", imageUrl: "https://static.wikia.nocookie.net/devilmaycry/images/c/c9/DMC5_Lady.png/revision/latest/scale-to-width-down/400?cb=20180922220400", ageNote: "Adult (18+)" },
+  { name: "Trish", universe: "Devil May Cry", gender: "female", imageUrl: "https://static.wikia.nocookie.net/devilmaycry/images/7/79/DMC5_Trish.png/revision/latest/scale-to-width-down/400?cb=20180922220252", ageNote: "Adult" },
+  { name: "Nico", universe: "Devil May Cry", gender: "female", imageUrl: "https://static.wikia.nocookie.net/devilmaycry/images/8/8a/Nicoletta_Goldstein_DMC5.png/revision/latest/scale-to-width-down/400?cb=20230810220744", ageNote: "Adult" },
+
+  // ── TEKKEN (5) ─────────────────────────────────────────────────────────────
+  { name: "Nina Williams", universe: "Tekken", gender: "female", imageUrl: "https://static.wikia.nocookie.net/tekken/images/c/c8/Tekken_8_-_Nina_Williams_Official_Render.jpg/revision/latest/scale-to-width-down/400?cb=20230901101613&path-prefix=en", ageNote: "Adult" },
+  { name: "Christie Monteiro", universe: "Tekken", gender: "female", imageUrl: "https://static.wikia.nocookie.net/tekken/images/5/55/Christie4.png/revision/latest/scale-to-width-down/400?cb=20171111111301&path-prefix=en", ageNote: "Adult (22)" },
+  { name: "Asuka Kazama", universe: "Tekken", gender: "female", imageUrl: "https://static.wikia.nocookie.net/tekken/images/b/b1/Tekken_8_-_Asuka_Render.jpg/revision/latest/scale-to-width-down/400?cb=20230425185037&path-prefix=en", ageNote: "Adult (18+)" },
+  { name: "Lars Alexandersson", universe: "Tekken", gender: "male", imageUrl: "https://static.wikia.nocookie.net/tekken/images/e/e6/Lars_Alexandersson_TK8_%28High_Resolution%29.jpg/revision/latest/scale-to-width-down/400?cb=20251203010212&path-prefix=en", ageNote: "Adult" },
+  { name: "Jin Kazama", universe: "Tekken", gender: "male", imageUrl: "https://static.wikia.nocookie.net/tekken/images/a/ab/T8_-_Jin_Render_%28High_Resolution%29.jpg/revision/latest/scale-to-width-down/400?cb=20251202234836&path-prefix=en", ageNote: "Adult (21)" },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // CARTOONS
+  // ═══════════════════════════════════════════════════════════════════════════
+
+  // ── AVATAR: THE LEGEND OF KORRA (5) ──────────────────────────────────────
+  { name: "Korra", universe: "Avatar: Legend of Korra", gender: "female", imageUrl: "https://static.wikia.nocookie.net/avatar/images/3/31/Korra_smiling.png/revision/latest/scale-to-width-down/400?cb=20200810000000", ageNote: "Adult (21)" },
+  { name: "Asami Sato", universe: "Avatar: Legend of Korra", gender: "female", imageUrl: "https://static.wikia.nocookie.net/avatar/images/b/b6/Asami_Sato.png/revision/latest/scale-to-width-down/400?cb=20200101000000", ageNote: "Adult (22)" },
+  { name: "Lin Beifong", universe: "Avatar: Legend of Korra", gender: "female", imageUrl: "https://static.wikia.nocookie.net/avatar/images/8/83/Lin_Beifong.png/revision/latest/scale-to-width-down/400?cb=20200101000000", ageNote: "Adult (40s)" },
+  { name: "Mako", universe: "Avatar: Legend of Korra", gender: "male", imageUrl: "https://static.wikia.nocookie.net/avatar/images/a/a6/Mako.png/revision/latest/scale-to-width-down/400?cb=20150408124557", ageNote: "Adult (22)" },
+  { name: "Bolin", universe: "Avatar: Legend of Korra", gender: "male", imageUrl: "https://static.wikia.nocookie.net/avatar/images/d/d4/Bolin.png/revision/latest/scale-to-width-down/400?cb=20200101000000", ageNote: "Adult (22)" },
+
+  // ── ARCANE (4) ─────────────────────────────────────────────────────────────
+  { name: "Vi (Arcane)", universe: "Arcane", gender: "female", imageUrl: "https://static.wikia.nocookie.net/arcane/images/c/ca/ViFinaleSitting.jpg/revision/latest/scale-to-width-down/400?cb=20241023000000", ageNote: "Adult" },
+  { name: "Caitlyn Kiramman", universe: "Arcane", gender: "female", imageUrl: "https://static.wikia.nocookie.net/arcane/images/4/49/CaitlynFinale.jpg/revision/latest/scale-to-width-down/400?cb=20250315073154", ageNote: "Adult (20s)" },
+  { name: "Jayce", universe: "Arcane", gender: "male", imageUrl: "https://static.wikia.nocookie.net/arcane/images/f/f6/Astral_Jayce.png/revision/latest/scale-to-width-down/400?cb=20250203233045", ageNote: "Adult" },
+  { name: "Viktor", universe: "Arcane", gender: "male", imageUrl: "https://static.wikia.nocookie.net/arcane/images/e/e2/AstralViktor.png/revision/latest/scale-to-width-down/400?cb=20250323005235", ageNote: "Adult" },
+
+  // ── CASTLEVANIA (3) ────────────────────────────────────────────────────────
+  { name: "Sypha Belnades", universe: "Castlevania", gender: "female", imageUrl: "https://static.wikia.nocookie.net/castlevania/images/f/f6/Pachi_sypha.jpg/revision/latest/scale-to-width-down/400?cb=20181026000000", ageNote: "Adult" },
+  { name: "Alucard", universe: "Castlevania", gender: "male", imageUrl: "https://static.wikia.nocookie.net/castlevania/images/2/21/Alucard_%28animated_series%29_-_01.jpg/revision/latest/scale-to-width-down/400?cb=20250816201900", ageNote: "Adult" },
+  { name: "Trevor Belmont", universe: "Castlevania", gender: "male", imageUrl: "https://static.wikia.nocookie.net/castlevania/images/2/24/Trevor_Belmont_-_01.png/revision/latest/scale-to-width-down/400?cb=20181026000000", ageNote: "Adult" },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // COMIC BOOKS (non-Marvel/DC)
+  // ═══════════════════════════════════════════════════════════════════════════
+
+  // ── INVINCIBLE (4) ─────────────────────────────────────────────────────────
+  { name: "Mark Grayson (Invincible)", universe: "Invincible", gender: "male", imageUrl: "https://static.wikia.nocookie.net/amazon-invincible/images/a/a3/Invincible_%28Mark_Grayson%29.png/revision/latest/scale-to-width-down/400?cb=20250717141424", ageNote: "Adult (18+)" },
+  { name: "Atom Eve", universe: "Invincible", gender: "female", imageUrl: "https://static.wikia.nocookie.net/amazon-invincible/images/7/74/Atom-EveProfile.png/revision/latest/scale-to-width-down/400?cb=20250520153227", ageNote: "Adult (18+)" },
+  { name: "Debbie Grayson", universe: "Invincible", gender: "female", imageUrl: "https://static.wikia.nocookie.net/amazon-invincible/images/c/cb/DebbieProfile.png/revision/latest/scale-to-width-down/400?cb=20210619071405", ageNote: "Adult" },
+  { name: "Omni-Man", universe: "Invincible", gender: "male", imageUrl: "https://static.wikia.nocookie.net/amazon-invincible/images/8/8d/Nolan_coalition_fullbod.png/revision/latest/scale-to-width-down/400?cb=20260123113904", ageNote: "Adult" },
+
+  // ── THE BOYS (4) ───────────────────────────────────────────────────────────
+  { name: "Billy Butcher", universe: "The Boys", gender: "male", imageUrl: "https://static.wikia.nocookie.net/amazons-the-boys/images/9/98/Billy_Butcher-S4.png/revision/latest/scale-to-width-down/400?cb=20240614090132", ageNote: "Adult" },
+  { name: "Starlight (Annie January)", universe: "The Boys", gender: "female", imageUrl: "https://static.wikia.nocookie.net/amazons-the-boys/images/c/cb/Annie_January-S4.png/revision/latest/scale-to-width-down/400?cb=20240614091322", ageNote: "Adult (25)" },
+  { name: "Queen Maeve", universe: "The Boys", gender: "female", imageUrl: "https://static.wikia.nocookie.net/amazons-the-boys/images/2/27/Queen-Maeve-S3.png/revision/latest/scale-to-width-down/400?cb=20220604010748", ageNote: "Adult" },
+  { name: "Homelander", universe: "The Boys", gender: "male", imageUrl: "https://static.wikia.nocookie.net/amazons-the-boys/images/5/5b/Homelander-S4.png/revision/latest/scale-to-width-down/400?cb=20240614091600", ageNote: "Adult" },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // MANGA (non-anime)
+  // ═══════════════════════════════════════════════════════════════════════════
+
+  // ── BERSERK (4) ────────────────────────────────────────────────────────────
+  { name: "Guts", universe: "Berserk", gender: "male", imageUrl: "https://static.wikia.nocookie.net/berserk/images/4/40/Manga_V38_Guts.png/revision/latest/scale-to-width-down/400?cb=20170919104357", ageNote: "Adult (24)" },
+  { name: "Griffith", universe: "Berserk", gender: "male", imageUrl: "https://static.wikia.nocookie.net/berserk/images/b/b0/BTCG_Griffith_Holding_Sabre.png/revision/latest/scale-to-width-down/400?cb=20170930052614", ageNote: "Adult" },
+  { name: "Casca", universe: "Berserk", gender: "female", imageUrl: "https://static.wikia.nocookie.net/berserk/images/d/d0/BTCG_Casca_and_Puck.png/revision/latest/scale-to-width-down/400?cb=20170923104942", ageNote: "Adult (22+)" },
+  { name: "Farnese de Vandimion", universe: "Berserk", gender: "female", imageUrl: "https://static.wikia.nocookie.net/berserk/images/9/9e/Farnese_de_Vandimion_Manga.jpg/revision/latest/scale-to-width-down/400?cb=20160918013313", ageNote: "Adult (18+)" },
+
+  // ── FULLMETAL ALCHEMIST (5) ────────────────────────────────────────────────
+  { name: "Roy Mustang", universe: "Fullmetal Alchemist", gender: "male", imageUrl: "https://static.wikia.nocookie.net/fma/images/5/5b/MustangManga.png/revision/latest/scale-to-width-down/400?cb=20250220111436", ageNote: "Adult (29)" },
+  { name: "Riza Hawkeye", universe: "Fullmetal Alchemist", gender: "female", imageUrl: "https://static.wikia.nocookie.net/fma/images/b/ba/RizaManga.png/revision/latest/scale-to-width-down/400?cb=20250220112828", ageNote: "Adult" },
+  { name: "Olivier Mira Armstrong", universe: "Fullmetal Alchemist", gender: "female", imageUrl: "https://static.wikia.nocookie.net/fma/images/e/e6/Avatar_olivier.png/revision/latest/scale-to-width-down/400?cb=20160812165045", ageNote: "Adult" },
+  { name: "Izumi Curtis", universe: "Fullmetal Alchemist", gender: "female", imageUrl: "https://static.wikia.nocookie.net/fma/images/2/26/Avatar_harnet.png/revision/latest/scale-to-width-down/400?cb=20171031131954", ageNote: "Adult" },
+  { name: "Alex Louis Armstrong", universe: "Fullmetal Alchemist", gender: "male", imageUrl: "https://static.wikia.nocookie.net/fma/images/4/44/Avatar_alex0.png/revision/latest/scale-to-width-down/400?cb=20180418142334", ageNote: "Adult" },
+
+  // ── TOKYO GHOUL (4) ────────────────────────────────────────────────────────
+  { name: "Ken Kaneki", universe: "Tokyo Ghoul", gender: "male", imageUrl: "https://static.wikia.nocookie.net/tokyoghoul/images/7/7d/Kaneki_Finale_HQ.png/revision/latest/scale-to-width-down/400?cb=20180706042331", ageNote: "Adult (18+)" },
+  { name: "Touka Kirishima", universe: "Tokyo Ghoul", gender: "female", imageUrl: "https://static.wikia.nocookie.net/tokyoghoul/images/5/5b/Touka_Finale_HQ.png/revision/latest/scale-to-width-down/400?cb=20181103072059", ageNote: "Adult (18+)" },
+  { name: "Shu Tsukiyama", universe: "Tokyo Ghoul", gender: "male", imageUrl: "https://static.wikia.nocookie.net/tokyoghoul/images/d/d6/Tsukiyama_Cover_Vol_4.png/revision/latest/scale-to-width-down/400?cb=20150321133928", ageNote: "Adult (22)" },
+  { name: "Rize Kamishiro", universe: "Tokyo Ghoul", gender: "female", imageUrl: "https://static.wikia.nocookie.net/tokyoghoul/images/b/b5/Re_Vol_15_%28cleaned_version%29.png/revision/latest/scale-to-width-down/400?cb=20180323091504", ageNote: "Adult (18+)" },
+
+  // ── HUNTER x HUNTER (3) ────────────────────────────────────────────────────
+  { name: "Hisoka Morow", universe: "Hunter x Hunter", gender: "male", imageUrl: "https://static.wikia.nocookie.net/hunterxhunter/images/2/29/Hisoka_Morow_YC_Portrait.png/revision/latest/scale-to-width-down/400?cb=20190123172039", ageNote: "Adult" },
+  { name: "Leorio Paradinight", universe: "Hunter x Hunter", gender: "male", imageUrl: "https://static.wikia.nocookie.net/hunterxhunter/images/7/73/HxH2011_EP145_Leorio_Portrait.png/revision/latest/scale-to-width-down/400?cb=20230902193715", ageNote: "Adult (19+)" },
+  { name: "Biscuit Krueger", universe: "Hunter x Hunter", gender: "female", imageUrl: "https://static.wikia.nocookie.net/hunterxhunter/images/c/cd/Biscuit_Krueger_CA_Portrait.png/revision/latest/scale-to-width-down/400?cb=20190630140152", ageNote: "Adult (ancient)" },
+
+
 ];
 
 async function seed() {

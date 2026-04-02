@@ -1,6 +1,6 @@
 # Multiverse FMA
 
-A full-stack web game where you assign **Marry**, **Date**, or **Avoid** to three characters per round drawn from 41 universes — Marvel, DC, anime, gacha games, JRPGs, and more.
+A full-stack web game where you assign **Marry**, **Date**, or **Avoid** to three characters per round drawn from 60 universes — Marvel, DC, anime, manga, manhwa, video games, cartoons, and more.
 
 ![Multiverse FMA](artifacts/multiverse-fma/public/opengraph.jpg)
 
@@ -16,19 +16,20 @@ The leaderboard tracks the most married, most dated, and most avoided characters
 
 ## Characters
 
-**305 characters** across **41 universes**, all strictly 18+ adults:
+**425 characters** across **60 universes**, all strictly 18+ adults:
 
 | Category | Universes |
 |---|---|
-| Western Comics | Marvel, DC |
+| Western Comics | Marvel, DC, Invincible, The Boys |
 | Anime | One Piece, Attack on Titan, Naruto, Dragon Ball, My Hero Academia, Bleach, Fairy Tail, High School DxD, Jujutsu Kaisen, One Punch Man, Akame ga Kill, Demon Slayer, Chainsaw Man, Spy x Family, Sword Art Online, Black Clover, Tower of God |
-| JRPGs | Persona 5, Final Fantasy, Fate |
-| Gacha / Live Service | Genshin Impact, Honkai Impact 3rd, Honkai: Star Rail, Zenless Zone Zero, Wuthering Waves, Arknights, NIKKE, Girls Frontline, Azur Lane, Epic Seven, AFK Journey |
-| Games | League of Legends, Overwatch, Smite, Fire Emblem |
+| Manga | Berserk, Fullmetal Alchemist, Tokyo Ghoul, Hunter x Hunter |
+| Manhwa | Omniscient Reader's Viewpoint, Second Life Ranker, Solo Leveling, Soul Land |
+| Video Games | NieR: Automata, Resident Evil, Street Fighter, Devil May Cry, Tekken, League of Legends, Overwatch, Smite, Fire Emblem, Persona 5, Final Fantasy, Fate, Genshin Impact, Honkai Impact 3rd, Honkai: Star Rail, Zenless Zone Zero, Wuthering Waves, Arknights, NIKKE, Girls Frontline, Azur Lane, Epic Seven, AFK Journey |
+| JRPGs | Persona 5, Final Fantasy, Fate/Stay Night |
+| Cartoons | Avatar: Legend of Korra, Arcane, Castlevania |
 | TV / Books | Game of Thrones, The Witcher |
-| Other | Soul Land, Solo Leveling |
 
-**304 of 305** characters use real sourced images (Fandom wiki CDN, game CDNs).
+**425 of 425** characters use real sourced images (Fandom wiki CDN, game CDNs). Zero placeholders.
 
 ---
 
@@ -40,6 +41,7 @@ The leaderboard tracks the most married, most dated, and most avoided characters
 | Backend | Express 5, Node.js 24 |
 | Database | PostgreSQL + Drizzle ORM |
 | Monorepo | pnpm workspaces, TypeScript project references |
+| i18n | EN / JA / ES (react-i18next) |
 | Fonts | Bangers (Google Fonts) — comic-book display font |
 
 ---
@@ -51,6 +53,7 @@ multiverse-fma/
 ├── artifacts/
 │   ├── api-server/          # Express API (characters, votes, stats, image proxy)
 │   └── multiverse-fma/      # React + Vite frontend
+├── electron-app/            # Electron desktop app wrapper
 ├── lib/
 │   ├── db/                  # Drizzle schema + PostgreSQL connection
 │   ├── api-spec/            # OpenAPI 3.1 spec + Orval codegen config
@@ -58,7 +61,7 @@ multiverse-fma/
 │   └── api-zod/             # Generated Zod schemas
 ├── scripts/
 │   └── src/
-│       └── seed-characters.ts   # Seeds all 305 characters
+│       └── seed-characters.ts   # Seeds all 425 characters
 ├── pnpm-workspace.yaml
 └── replit.md
 ```
@@ -153,9 +156,18 @@ HSR_ID(1005)              // Honkai: Star Rail
 AK("char_263_skadi_2")    // Arknights
 OW("widowmaker")          // Overwatch
 FW("kimetsu-no-yaiba", "path/to/image.png")  // Fandom wiki
+"https://..."             // Direct URL (for video game wikis)
 ```
 
 To reseed: `pnpm --filter @workspace/scripts run seed-characters`
+
+---
+
+## Desktop App (Electron)
+
+The `electron-app/` directory contains a cross-platform desktop wrapper.
+
+See `electron-app/README.md` for build instructions.
 
 ---
 

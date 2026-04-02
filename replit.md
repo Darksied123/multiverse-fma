@@ -39,10 +39,10 @@ artifacts-monorepo/
 
 ## Multiverse FMA Game
 
-A full-stack web game where users assign Marry/Date/Avoid to 3 randomly selected characters per round across 44 universes.
+A full-stack web game where users assign Marry/Date/Avoid to 3 randomly selected characters per round across 60 universes.
 
 ### Features
-- **356 characters** across **44 universes** — all with real images, 0 placeholders
+- **425 characters** across **60 universes** — all with real images, 0 placeholders
 - Dark comic-book neon aesthetic (magenta, yellow, cyan accents)
 - Global stat tracking and leaderboard with 5-minute caching
 - Image proxy for external CDN images (Fandom wikis, game CDNs)
