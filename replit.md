@@ -39,17 +39,26 @@ artifacts-monorepo/
 
 ## Multiverse FMA Game
 
-A full-stack web game where users assign Marry/Date/Avoid to 3 randomly selected characters per round across 41 universes.
+A full-stack web game where users assign Marry/Date/Avoid to 3 randomly selected characters per round across 44 universes.
 
 ### Features
-- 305 characters across 41 universes (304 with real images, 1 placeholder)
+- **356 characters** across **44 universes** — all with real images, 0 placeholders
 - Dark comic-book neon aesthetic (magenta, yellow, cyan accents)
-- Global stat tracking and leaderboard
+- Global stat tracking and leaderboard with 5-minute caching
 - Image proxy for external CDN images (Fandom wikis, game CDNs)
 - Cookie-free anonymous voting
+- **i18n**: EN / 日本語 / ES (react-i18next, browser language detection)
+- **Electron desktop app** (`electron-app/`) — wraps deployed URL, buildable to .exe/.dmg
 
-### Universes
-Marvel, DC, One Piece, Attack on Titan, Naruto, Dragon Ball, My Hero Academia, Bleach, Fairy Tail, High School DxD, Jujutsu Kaisen, One Punch Man, Akame ga Kill, Demon Slayer, Chainsaw Man, Spy x Family, Sword Art Online, Black Clover, Tower of God, Persona 5, Final Fantasy, Fate, Genshin Impact, Honkai Impact 3rd, Honkai: Star Rail, Azur Lane, Girls Frontline, Epic Seven, Solo Leveling, Game of Thrones, The Witcher, Soul Land, Fire Emblem, League of Legends, Overwatch, Smite, Arknights, Zenless Zone Zero, NIKKE, AFK Journey, Wuthering Waves
+### Universes (44)
+Marvel, DC, One Piece, Attack on Titan, Naruto, Dragon Ball, My Hero Academia, Bleach, Fairy Tail, High School DxD, Jujutsu Kaisen, One Punch Man, Akame ga Kill, Demon Slayer, Chainsaw Man, Spy x Family, Sword Art Online, Black Clover, Tower of God, Persona 5, Final Fantasy, Fate, Genshin Impact, Honkai Impact 3rd, Honkai: Star Rail, Azur Lane, Girls Frontline, Epic Seven, Solo Leveling, Game of Thrones, The Witcher, Soul Land, Fire Emblem, League of Legends, Overwatch, Smite, Arknights, Zenless Zone Zero, NIKKE, AFK Journey, Wuthering Waves, DanMachi, Leveling with the Gods, The Beginning After the End
+
+### Important Notes
+- **NEVER create requirements.txt** — Replit treats it as Python and errors on `pip install`
+- **Seed script**: `pnpm --filter @workspace/scripts run seed-characters`
+- **DB push**: `pnpm --filter @workspace/db run push`
+- **Broken symlink fix**: If drizzle-orm build fails, re-link: `rm artifacts/api-server/node_modules/drizzle-orm && ln -s ../../../node_modules/.pnpm/drizzle-orm@0.45.1_@types+pg@8.18.0_pg@8.20.0/node_modules/drizzle-orm artifacts/api-server/node_modules/drizzle-orm`
+- **Unicode chars in seed**: Use Node.js scripts to modify seed-characters.ts (box-drawing chars break `edit` tool string matching)
 
 ### Frontend Routes
 - `/` — Home page with hero banner
