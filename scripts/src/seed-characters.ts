@@ -31,12 +31,12 @@ const FW = (wiki: string, path: string) =>
 const characters = [
   // ── MARVEL (16) ─────────────────────────────────────────────────────────────
   { name: "Black Widow", universe: "Marvel", gender: "female", imageUrl: FW("marveldatabase", "7/72/Black_Widow_Pale_Little_Spider_Vol_1_1_Textless.jpg/revision/latest/scale-to-width-down/331?cb=20190809082317"), ageNote: "Adult" },
-  { name: "Storm", universe: "Marvel", gender: "female", imageUrl: FW("marveldatabase", "5/5d/Ororo_Munroe_%28Earth-12%29_from_Exiles_Vol_1_14_0001.jpg/revision/latest?cb=20191231020331"), ageNote: "Adult" },
-  { name: "Scarlet Witch", universe: "Marvel", gender: "female", imageUrl: FW("marveldatabase", "1/1d/Wanda_Maximoff_%28Earth-12%29_from_Exiles_Vol_1_14_0001.jpg/revision/latest?cb=20191231013147"), ageNote: "Adult" },
-  { name: "She-Hulk", universe: "Marvel", gender: "female", imageUrl: FW("marveldatabase", "9/92/Jennifer_Walters_%28Earth-65%29_from_Spider-Gwen_Annual_Vol_1_1.jpg/revision/latest/scale-to-width-down/285?cb=20181225181225"), ageNote: "Adult" },
+  { name: "Storm", universe: "Marvel", gender: "female", imageUrl: FW("marveldatabase", "b/bc/Storm_Vol_3_1_Textless.jpg/revision/latest/scale-to-width-down/350?cb=20140630000000"), ageNote: "Adult" },
+  { name: "Scarlet Witch", universe: "Marvel", gender: "female", imageUrl: FW("marveldatabase", "5/5b/Scarlet_Witch_Vol_2_1_Textless.jpg/revision/latest/scale-to-width-down/350?cb=20150101000000"), ageNote: "Adult" },
+  { name: "She-Hulk", universe: "Marvel", gender: "female", imageUrl: FW("marveldatabase", "5/5e/She-Hulk_Vol_3_1_Textless.jpg/revision/latest/scale-to-width-down/350?cb=20220101000000"), ageNote: "Adult" },
   { name: "Ms. Marvel", universe: "Marvel", gender: "female", imageUrl: FW("marveldatabase", "4/48/Ms._Marvel_Vol_2_1_Textless.jpg/revision/latest/scale-to-width-down/333?cb=20061023133037"), ageNote: "Adult" },
   { name: "Psylocke", universe: "Marvel", gender: "female", imageUrl: FW("marveldatabase", "0/08/Elizabeth_Braddock_%28Earth-616%29_from_Hunt_for_Wolverine_Mystery_in_Madripoor_Vol_1_4_Spoiler_Variant_cover_001.jpg/revision/latest/scale-to-width-down/317?cb=20180823221219"), ageNote: "Adult" },
-  { name: "Rogue", universe: "Marvel", gender: "female", imageUrl: FW("marveldatabase", "0/0b/Rogue_%28Anna_Marie%29_%28Earth-27%29_from_Exiles_Vol_1_83_0001.jpg/revision/latest/scale-to-width-down/159?cb=20191209061419"), ageNote: "Adult" },
+  { name: "Rogue", universe: "Marvel", gender: "female", imageUrl: FW("marveldatabase", "1/1c/X-Men_Red_Vol_1_1_Textless.jpg/revision/latest/scale-to-width-down/350?cb=20180101000000"), ageNote: "Adult" },
   { name: "Spider-Woman", universe: "Marvel", gender: "female", imageUrl: FW("marveldatabase", "4/4e/Julia_Carpenter_%28Earth-616%29_from_Ms._Marvel_Vol_2_13_0001.png/revision/latest/scale-to-width-down/321?cb=20230701112201"), ageNote: "Adult" },
   { name: "Thor", universe: "Marvel", gender: "male", imageUrl: MV("5/a0/537bc7036ab02"), ageNote: "Adult" },
   { name: "Iron Man", universe: "Marvel", gender: "male", imageUrl: MV("3/40/4bb4680432f73"), ageNote: "Adult" },
@@ -44,8 +44,8 @@ const characters = [
   { name: "Wolverine", universe: "Marvel", gender: "male", imageUrl: FW("marveldatabase", "9/9e/Dark_Wolverine_Vol_1_77_Textless.jpg/revision/latest/scale-to-width-down/329?cb=20090712125221"), ageNote: "Adult" },
   { name: "Deadpool", universe: "Marvel", gender: "male", imageUrl: FW("marveldatabase", "4/44/Deadpool_Vol_9_8_Deadpool_Virgin_Variant.jpg/revision/latest/scale-to-width-down/325?cb=20241117002534"), ageNote: "Adult" },
   { name: "Black Panther", universe: "Marvel", gender: "male", imageUrl: FW("marveldatabase", "a/a2/Black_Panther_Vol_5_1_Textless.jpg/revision/latest/scale-to-width-down/322?cb=20221204164902"), ageNote: "Adult" },
-  { name: "Doctor Strange", universe: "Marvel", gender: "male", imageUrl: FW("marveldatabase", "a/ac/Asim_Strange_%28Earth-65%29_from_Spider-Gwen_Vol_2_34.jpg/revision/latest?cb=20181231172547"), ageNote: "Adult" },
-  { name: "Gambit", universe: "Marvel", gender: "male", imageUrl: FW("marveldatabase", "4/43/Remy_LeBeau_%28Earth-12%29_from_Exiles_Vol_1_14_0001.jpg/revision/latest?cb=20191231020037"), ageNote: "Adult" },
+  { name: "Doctor Strange", universe: "Marvel", gender: "male", imageUrl: FW("marveldatabase", "5/53/Doctor_Strange_Vol_6_1_Textless.jpg/revision/latest/scale-to-width-down/350?cb=20230101000000"), ageNote: "Adult" },
+  { name: "Gambit", universe: "Marvel", gender: "male", imageUrl: FW("marveldatabase", "d/da/Gambit_Vol_5_1_Textless.jpg/revision/latest/scale-to-width-down/350?cb=20220101000000"), ageNote: "Adult" },
 
   // ── DC (15) ──────────────────────────────────────────────────────────────────
   { name: "Wonder Woman", universe: "DC", gender: "female", imageUrl: FW("marvel_dc", "b/bd/Wonder_Woman_Earth-Two_002.jpg/revision/latest/scale-to-width-down/500?cb=20221222001726"), ageNote: "Adult" },
@@ -65,16 +65,16 @@ const characters = [
   { name: "Lobo", universe: "DC", gender: "male", imageUrl: "https://static.wikia.nocookie.net/marvel_dc/images/0/01/Lobo_036.jpg/revision/latest/scale-to-width-down/353?cb=20091018074554", ageNote: "Adult" },
 
   // ── ONE PIECE (6) ──────────────────────────────────────────────────────────
-  { name: "Boa Hancock", universe: "One Piece", gender: "female", imageUrl: FW("onepiece", "f/f0/Boa_Hancock_Anime_Infobox.png/revision/latest/scale-to-width-down/242?cb=20230126022456"), ageNote: "Adult (31)" },
-  { name: "Nico Robin", universe: "One Piece", gender: "female", imageUrl: "https://static.wikia.nocookie.net/onepiece/images/b/bc/Nico_Robin_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/257?cb=20190202051257", ageNote: "Adult (30)" },
-  { name: "Nami", universe: "One Piece", gender: "female", imageUrl: "https://static.wikia.nocookie.net/onepiece/images/6/68/Nami_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/298?cb=20260315214841", ageNote: "Adult (20)" },
-  { name: "Roronoa Zoro", universe: "One Piece", gender: "male", imageUrl: "https://static.wikia.nocookie.net/onepiece/images/5/52/Roronoa_Zoro_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/188?cb=20241029161719", ageNote: "Adult (21)" },
-  { name: "Trafalgar Law", universe: "One Piece", gender: "male", imageUrl: "https://static.wikia.nocookie.net/onepiece/images/4/4d/Trafalgar_D._Water_Law_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/222?cb=20230124163510", ageNote: "Adult (26)" },
-  { name: "Sanji", universe: "One Piece", gender: "male", imageUrl: FW("onepiece", "b/b6/Sanji_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/167?cb=20240122012744"), ageNote: "Adult (21)" },
+  { name: "Boa Hancock", universe: "One Piece", gender: "female", imageUrl: FW("onepiece", "f/f0/Boa_Hancock_Anime_Infobox.png/revision/latest/scale-to-width-down/350?cb=20230126022456"), ageNote: "Adult (31)" },
+  { name: "Nico Robin", universe: "One Piece", gender: "female", imageUrl: "https://static.wikia.nocookie.net/onepiece/images/b/bc/Nico_Robin_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/350?cb=20190202051257", ageNote: "Adult (30)" },
+  { name: "Nami", universe: "One Piece", gender: "female", imageUrl: "https://static.wikia.nocookie.net/onepiece/images/6/68/Nami_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/350?cb=20260315214841", ageNote: "Adult (20)" },
+  { name: "Roronoa Zoro", universe: "One Piece", gender: "male", imageUrl: "https://static.wikia.nocookie.net/onepiece/images/5/52/Roronoa_Zoro_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/350?cb=20241029161719", ageNote: "Adult (21)" },
+  { name: "Trafalgar Law", universe: "One Piece", gender: "male", imageUrl: "https://static.wikia.nocookie.net/onepiece/images/4/4d/Trafalgar_D._Water_Law_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/350?cb=20230124163510", ageNote: "Adult (26)" },
+  { name: "Sanji", universe: "One Piece", gender: "male", imageUrl: FW("onepiece", "b/b6/Sanji_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/350?cb=20240122012744"), ageNote: "Adult (21)" },
   { name: "Yamato", universe: "One Piece", gender: "female", imageUrl: FW("onepiece", "b/bd/Yamato_Anime_Infobox.png/revision/latest/scale-to-width-down/336?cb=20260126165014"), ageNote: "Adult (28)" },
   { name: "Jewelry Bonney", universe: "One Piece", gender: "female", imageUrl: FW("onepiece", "6/62/Jewelry_Bonney_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/333?cb=20230123001318"), ageNote: "Adult (24)" },
-  { name: "Vinsmoke Reiju", universe: "One Piece", gender: "female", imageUrl: FW("onepiece", "a/a3/Vinsmoke_Reiju_Anime_Infobox.png/revision/latest/scale-to-width-down/209?cb=20231211104854"), ageNote: "Adult (24)" },
-  { name: "Portgas D. Ace", universe: "One Piece", gender: "male", imageUrl: FW("onepiece", "4/4f/Portgas_D._Ace_Anime_Infobox.png/revision/latest/scale-to-width-down/299?cb=20240629132600"), ageNote: "Adult (20)" },
+  { name: "Vinsmoke Reiju", universe: "One Piece", gender: "female", imageUrl: FW("onepiece", "a/a3/Vinsmoke_Reiju_Anime_Infobox.png/revision/latest/scale-to-width-down/350?cb=20231211104854"), ageNote: "Adult (24)" },
+  { name: "Portgas D. Ace", universe: "One Piece", gender: "male", imageUrl: FW("onepiece", "4/4f/Portgas_D._Ace_Anime_Infobox.png/revision/latest/scale-to-width-down/350?cb=20240629132600"), ageNote: "Adult (20)" },
 
   // ── ATTACK ON TITAN (3) ────────────────────────────────────────────────────
   { name: "Mikasa Ackerman", universe: "Attack on Titan", gender: "female", imageUrl: "https://static.wikia.nocookie.net/shingekinokyojin/images/f/f7/Mikasa_Ackerman_character_image.png/revision/latest?cb=20210410131531", ageNote: "Adult (19)" },
@@ -88,17 +88,17 @@ const characters = [
   { name: "Sasuke Uchiha", universe: "Naruto", gender: "male", imageUrl: FW("naruto", "2/21/Sasuke_Part_1.png/revision/latest/scale-to-width-down/500?cb=20170716092103"), ageNote: "Adult (19+)" },
 
   // ── DRAGON BALL (5) ────────────────────────────────────────────────────────
-  { name: "Android 18", universe: "Dragon Ball", gender: "female", imageUrl: FW("dragonball", "e/e6/Android_18_anime_profile.png/revision/latest/scale-to-width-down/200?cb=20250617190842"), ageNote: "Adult" },
-  { name: "Bulma", universe: "Dragon Ball", gender: "female", imageUrl: FW("dragonball", "a/a6/Bulma_anime_profile.png/revision/latest/scale-to-width-down/171?cb=20250617190824"), ageNote: "Adult" },
-  { name: "Videl", universe: "Dragon Ball", gender: "female", imageUrl: FW("dragonball", "d/de/Videl_Episode_207.png/revision/latest/scale-to-width-down/296?cb=20210406214244"), ageNote: "Adult" },
-  { name: "Goku", universe: "Dragon Ball", gender: "male", imageUrl: FW("dragonball", "b/ba/Goku_anime_profile.png/revision/latest/scale-to-width-down/252?cb=20250723190513"), ageNote: "Adult" },
+  { name: "Android 18", universe: "Dragon Ball", gender: "female", imageUrl: FW("dragonball", "e/e6/Android_18_anime_profile.png/revision/latest/scale-to-width-down/350?cb=20250617190842"), ageNote: "Adult" },
+  { name: "Bulma", universe: "Dragon Ball", gender: "female", imageUrl: FW("dragonball", "a/a6/Bulma_anime_profile.png/revision/latest/scale-to-width-down/350?cb=20250617190824"), ageNote: "Adult" },
+  { name: "Videl", universe: "Dragon Ball", gender: "female", imageUrl: FW("dragonball", "d/de/Videl_Episode_207.png/revision/latest/scale-to-width-down/350?cb=20210406214244"), ageNote: "Adult" },
+  { name: "Goku", universe: "Dragon Ball", gender: "male", imageUrl: FW("dragonball", "b/ba/Goku_anime_profile.png/revision/latest/scale-to-width-down/350?cb=20250723190513"), ageNote: "Adult" },
   { name: "Vegeta", universe: "Dragon Ball", gender: "male", imageUrl: FW("dragonball", "9/94/Vegeta_anime_profile.png/revision/latest/scale-to-width-down/308?cb=20250723190507"), ageNote: "Adult" },
 
   // ── MY HERO ACADEMIA (4) ──────────────────────────────────────────────────
   { name: "Midnight", universe: "My Hero Academia", gender: "female", imageUrl: FW("bokunoheroacademia", "d/d5/Nemuri_Kayama_Anime_Action.png/revision/latest?cb=20220808034301"), ageNote: "Adult (30)" },
-  { name: "Mt. Lady", universe: "My Hero Academia", gender: "female", imageUrl: FW("p__", "a/ac/Mount_Lady_Action_Pose.png/revision/latest/scale-to-width-down/262?cb=20221112121955&path-prefix=protagonist"), ageNote: "Adult (23)" },
-  { name: "Mirko", universe: "My Hero Academia", gender: "female", imageUrl: FW("p__", "8/89/Mirko_Short_Hair.png/revision/latest/scale-to-width-down/202?cb=20240217113232&path-prefix=protagonist"), ageNote: "Adult (27)" },
-  { name: "Momo Yaoyorozu", universe: "My Hero Academia", gender: "female", imageUrl: FW("bokunoheroacademia", "8/8f/Momo_Yaoyorozu_Action_2.png/revision/latest/scale-to-width-down/186?cb=20250602031925"), ageNote: "Adult (18)" },
+  { name: "Mt. Lady", universe: "My Hero Academia", gender: "female", imageUrl: FW("p__", "a/ac/Mount_Lady_Action_Pose.png/revision/latest/scale-to-width-down/350?cb=20221112121955&path-prefix=protagonist"), ageNote: "Adult (23)" },
+  { name: "Mirko", universe: "My Hero Academia", gender: "female", imageUrl: FW("p__", "8/89/Mirko_Short_Hair.png/revision/latest/scale-to-width-down/350?cb=20240217113232&path-prefix=protagonist"), ageNote: "Adult (27)" },
+  { name: "Momo Yaoyorozu", universe: "My Hero Academia", gender: "female", imageUrl: FW("bokunoheroacademia", "8/8f/Momo_Yaoyorozu_Action_2.png/revision/latest/scale-to-width-down/350?cb=20250602031925"), ageNote: "Adult (18)" },
 
   // ── BLEACH (5) ─────────────────────────────────────────────────────────────
   { name: "Yoruichi Shihouin", universe: "Bleach", gender: "female", imageUrl: FW("bleach", "6/62/Ep246YoruichiShih%C5%8Din.png/revision/latest/scale-to-width-down/500?cb=20231105202606&path-prefix=en"), ageNote: "Adult" },
@@ -126,9 +126,9 @@ const characters = [
   { name: "Akeno Himejima", universe: "High School DxD", gender: "female", imageUrl: FW("highschooldxd", "c/ca/AkenoLN.png/revision/latest/scale-to-width-down/389?cb=20250831105719"), ageNote: "Adult (18+)" },
 
   // ── JUJUTSU KAISEN (3) ────────────────────────────────────────────────────
-  { name: "Maki Zenin", universe: "Jujutsu Kaisen", gender: "female", imageUrl: FW("jujutsu-kaisen", "2/2c/Maki_Zen%27in_%28Anime_4%29.png/revision/latest/scale-to-width-down/201?cb=20251230144642"), ageNote: "Adult (28)" },
-  { name: "Nobara Kugisaki", universe: "Jujutsu Kaisen", gender: "female", imageUrl: FW("jujutsu-kaisen", "d/dd/Nobara_Kugisaki_%28Anime_2%29.png/revision/latest/scale-to-width-down/250?cb=20240621133809"), ageNote: "Adult (18)" },
-  { name: "Gojo Satoru", universe: "Jujutsu Kaisen", gender: "male", imageUrl: FW("jujutsu-kaisen", "e/ef/Satoru_Gojo_%28Anime_2%29.png/revision/latest/scale-to-width-down/153?cb=20250726003655"), ageNote: "Adult (28)" },
+  { name: "Maki Zenin", universe: "Jujutsu Kaisen", gender: "female", imageUrl: FW("jujutsu-kaisen", "2/2c/Maki_Zen%27in_%28Anime_4%29.png/revision/latest/scale-to-width-down/350?cb=20251230144642"), ageNote: "Adult (28)" },
+  { name: "Nobara Kugisaki", universe: "Jujutsu Kaisen", gender: "female", imageUrl: FW("jujutsu-kaisen", "d/dd/Nobara_Kugisaki_%28Anime_2%29.png/revision/latest/scale-to-width-down/350?cb=20240621133809"), ageNote: "Adult (18)" },
+  { name: "Gojo Satoru", universe: "Jujutsu Kaisen", gender: "male", imageUrl: FW("jujutsu-kaisen", "e/ef/Satoru_Gojo_%28Anime_2%29.png/revision/latest/scale-to-width-down/350?cb=20250726003655"), ageNote: "Adult (28)" },
 
   // ── ONE PUNCH MAN (2) ─────────────────────────────────────────────────────
   { name: "Fubuki", universe: "One Punch Man", gender: "female", imageUrl: FW("onepunchman", "0/0d/Fubuki_Manga.png/revision/latest/scale-to-width-down/348?cb=20200216005423"), ageNote: "Adult (23)" },
@@ -142,8 +142,8 @@ const characters = [
   // ── DEMON SLAYER (6) ──────────────────────────────────────────────────────
   { name: "Mitsuri Kanroji", universe: "Demon Slayer", gender: "female", imageUrl: FW("kimetsu-no-yaiba", "7/74/Mitsuri_anime.png/revision/latest/scale-to-width-down/350?cb=20230614072150"), ageNote: "Adult (19)" },
   { name: "Shinobu Kocho", universe: "Demon Slayer", gender: "female", imageUrl: FW("kimetsu-no-yaiba", "e/e5/Shinobu_anime.png/revision/latest/scale-to-width-down/350?cb=20241010231126"), ageNote: "Adult (18)" },
-  { name: "Nezuko Kamado", universe: "Demon Slayer", gender: "female", imageUrl: FW("kimetsu-no-yaiba", "0/0e/Nezuko_anime_right_face.png/revision/latest/scale-to-width-down/298?cb=20241228000758"), ageNote: "Adult (post-timeskip)" },
-  { name: "Tanjiro Kamado", universe: "Demon Slayer", gender: "male", imageUrl: FW("kimetsu-no-yaiba", "0/05/Tanjiro_anime_right_face.png/revision/latest/scale-to-width-down/286?cb=20241228000706"), ageNote: "Adult" },
+  { name: "Nezuko Kamado", universe: "Demon Slayer", gender: "female", imageUrl: FW("kimetsu-no-yaiba", "0/0e/Nezuko_anime_right_face.png/revision/latest/scale-to-width-down/350?cb=20241228000758"), ageNote: "Adult (post-timeskip)" },
+  { name: "Tanjiro Kamado", universe: "Demon Slayer", gender: "male", imageUrl: FW("kimetsu-no-yaiba", "0/05/Tanjiro_anime_right_face.png/revision/latest/scale-to-width-down/350?cb=20241228000706"), ageNote: "Adult" },
   { name: "Kyojuro Rengoku", universe: "Demon Slayer", gender: "male", imageUrl: FW("kimetsu-no-yaiba", "d/de/Kyojuro_anime_right_face.png/revision/latest/scale-to-width-down/401?cb=20241228001647"), ageNote: "Adult (20)" },
   { name: "Giyu Tomioka", universe: "Demon Slayer", gender: "male", imageUrl: FW("kimetsu-no-yaiba", "4/43/Giyu_anime_design.png/revision/latest/scale-to-width-down/350?cb=20190831073602"), ageNote: "Adult (21)" },
 
@@ -151,11 +151,11 @@ const characters = [
   { name: "Makima", universe: "Chainsaw Man", gender: "female", imageUrl: FW("chainsaw-man", "5/54/Makima_Reze_Arc_anime_design.png/revision/latest/scale-to-width-down/300?cb=20250323073730"), ageNote: "Adult" },
   { name: "Power", universe: "Chainsaw Man", gender: "female", imageUrl: FW("chainsaw-man", "a/ac/Power_anime_design_2.png/revision/latest/scale-to-width-down/300?cb=20231006042039"), ageNote: "Adult" },
   { name: "Reze", universe: "Chainsaw Man", gender: "female", imageUrl: FW("chainsaw-man", "8/8a/Reze_Reze_Arc_anime_design.png/revision/latest/scale-to-width-down/300?cb=20250323073718"), ageNote: "Adult" },
-  { name: "Denji", universe: "Chainsaw Man", gender: "male", imageUrl: FW("chainsaw-man", "b/b0/Denji_Reze_Arc_anime_design.png/revision/latest/scale-to-width-down/298?cb=20250324010006"), ageNote: "Adult (18)" },
+  { name: "Denji", universe: "Chainsaw Man", gender: "male", imageUrl: FW("chainsaw-man", "b/b0/Denji_Reze_Arc_anime_design.png/revision/latest/scale-to-width-down/350?cb=20250324010006"), ageNote: "Adult (18)" },
 
   // ── SPY X FAMILY (2) ──────────────────────────────────────────────────────
   { name: "Yor Forger", universe: "Spy x Family", gender: "female", imageUrl: FW("spy-x-family9171", "5/53/Yor_Forger_Anime_3.png/revision/latest/scale-to-width-down/400?cb=20211031154658"), ageNote: "Adult (27)" },
-  { name: "Loid Forger", universe: "Spy x Family", gender: "male", imageUrl: FW("spy-x-family9171", "c/cd/Loid_Forger_Anime_3.png/revision/latest/scale-to-width-down/240?cb=20211031154403"), ageNote: "Adult" },
+  { name: "Loid Forger", universe: "Spy x Family", gender: "male", imageUrl: FW("spy-x-family9171", "c/cd/Loid_Forger_Anime_3.png/revision/latest/scale-to-width-down/350?cb=20211031154403"), ageNote: "Adult" },
 
   // ── SWORD ART ONLINE (5) ──────────────────────────────────────────────────
   { name: "Asuna", universe: "Sword Art Online", gender: "female", imageUrl: FW("swordartonline", "0/06/Asuna_with_Yui_Biprobe.png/revision/latest/scale-to-width-down/500?cb=20141220180221"), ageNote: "Adult (18)" },
@@ -165,46 +165,46 @@ const characters = [
   { name: "Kirito", universe: "Sword Art Online", gender: "male", imageUrl: FW("swordartonline", "7/7d/Kazuto.png/revision/latest/scale-to-width-down/500?cb=20140228021321"), ageNote: "Adult (18)" },
 
   // ── BLACK CLOVER (5) ──────────────────────────────────────────────────────
-  { name: "Noelle Silva", universe: "Black Clover", gender: "female", imageUrl: "https://static.wikia.nocookie.net/blackclover/images/0/00/Noelle_after_Heart_Kingdom_training.png/revision/latest/scale-to-width-down/186?cb=20191117231002", ageNote: "Adult (18)" },
-  { name: "Mimosa Vermillion", universe: "Black Clover", gender: "female", imageUrl: "https://static.wikia.nocookie.net/blackclover/images/c/c2/Mimosa_after_Heart_Kingdom_training.png/revision/latest/scale-to-width-down/228?cb=20191117230857", ageNote: "Adult (18)" },
+  { name: "Noelle Silva", universe: "Black Clover", gender: "female", imageUrl: "https://static.wikia.nocookie.net/blackclover/images/0/00/Noelle_after_Heart_Kingdom_training.png/revision/latest/scale-to-width-down/350?cb=20191117231002", ageNote: "Adult (18)" },
+  { name: "Mimosa Vermillion", universe: "Black Clover", gender: "female", imageUrl: "https://static.wikia.nocookie.net/blackclover/images/c/c2/Mimosa_after_Heart_Kingdom_training.png/revision/latest/scale-to-width-down/350?cb=20191117230857", ageNote: "Adult (18)" },
   { name: "Charlotte Roselei", universe: "Black Clover", gender: "female", imageUrl: FW("blackclover", "3/36/Charlotte_after_timeskip.png/revision/latest?cb=20210104152628"), ageNote: "Adult" },
-  { name: "Asta", universe: "Black Clover", gender: "male", imageUrl: FW("blackclover", "9/98/Asta_profile.png/revision/latest/scale-to-width-down/274?cb=20220731212646"), ageNote: "Adult (18)" },
-  { name: "Yuno", universe: "Black Clover", gender: "male", imageUrl: FW("blackclover", "e/eb/Yuno_profile.png/revision/latest/scale-to-width-down/263?cb=20220731212525"), ageNote: "Adult (18)" },
+  { name: "Asta", universe: "Black Clover", gender: "male", imageUrl: FW("blackclover", "9/98/Asta_profile.png/revision/latest/scale-to-width-down/350?cb=20220731212646"), ageNote: "Adult (18)" },
+  { name: "Yuno", universe: "Black Clover", gender: "male", imageUrl: FW("blackclover", "e/eb/Yuno_profile.png/revision/latest/scale-to-width-down/350?cb=20220731212525"), ageNote: "Adult (18)" },
 
   // ── TOWER OF GOD (3) ──────────────────────────────────────────────────────
-  { name: "Yuri Ha Jahad", universe: "Tower of God", gender: "female", imageUrl: FW("towerofgod", "2/29/563_-_Yuri_1.png/revision/latest/scale-to-width-down/195?cb=20230825120033"), ageNote: "Adult" },
+  { name: "Yuri Ha Jahad", universe: "Tower of God", gender: "female", imageUrl: FW("towerofgod", "2/29/563_-_Yuri_1.png/revision/latest/scale-to-width-down/350?cb=20230825120033"), ageNote: "Adult" },
   { name: "Endorsi Jahad", universe: "Tower of God", gender: "female", imageUrl: FW("towerofgod", "5/53/567_Androssi_face.png/revision/latest/scale-to-width-down/500?cb=20230713125817"), ageNote: "Adult" },
-  { name: "Bam", universe: "Tower of God", gender: "male", imageUrl: FW("towerofgod", "a/a8/Baam_sprout_arc.jpg/revision/latest/scale-to-width-down/244?cb=20260208080816"), ageNote: "Adult" },
+  { name: "Bam", universe: "Tower of God", gender: "male", imageUrl: FW("towerofgod", "a/a8/Baam_sprout_arc.jpg/revision/latest/scale-to-width-down/350?cb=20260208080816"), ageNote: "Adult" },
 
   // ── PERSONA 5 (8) ─────────────────────────────────────────────────────────
-  { name: "Makoto Niijima", universe: "Persona 5", gender: "female", imageUrl: FW("megamitensei", "0/04/Makoto_Nijima.png/revision/latest/scale-to-width-down/153?cb=20230428014332"), ageNote: "Adult (18)" },
-  { name: "Ann Takamaki", universe: "Persona 5", gender: "female", imageUrl: FW("megamitensei", "b/be/An_takamaki.png/revision/latest/scale-to-width-down/183?cb=20170426203909"), ageNote: "Adult (18)" },
-  { name: "Haru Okumura", universe: "Persona 5", gender: "female", imageUrl: FW("megamitensei", "7/77/P5_Haru_Okumura.png/revision/latest/scale-to-width-down/120?cb=20240307215250"), ageNote: "Adult (18)" },
-  { name: "Futaba Sakura", universe: "Persona 5", gender: "female", imageUrl: FW("megamitensei", "6/62/Futaba_Sakura.png/revision/latest/scale-to-width-down/196?cb=20230219085927"), ageNote: "Adult (18)" },
-  { name: "Sumire Yoshizawa", universe: "Persona 5", gender: "female", imageUrl: FW("megamitensei", "a/ab/Kasumi_Yoshizawa.png/revision/latest/scale-to-width-down/146?cb=20230607090728"), ageNote: "Adult (18)" },
-  { name: "Joker", universe: "Persona 5", gender: "male", imageUrl: FW("megamitensei", "6/63/Persona_5_Hero.png/revision/latest/scale-to-width-down/211?cb=20240407105006"), ageNote: "Adult (18)" },
-  { name: "Ryuji Sakamoto", universe: "Persona 5", gender: "male", imageUrl: FW("megamitensei", "b/bc/Ryuji_Sakamoto.png/revision/latest/scale-to-width-down/186?cb=20240806005553"), ageNote: "Adult (18)" },
-  { name: "Goro Akechi", universe: "Persona 5", gender: "male", imageUrl: FW("megamitensei", "1/15/Gor%C5%8D_Akechi.png/revision/latest/scale-to-width-down/146?cb=20230603111738"), ageNote: "Adult (18)" },
+  { name: "Makoto Niijima", universe: "Persona 5", gender: "female", imageUrl: FW("megamitensei", "0/04/Makoto_Nijima.png/revision/latest/scale-to-width-down/350?cb=20230428014332"), ageNote: "Adult (18)" },
+  { name: "Ann Takamaki", universe: "Persona 5", gender: "female", imageUrl: FW("megamitensei", "b/be/An_takamaki.png/revision/latest/scale-to-width-down/350?cb=20170426203909"), ageNote: "Adult (18)" },
+  { name: "Haru Okumura", universe: "Persona 5", gender: "female", imageUrl: FW("megamitensei", "7/77/P5_Haru_Okumura.png/revision/latest/scale-to-width-down/350?cb=20240307215250"), ageNote: "Adult (18)" },
+  { name: "Futaba Sakura", universe: "Persona 5", gender: "female", imageUrl: FW("megamitensei", "6/62/Futaba_Sakura.png/revision/latest/scale-to-width-down/350?cb=20230219085927"), ageNote: "Adult (18)" },
+  { name: "Sumire Yoshizawa", universe: "Persona 5", gender: "female", imageUrl: FW("megamitensei", "a/ab/Kasumi_Yoshizawa.png/revision/latest/scale-to-width-down/350?cb=20230607090728"), ageNote: "Adult (18)" },
+  { name: "Joker", universe: "Persona 5", gender: "male", imageUrl: FW("megamitensei", "6/63/Persona_5_Hero.png/revision/latest/scale-to-width-down/350?cb=20240407105006"), ageNote: "Adult (18)" },
+  { name: "Ryuji Sakamoto", universe: "Persona 5", gender: "male", imageUrl: FW("megamitensei", "b/bc/Ryuji_Sakamoto.png/revision/latest/scale-to-width-down/350?cb=20240806005553"), ageNote: "Adult (18)" },
+  { name: "Goro Akechi", universe: "Persona 5", gender: "male", imageUrl: FW("megamitensei", "1/15/Gor%C5%8D_Akechi.png/revision/latest/scale-to-width-down/350?cb=20230603111738"), ageNote: "Adult (18)" },
 
   // ── FINAL FANTASY (10) ────────────────────────────────────────────────────
-  { name: "Tifa Lockhart", universe: "Final Fantasy", gender: "female", imageUrl: FW("finalfantasy", "2/21/Tifa_Lockhart_from_FFVII_Rebirth_promo_render.png/revision/latest/scale-to-width-down/167?cb=20240304073043"), ageNote: "Adult (20)" },
+  { name: "Tifa Lockhart", universe: "Final Fantasy", gender: "female", imageUrl: FW("finalfantasy", "2/21/Tifa_Lockhart_from_FFVII_Rebirth_promo_render.png/revision/latest/scale-to-width-down/350?cb=20240304073043"), ageNote: "Adult (20)" },
   { name: "Aerith Gainsborough", universe: "Final Fantasy", gender: "female", imageUrl: FW("finalfantasy", "1/1f/Aerith_Gainsborough_from_FFVII_Rebirth_promo_render.png/revision/latest/scale-to-width-down/354?cb=20240304072103"), ageNote: "Adult (22)" },
-  { name: "Lightning", universe: "Final Fantasy", gender: "female", imageUrl: FW("finalfantasy", "c/c6/FFXIII-Lightning_CG.png/revision/latest/scale-to-width-down/213?cb=20150918214724"), ageNote: "Adult (21)" },
-  { name: "Yuna", universe: "Final Fantasy", gender: "female", imageUrl: FW("finalfantasy", "f/f9/FFX_Artwork_Yuna.png/revision/latest/scale-to-width-down/191?cb=20141023193639"), ageNote: "Adult (19)" },
-  { name: "Lulu", universe: "Final Fantasy", gender: "female", imageUrl: FW("finalfantasy", "5/5b/FFX_Lulu_Art.png/revision/latest/scale-to-width-down/281?cb=20140809031913"), ageNote: "Adult (22)" },
+  { name: "Lightning", universe: "Final Fantasy", gender: "female", imageUrl: FW("finalfantasy", "c/c6/FFXIII-Lightning_CG.png/revision/latest/scale-to-width-down/350?cb=20150918214724"), ageNote: "Adult (21)" },
+  { name: "Yuna", universe: "Final Fantasy", gender: "female", imageUrl: FW("finalfantasy", "f/f9/FFX_Artwork_Yuna.png/revision/latest/scale-to-width-down/350?cb=20141023193639"), ageNote: "Adult (19)" },
+  { name: "Lulu", universe: "Final Fantasy", gender: "female", imageUrl: FW("finalfantasy", "5/5b/FFX_Lulu_Art.png/revision/latest/scale-to-width-down/350?cb=20140809031913"), ageNote: "Adult (22)" },
   { name: "Rinoa Heartilly", universe: "Final Fantasy", gender: "female", imageUrl: FW("finalfantasy", "0/09/Ff8-rinoa.jpg/revision/latest/scale-to-width-down/344?cb=20100603174143"), ageNote: "Adult" },
-  { name: "Cloud Strife", universe: "Final Fantasy", gender: "male", imageUrl: FW("finalfantasy", "e/ec/Cloud_Strife_from_FFVII_Rebirth_promo_render.png/revision/latest/scale-to-width-down/209?cb=20251015150343"), ageNote: "Adult (21)" },
-  { name: "Noctis Lucis Caelum", universe: "Final Fantasy", gender: "male", imageUrl: FW("finalfantasy", "4/4a/FFXV_Noctis.png/revision/latest/scale-to-width-down/174?cb=20160818232513"), ageNote: "Adult (20)" },
-  { name: "Sephiroth", universe: "Final Fantasy", gender: "male", imageUrl: FW("finalfantasy", "a/af/Sephiroth_from_FFVII_Rebirth_promo_render.png/revision/latest/scale-to-width-down/299?cb=20231231113824"), ageNote: "Adult" },
+  { name: "Cloud Strife", universe: "Final Fantasy", gender: "male", imageUrl: FW("finalfantasy", "e/ec/Cloud_Strife_from_FFVII_Rebirth_promo_render.png/revision/latest/scale-to-width-down/350?cb=20251015150343"), ageNote: "Adult (21)" },
+  { name: "Noctis Lucis Caelum", universe: "Final Fantasy", gender: "male", imageUrl: FW("finalfantasy", "4/4a/FFXV_Noctis.png/revision/latest/scale-to-width-down/350?cb=20160818232513"), ageNote: "Adult (20)" },
+  { name: "Sephiroth", universe: "Final Fantasy", gender: "male", imageUrl: FW("finalfantasy", "a/af/Sephiroth_from_FFVII_Rebirth_promo_render.png/revision/latest/scale-to-width-down/350?cb=20231231113824"), ageNote: "Adult" },
   { name: "Squall Leonhart", universe: "Final Fantasy", gender: "male", imageUrl: FW("finalfantasy", "d/d2/Ff8-squall.jpg/revision/latest/scale-to-width-down/403?cb=20100603174959"), ageNote: "Adult" },
 
   // ── FATE SERIES (6) ───────────────────────────────────────────────────────
-  { name: "Artoria Pendragon", universe: "Fate", gender: "female", imageUrl: FW("typemoon", "8/88/Saber_2.png/revision/latest/scale-to-width-down/262?cb=20110320010239"), ageNote: "Adult" },
-  { name: "Rin Tohsaka", universe: "Fate", gender: "female", imageUrl: FW("typemoon", "e/e1/Tohsaka_rin.png/revision/latest/scale-to-width-down/238?cb=20141028223858"), ageNote: "Adult (18)" },
-  { name: "Sakura Matou", universe: "Fate", gender: "female", imageUrl: FW("typemoon", "c/cc/Matou_sakura.png/revision/latest/scale-to-width-down/242?cb=20141017160439"), ageNote: "Adult (18)" },
-  { name: "Mordred", universe: "Fate", gender: "female", imageUrl: FW("typemoon", "6/6c/Saber_of_red_armour2.png/revision/latest/scale-to-width-down/292?cb=20150904081235"), ageNote: "Adult" },
+  { name: "Artoria Pendragon", universe: "Fate", gender: "female", imageUrl: FW("typemoon", "8/88/Saber_2.png/revision/latest/scale-to-width-down/350?cb=20110320010239"), ageNote: "Adult" },
+  { name: "Rin Tohsaka", universe: "Fate", gender: "female", imageUrl: FW("typemoon", "e/e1/Tohsaka_rin.png/revision/latest/scale-to-width-down/350?cb=20141028223858"), ageNote: "Adult (18)" },
+  { name: "Sakura Matou", universe: "Fate", gender: "female", imageUrl: FW("typemoon", "c/cc/Matou_sakura.png/revision/latest/scale-to-width-down/350?cb=20141017160439"), ageNote: "Adult (18)" },
+  { name: "Mordred", universe: "Fate", gender: "female", imageUrl: FW("typemoon", "6/6c/Saber_of_red_armour2.png/revision/latest/scale-to-width-down/350?cb=20150904081235"), ageNote: "Adult" },
   { name: "Scathach", universe: "Fate", gender: "female", imageUrl: FW("typemoon", "b/b1/FGOLancerScathStage1.png/revision/latest/scale-to-width-down/353?cb=20151210083513"), ageNote: "Adult (ancient warrior)" },
-  { name: "Gilgamesh", universe: "Fate", gender: "male", imageUrl: FW("typemoon", "6/63/Gilfull.png/revision/latest/scale-to-width-down/218?cb=20130523232436"), ageNote: "Adult" },
+  { name: "Gilgamesh", universe: "Fate", gender: "male", imageUrl: FW("typemoon", "6/63/Gilfull.png/revision/latest/scale-to-width-down/350?cb=20130523232436"), ageNote: "Adult" },
 
   // ── GENSHIN IMPACT (16) ───────────────────────────────────────────────────
   { name: "Raiden Shogun", universe: "Genshin Impact", gender: "female", imageUrl: GI("Shougun"), ageNote: "Adult (millennia old deity)" },
@@ -295,27 +295,27 @@ const characters = [
   { name: "Jon Snow", universe: "Game of Thrones", gender: "male", imageUrl: FW("gameofthrones", "d/d0/JonSnow8x06.PNG/revision/latest?cb=20190714094440"), ageNote: "Adult" },
 
   // ── THE WITCHER (3) ───────────────────────────────────────────────────────
-  { name: "Yennefer of Vengerberg", universe: "The Witcher", gender: "female", imageUrl: FW("witcher", "f/f0/The_Witcher_3_Wild_Hunt-Yennefer_of_Vengerberg.png/revision/latest/scale-to-width-down/179?cb=20160326134030"), ageNote: "Adult (100+ years old)" },
+  { name: "Yennefer of Vengerberg", universe: "The Witcher", gender: "female", imageUrl: FW("witcher", "f/f0/The_Witcher_3_Wild_Hunt-Yennefer_of_Vengerberg.png/revision/latest/scale-to-width-down/350?cb=20160326134030"), ageNote: "Adult (100+ years old)" },
   { name: "Triss Merigold", universe: "The Witcher", gender: "female", imageUrl: FW("witcher", "2/27/Triss-TW3-new-render.png/revision/latest/scale-to-width-down/313?cb=20160402173701"), ageNote: "Adult" },
   { name: "Geralt of Rivia", universe: "The Witcher", gender: "male", imageUrl: FW("witcher", "5/51/Netflix_geralt_shirt.jpg/revision/latest/scale-to-width-down/410?cb=20191228182240"), ageNote: "Adult" },
 
   // ── SOUL LAND (3) ─────────────────────────────────────────────────────────
-  { name: "Xiao Wu", universe: "Soul Land", gender: "female", imageUrl: FW("soulland", "3/34/Xiao_wu_god.jpg/revision/latest/scale-to-width-down/281?cb=20230713090901"), ageNote: "Adult" },
+  { name: "Xiao Wu", universe: "Soul Land", gender: "female", imageUrl: FW("soulland", "3/34/Xiao_wu_god.jpg/revision/latest/scale-to-width-down/350?cb=20230713090901"), ageNote: "Adult" },
   { name: "Bibi Dong", universe: "Soul Land", gender: "female", imageUrl: FW("soulland", "5/51/%E6%AF%94%E6%AF%94%E4%B8%9C.png/revision/latest/scale-to-width-down/500?cb=20210425192931"), ageNote: "Adult" },
   { name: "Tang San", universe: "Soul Land", gender: "male", imageUrl: FW("soulland", "5/5a/TS_God_Duo_Coexistence.jpeg/revision/latest/scale-to-width-down/348?cb=20240622031506"), ageNote: "Adult" },
 
   // ── FIRE EMBLEM (12) ──────────────────────────────────────────────────────
   { name: "Edelgard von Hresvelg", universe: "Fire Emblem", gender: "female", imageUrl: FW("fireemblem", "7/7b/Artwork_Edelgard.png/revision/latest/scale-to-width-down/366?cb=20201220085222"), ageNote: "Adult (18+)" },
   { name: "Byleth", universe: "Fire Emblem", gender: "male", imageUrl: FW("fireemblem", "b/bc/Artwork_Byleth_M.png/revision/latest/scale-to-width-down/500?cb=20201220085213"), ageNote: "Adult" },
-  { name: "Camilla", universe: "Fire Emblem", gender: "female", imageUrl: FW("fireemblem", "9/96/Camilla_art.png/revision/latest/scale-to-width-down/284?cb=20240903035612"), ageNote: "Adult" },
-  { name: "Tharja", universe: "Fire Emblem", gender: "female", imageUrl: FW("fireemblem", "6/68/Tharja_FE13_Artwork.png/revision/latest/scale-to-width-down/229?cb=20190810134754"), ageNote: "Adult" },
-  { name: "Aversa", universe: "Fire Emblem", gender: "female", imageUrl: FW("fireemblem", "5/59/Aversa_%28FE13_Artwork%29.png/revision/latest/scale-to-width-down/294?cb=20170305062950"), ageNote: "Adult" },
-  { name: "Dorothea", universe: "Fire Emblem", gender: "female", imageUrl: FW("fireemblem", "f/ff/3H_Dorothea_Artwork.png/revision/latest/scale-to-width-down/293?cb=20210526001639"), ageNote: "Adult (18+)" },
-  { name: "Rhea", universe: "Fire Emblem", gender: "female", imageUrl: FW("fireemblem", "b/b9/3H_Rhea_Artwork.png/revision/latest/scale-to-width-down/294?cb=20210525204902"), ageNote: "Adult (ancient)" },
+  { name: "Camilla", universe: "Fire Emblem", gender: "female", imageUrl: FW("fireemblem", "9/96/Camilla_art.png/revision/latest/scale-to-width-down/350?cb=20240903035612"), ageNote: "Adult" },
+  { name: "Tharja", universe: "Fire Emblem", gender: "female", imageUrl: FW("fireemblem", "6/68/Tharja_FE13_Artwork.png/revision/latest/scale-to-width-down/350?cb=20190810134754"), ageNote: "Adult" },
+  { name: "Aversa", universe: "Fire Emblem", gender: "female", imageUrl: FW("fireemblem", "5/59/Aversa_%28FE13_Artwork%29.png/revision/latest/scale-to-width-down/350?cb=20170305062950"), ageNote: "Adult" },
+  { name: "Dorothea", universe: "Fire Emblem", gender: "female", imageUrl: FW("fireemblem", "f/ff/3H_Dorothea_Artwork.png/revision/latest/scale-to-width-down/350?cb=20210526001639"), ageNote: "Adult (18+)" },
+  { name: "Rhea", universe: "Fire Emblem", gender: "female", imageUrl: FW("fireemblem", "b/b9/3H_Rhea_Artwork.png/revision/latest/scale-to-width-down/350?cb=20210525204902"), ageNote: "Adult (ancient)" },
   { name: "Lysithea von Ordelia", universe: "Fire Emblem", gender: "female", imageUrl: FW("fireemblem", "d/d5/Lysithea_Heroes.png/revision/latest/scale-to-width-down/417?cb=20200305141046"), ageNote: "Adult (18)" },
   { name: "Marianne von Edmund", universe: "Fire Emblem", gender: "female", imageUrl: FW("fireemblem", "0/06/Marianne_Heroes.png/revision/latest/scale-to-width-down/417?cb=20210304054624"), ageNote: "Adult (18)" },
   { name: "Dimitri Alexandre Blaiddyd", universe: "Fire Emblem", gender: "male", imageUrl: FW("fireemblem", "1/18/Artwork_Dimitri.png/revision/latest/scale-to-width-down/500?cb=20201220085839"), ageNote: "Adult (21)" },
-  { name: "Claude von Riegan", universe: "Fire Emblem", gender: "male", imageUrl: FW("fireemblem", "b/ba/Artwork_Claude.png/revision/latest/scale-to-width-down/222?cb=20201220085923"), ageNote: "Adult (21)" },
+  { name: "Claude von Riegan", universe: "Fire Emblem", gender: "male", imageUrl: FW("fireemblem", "b/ba/Artwork_Claude.png/revision/latest/scale-to-width-down/350?cb=20201220085923"), ageNote: "Adult (21)" },
   { name: "Felix Hugo Fraldarius", universe: "Fire Emblem", gender: "male", imageUrl: FW("fireemblem", "7/7b/Felix_Heroes.png/revision/latest/scale-to-width-down/417?cb=20230417045800"), ageNote: "Adult (20)" },
 
   // ── LEAGUE OF LEGENDS (14) ────────────────────────────────────────────────
@@ -375,32 +375,32 @@ const characters = [
   { name: "Blaze", universe: "Arknights", gender: "female", imageUrl: AK("char_017_huang_2"), ageNote: "Adult" },
 
   // ── ZENLESS ZONE ZERO (12) ────────────────────────────────────────────────
-  { name: "Nicole Demara", universe: "Zenless Zone Zero", gender: "female", imageUrl: FW("zenless-zone-zero", "7/7a/Agent_Nicole_Demara_Portrait.png/revision/latest/scale-to-width-down/283?cb=20240707011646"), ageNote: "Adult" },
-  { name: "Zhu Yuan", universe: "Zenless Zone Zero", gender: "female", imageUrl: FW("zenless-zone-zero", "0/07/Agent_Zhu_Yuan_Portrait.png/revision/latest/scale-to-width-down/221?cb=20240708205906"), ageNote: "Adult" },
+  { name: "Nicole Demara", universe: "Zenless Zone Zero", gender: "female", imageUrl: FW("zenless-zone-zero", "7/7a/Agent_Nicole_Demara_Portrait.png/revision/latest/scale-to-width-down/350?cb=20240707011646"), ageNote: "Adult" },
+  { name: "Zhu Yuan", universe: "Zenless Zone Zero", gender: "female", imageUrl: FW("zenless-zone-zero", "0/07/Agent_Zhu_Yuan_Portrait.png/revision/latest/scale-to-width-down/350?cb=20240708205906"), ageNote: "Adult" },
   { name: "Ellen Joe", universe: "Zenless Zone Zero", gender: "female", imageUrl: FW("zenless-zone-zero", "e/e3/Agent_Ellen_Joe_Portrait.png/revision/latest/scale-to-width-down/425?cb=20241007222138"), ageNote: "Adult" },
   { name: "Rina", universe: "Zenless Zone Zero", gender: "female", imageUrl: FW("zenless-zone-zero", "4/40/Agent_Alexandrina_Sebastiane_Portrait.png/revision/latest/scale-to-width-down/384?cb=20240707002357"), ageNote: "Adult" },
-  { name: "Grace Howard", universe: "Zenless Zone Zero", gender: "female", imageUrl: FW("zenless-zone-zero", "9/9a/Agent_Grace_Howard_Portrait.png/revision/latest/scale-to-width-down/194?cb=20240707002436"), ageNote: "Adult" },
+  { name: "Grace Howard", universe: "Zenless Zone Zero", gender: "female", imageUrl: FW("zenless-zone-zero", "9/9a/Agent_Grace_Howard_Portrait.png/revision/latest/scale-to-width-down/350?cb=20240707002436"), ageNote: "Adult" },
   { name: "Koleda", universe: "Zenless Zone Zero", gender: "female", imageUrl: FW("zenless-zone-zero", "d/d6/Agent_Koleda_Belobog_Portrait.png/revision/latest/scale-to-width-down/430?cb=20240706234545"), ageNote: "Adult" },
   { name: "Miyabi", universe: "Zenless Zone Zero", gender: "female", imageUrl: FW("zenless-zone-zero", "d/da/Agent_Hoshimi_Miyabi_Portrait.png/revision/latest/scale-to-width-down/317?cb=20250329051641"), ageNote: "Adult" },
   { name: "Yanagi", universe: "Zenless Zone Zero", gender: "female", imageUrl: FW("zenless-zone-zero", "c/cb/Agent_Tsukishiro_Yanagi_Portrait.png/revision/latest/scale-to-width-down/352?cb=20241106030347"), ageNote: "Adult" },
   { name: "Burnice", universe: "Zenless Zone Zero", gender: "female", imageUrl: FW("zenless-zone-zero", "d/d1/Agent_Burnice_White_Portrait.png/revision/latest/scale-to-width-down/324?cb=20241016140944"), ageNote: "Adult" },
-  { name: "Piper Wheel", universe: "Zenless Zone Zero", gender: "female", imageUrl: FW("zenless-zone-zero", "a/a9/Agent_Piper_Wheel_Portrait.png/revision/latest/scale-to-width-down/241?cb=20240707002233"), ageNote: "Adult (18+)" },
+  { name: "Piper Wheel", universe: "Zenless Zone Zero", gender: "female", imageUrl: FW("zenless-zone-zero", "a/a9/Agent_Piper_Wheel_Portrait.png/revision/latest/scale-to-width-down/350?cb=20240707002233"), ageNote: "Adult (18+)" },
   { name: "Billy Kid", universe: "Zenless Zone Zero", gender: "male", imageUrl: FW("zenless-zone-zero", "d/dc/Agent_Billy_Kid_Portrait.png/revision/latest/scale-to-width-down/313?cb=20240707002211"), ageNote: "Adult" },
-  { name: "Soldier 11", universe: "Zenless Zone Zero", gender: "female", imageUrl: FW("zenless-zone-zero", "3/36/Agent_Soldier_11_Portrait.png/revision/latest/scale-to-width-down/230?cb=20240713020308"), ageNote: "Adult" },
+  { name: "Soldier 11", universe: "Zenless Zone Zero", gender: "female", imageUrl: FW("zenless-zone-zero", "3/36/Agent_Soldier_11_Portrait.png/revision/latest/scale-to-width-down/350?cb=20240713020308"), ageNote: "Adult" },
 
   // ── NIKKE (12) ────────────────────────────────────────────────────────────
   { name: "Rapi", universe: "NIKKE", gender: "female", imageUrl: FW("nikke-goddess-of-victory-international", "8/82/Rapi_MI.png/revision/latest?cb=20231123043651"), ageNote: "Adult android" },
   { name: "Anis", universe: "NIKKE", gender: "female", imageUrl: FW("nikke-goddess-of-victory-international", "b/bc/Anis_MI.png/revision/latest?cb=20231123052306"), ageNote: "Adult android" },
-  { name: "Neon", universe: "NIKKE", gender: "female", imageUrl: FW("nikke-goddess-of-victory-international", "1/14/Neon_MI.png/revision/latest/scale-to-width-down/252?cb=20231123052411"), ageNote: "Adult android" },
+  { name: "Neon", universe: "NIKKE", gender: "female", imageUrl: FW("nikke-goddess-of-victory-international", "1/14/Neon_MI.png/revision/latest/scale-to-width-down/350?cb=20231123052411"), ageNote: "Adult android" },
   { name: "Modernia", universe: "NIKKE", gender: "female", imageUrl: FW("nikke-goddess-of-victory-international", "8/80/Modernia_MI.png/revision/latest?cb=20231123052408"), ageNote: "Adult android" },
-  { name: "Scarlet (NIKKE)", universe: "NIKKE", gender: "female", imageUrl: FW("nikke-goddess-of-victory-international", "4/45/Scarlet_MI.png/revision/latest/scale-to-width-down/250?cb=20231123052441"), ageNote: "Adult android" },
-  { name: "Alice", universe: "NIKKE", gender: "female", imageUrl: FW("nikke-goddess-of-victory-international", "c/ce/Alice_MI.png/revision/latest/scale-to-width-down/254?cb=20231123052304"), ageNote: "Adult android" },
-  { name: "Noise", universe: "NIKKE", gender: "female", imageUrl: FW("nikke-goddess-of-victory-international", "b/b9/Noise_MI.png/revision/latest/scale-to-width-down/254?cb=20231123052417"), ageNote: "Adult android" },
+  { name: "Scarlet (NIKKE)", universe: "NIKKE", gender: "female", imageUrl: FW("nikke-goddess-of-victory-international", "4/45/Scarlet_MI.png/revision/latest/scale-to-width-down/350?cb=20231123052441"), ageNote: "Adult android" },
+  { name: "Alice", universe: "NIKKE", gender: "female", imageUrl: FW("nikke-goddess-of-victory-international", "c/ce/Alice_MI.png/revision/latest/scale-to-width-down/350?cb=20231123052304"), ageNote: "Adult android" },
+  { name: "Noise", universe: "NIKKE", gender: "female", imageUrl: FW("nikke-goddess-of-victory-international", "b/b9/Noise_MI.png/revision/latest/scale-to-width-down/350?cb=20231123052417"), ageNote: "Adult android" },
   { name: "Privaty", universe: "NIKKE", gender: "female", imageUrl: FW("nikke-goddess-of-victory-international", "e/e8/Privaty_MI.png/revision/latest?cb=20231123052426"), ageNote: "Adult android" },
-  { name: "Rupee", universe: "NIKKE", gender: "female", imageUrl: FW("nikke-goddess-of-victory-international", "a/a1/Rupee_MI.png/revision/latest/scale-to-width-down/250?cb=20231123052438"), ageNote: "Adult android" },
-  { name: "Sin", universe: "NIKKE", gender: "female", imageUrl: FW("nikke-goddess-of-victory-international", "4/48/Sin_MI.png/revision/latest/scale-to-width-down/250?cb=20231123052444"), ageNote: "Adult android" },
+  { name: "Rupee", universe: "NIKKE", gender: "female", imageUrl: FW("nikke-goddess-of-victory-international", "a/a1/Rupee_MI.png/revision/latest/scale-to-width-down/350?cb=20231123052438"), ageNote: "Adult android" },
+  { name: "Sin", universe: "NIKKE", gender: "female", imageUrl: FW("nikke-goddess-of-victory-international", "4/48/Sin_MI.png/revision/latest/scale-to-width-down/350?cb=20231123052444"), ageNote: "Adult android" },
   { name: "Yulha", universe: "NIKKE", gender: "female", imageUrl: FW("nikke-goddess-of-victory-international", "2/2b/Yulha_MI.png/revision/latest?cb=20231123052459"), ageNote: "Adult android" },
-  { name: "Quency", universe: "NIKKE", gender: "female", imageUrl: FW("nikke-goddess-of-victory-international", "5/5a/Quency_MI.png/revision/latest/scale-to-width-down/250?cb=20231123052430"), ageNote: "Adult android" },
+  { name: "Quency", universe: "NIKKE", gender: "female", imageUrl: FW("nikke-goddess-of-victory-international", "5/5a/Quency_MI.png/revision/latest/scale-to-width-down/350?cb=20231123052430"), ageNote: "Adult android" },
 
   // ── AFK JOURNEY (8) ──────────────────────────────────────────────────────
   { name: "Temesia", universe: "AFK Journey", gender: "female", imageUrl: FW("afk-journey", "c/c6/Temesia.png/revision/latest/scale-to-width-down/433?cb=20251130210520"), ageNote: "Adult" },
@@ -409,26 +409,26 @@ const characters = [
   { name: "Eironn", universe: "AFK Journey", gender: "male", imageUrl: FW("afk-journey", "6/69/Eironn.png/revision/latest/scale-to-width-down/500?cb=20240401124826"), ageNote: "Adult" },
   { name: "Lucius", universe: "AFK Journey", gender: "male", imageUrl: FW("afk-journey", "5/5d/Lucius.png/revision/latest/scale-to-width-down/389?cb=20251205000322"), ageNote: "Adult" },
   { name: "Odie", universe: "AFK Journey", gender: "male", imageUrl: FW("afk-journey", "2/2e/Odie.png/revision/latest/scale-to-width-down/375?cb=20240320152553"), ageNote: "Adult" },
-  { name: "Vala", universe: "AFK Journey", gender: "female", imageUrl: FW("afk-journey", "6/6a/Vala.png/revision/latest/scale-to-width-down/299?cb=20251205000455"), ageNote: "Adult" },
-  { name: "Sinbad", universe: "AFK Journey", gender: "male", imageUrl: FW("afk-journey", "3/35/Sinbad.png/revision/latest/scale-to-width-down/201?cb=20251205000847"), ageNote: "Adult" },
+  { name: "Vala", universe: "AFK Journey", gender: "female", imageUrl: FW("afk-journey", "6/6a/Vala.png/revision/latest/scale-to-width-down/350?cb=20251205000455"), ageNote: "Adult" },
+  { name: "Sinbad", universe: "AFK Journey", gender: "male", imageUrl: FW("afk-journey", "3/35/Sinbad.png/revision/latest/scale-to-width-down/350?cb=20251205000847"), ageNote: "Adult" },
 
   // ── WUTHERING WAVES (16) ──────────────────────────────────────────────────
-  { name: "Yinlin", universe: "Wuthering Waves", gender: "female", imageUrl: FW("wutheringwaves", "3/33/Yinlin_Card.jpg/revision/latest/scale-to-width-down/283?cb=20241007222006"), ageNote: "Adult" },
-  { name: "Jianxin", universe: "Wuthering Waves", gender: "female", imageUrl: FW("wutheringwaves", "8/8a/Jianxin_Card.jpg/revision/latest/scale-to-width-down/281?cb=20240206132017"), ageNote: "Adult" },
-  { name: "Changli", universe: "Wuthering Waves", gender: "female", imageUrl: FW("wutheringwaves", "e/e9/Changli_Card.png/revision/latest/scale-to-width-down/281?cb=20240719033449"), ageNote: "Adult" },
-  { name: "Verina", universe: "Wuthering Waves", gender: "female", imageUrl: FW("wutheringwaves", "7/7c/Verina%27s_Card.jpg/revision/latest/scale-to-width-down/282?cb=20240511130959"), ageNote: "Adult" },
-  { name: "Zhezhi", universe: "Wuthering Waves", gender: "female", imageUrl: FW("wutheringwaves", "f/f0/Zhezhi_Card.png/revision/latest/scale-to-width-down/281?cb=20240708201004"), ageNote: "Adult" },
-  { name: "Carlotta", universe: "Wuthering Waves", gender: "female", imageUrl: FW("wutheringwaves", "8/8a/Carlotta_Card.png/revision/latest/scale-to-width-down/264?cb=20241122070709"), ageNote: "Adult" },
-  { name: "Shorekeeper", universe: "Wuthering Waves", gender: "female", imageUrl: FW("wutheringwaves", "8/85/Shorekeeper_Card.png/revision/latest/scale-to-width-down/281?cb=20240813134043"), ageNote: "Adult (ancient entity)" },
-  { name: "Camellya", universe: "Wuthering Waves", gender: "female", imageUrl: FW("wutheringwaves", "8/8f/Camellya_Card.png/revision/latest/scale-to-width-down/281?cb=20240912101744"), ageNote: "Adult" },
-  { name: "Roccia", universe: "Wuthering Waves", gender: "female", imageUrl: FW("wutheringwaves", "e/ea/Roccia_Card.png/revision/latest/scale-to-width-down/264?cb=20241122070750"), ageNote: "Adult" },
-  { name: "Phoebe", universe: "Wuthering Waves", gender: "female", imageUrl: FW("wutheringwaves", "5/54/Phoebe_Card.png/revision/latest/scale-to-width-down/281?cb=20251015114458"), ageNote: "Adult" },
-  { name: "Danjin", universe: "Wuthering Waves", gender: "female", imageUrl: FW("wutheringwaves", "3/3e/Danjin_Card.png/revision/latest/scale-to-width-down/281?cb=20240607110406"), ageNote: "Adult" },
-  { name: "Jinhsi", universe: "Wuthering Waves", gender: "female", imageUrl: FW("wutheringwaves", "a/a9/Jinhsi_Card.png/revision/latest/scale-to-width-down/282?cb=20240517072857"), ageNote: "Adult" },
-  { name: "Calcharo", universe: "Wuthering Waves", gender: "male", imageUrl: FW("wutheringwaves", "e/e5/Calcharo_Card.png/revision/latest/scale-to-width-down/281?cb=20240717222251"), ageNote: "Adult" },
-  { name: "Jiyan", universe: "Wuthering Waves", gender: "male", imageUrl: FW("wutheringwaves", "0/0d/Jiyan_Card.png/revision/latest/scale-to-width-down/281?cb=20240509102627"), ageNote: "Adult" },
-  { name: "Brant", universe: "Wuthering Waves", gender: "male", imageUrl: FW("wutheringwaves", "2/2d/Brant_Card.png/revision/latest/scale-to-width-down/281?cb=20251015115249"), ageNote: "Adult" },
-  { name: "Xiangli Yao", universe: "Wuthering Waves", gender: "male", imageUrl: FW("wutheringwaves", "e/e9/Xiangli_Yao_Card.png/revision/latest/scale-to-width-down/281?cb=20240708200915"), ageNote: "Adult" },
+  { name: "Yinlin", universe: "Wuthering Waves", gender: "female", imageUrl: FW("wutheringwaves", "3/33/Yinlin_Card.jpg/revision/latest/scale-to-width-down/350?cb=20241007222006"), ageNote: "Adult" },
+  { name: "Jianxin", universe: "Wuthering Waves", gender: "female", imageUrl: FW("wutheringwaves", "8/8a/Jianxin_Card.jpg/revision/latest/scale-to-width-down/350?cb=20240206132017"), ageNote: "Adult" },
+  { name: "Changli", universe: "Wuthering Waves", gender: "female", imageUrl: FW("wutheringwaves", "e/e9/Changli_Card.png/revision/latest/scale-to-width-down/350?cb=20240719033449"), ageNote: "Adult" },
+  { name: "Verina", universe: "Wuthering Waves", gender: "female", imageUrl: FW("wutheringwaves", "7/7c/Verina%27s_Card.jpg/revision/latest/scale-to-width-down/350?cb=20240511130959"), ageNote: "Adult" },
+  { name: "Zhezhi", universe: "Wuthering Waves", gender: "female", imageUrl: FW("wutheringwaves", "f/f0/Zhezhi_Card.png/revision/latest/scale-to-width-down/350?cb=20240708201004"), ageNote: "Adult" },
+  { name: "Carlotta", universe: "Wuthering Waves", gender: "female", imageUrl: FW("wutheringwaves", "8/8a/Carlotta_Card.png/revision/latest/scale-to-width-down/350?cb=20241122070709"), ageNote: "Adult" },
+  { name: "Shorekeeper", universe: "Wuthering Waves", gender: "female", imageUrl: FW("wutheringwaves", "8/85/Shorekeeper_Card.png/revision/latest/scale-to-width-down/350?cb=20240813134043"), ageNote: "Adult (ancient entity)" },
+  { name: "Camellya", universe: "Wuthering Waves", gender: "female", imageUrl: FW("wutheringwaves", "8/8f/Camellya_Card.png/revision/latest/scale-to-width-down/350?cb=20240912101744"), ageNote: "Adult" },
+  { name: "Roccia", universe: "Wuthering Waves", gender: "female", imageUrl: FW("wutheringwaves", "e/ea/Roccia_Card.png/revision/latest/scale-to-width-down/350?cb=20241122070750"), ageNote: "Adult" },
+  { name: "Phoebe", universe: "Wuthering Waves", gender: "female", imageUrl: FW("wutheringwaves", "5/54/Phoebe_Card.png/revision/latest/scale-to-width-down/350?cb=20251015114458"), ageNote: "Adult" },
+  { name: "Danjin", universe: "Wuthering Waves", gender: "female", imageUrl: FW("wutheringwaves", "3/3e/Danjin_Card.png/revision/latest/scale-to-width-down/350?cb=20240607110406"), ageNote: "Adult" },
+  { name: "Jinhsi", universe: "Wuthering Waves", gender: "female", imageUrl: FW("wutheringwaves", "a/a9/Jinhsi_Card.png/revision/latest/scale-to-width-down/350?cb=20240517072857"), ageNote: "Adult" },
+  { name: "Calcharo", universe: "Wuthering Waves", gender: "male", imageUrl: FW("wutheringwaves", "e/e5/Calcharo_Card.png/revision/latest/scale-to-width-down/350?cb=20240717222251"), ageNote: "Adult" },
+  { name: "Jiyan", universe: "Wuthering Waves", gender: "male", imageUrl: FW("wutheringwaves", "0/0d/Jiyan_Card.png/revision/latest/scale-to-width-down/350?cb=20240509102627"), ageNote: "Adult" },
+  { name: "Brant", universe: "Wuthering Waves", gender: "male", imageUrl: FW("wutheringwaves", "2/2d/Brant_Card.png/revision/latest/scale-to-width-down/350?cb=20251015115249"), ageNote: "Adult" },
+  { name: "Xiangli Yao", universe: "Wuthering Waves", gender: "male", imageUrl: FW("wutheringwaves", "e/e9/Xiangli_Yao_Card.png/revision/latest/scale-to-width-down/350?cb=20240708200915"), ageNote: "Adult" },
   // ── DANMACHI (8) ──────────────────────────────────────────────────────────────────────────
   { name: "Bell Cranel", universe: "DanMachi", gender: "male", imageUrl: "https://static.wikia.nocookie.net/dungeon-ni-deai-o-motomeru/images/2/2b/Bell_Crannel_Anime_SeasonV.jpg/revision/latest/scale-to-width-down/500?cb=20260129132229", ageNote: "Adult (18)" },
   { name: "Hestia", universe: "DanMachi", gender: "female", imageUrl: "https://static.wikia.nocookie.net/dungeon-ni-deai-o-motomeru/images/5/5a/Hestia_Anime.png/revision/latest/scale-to-width-down/500?cb=20150602195700", ageNote: "Adult goddess" },
@@ -442,13 +442,13 @@ const characters = [
   // ── LEVELING WITH THE GODS (4) ─────────────────────────────────────────────────────────
   { name: "Kim YuWon", universe: "Leveling with the Gods", gender: "male", imageUrl: FW("leveling-with-the-gods", "b/b8/Kim_Yuwon.png/revision/latest/scale-to-width-down/345?cb=20240411063602"), ageNote: "Adult" },
   { name: "Odin", universe: "Leveling with the Gods", gender: "male", imageUrl: FW("leveling-with-the-gods", "8/85/Odin.jpg/revision/latest/scale-to-width-down/368?cb=20220324034641"), ageNote: "Adult god" },
-  { name: "Hercules", universe: "Leveling with the Gods", gender: "male", imageUrl: FW("leveling-with-the-gods", "7/76/Hercules.png/revision/latest/scale-to-width-down/270?cb=20240411063514"), ageNote: "Adult god" },
-  { name: "Zeus", universe: "Leveling with the Gods", gender: "male", imageUrl: FW("leveling-with-the-gods", "f/f8/Zeus_Younger.jpg/revision/latest/scale-to-width-down/287?cb=20240404034035"), ageNote: "Adult god" },
+  { name: "Hercules", universe: "Leveling with the Gods", gender: "male", imageUrl: FW("leveling-with-the-gods", "7/76/Hercules.png/revision/latest/scale-to-width-down/350?cb=20240411063514"), ageNote: "Adult god" },
+  { name: "Zeus", universe: "Leveling with the Gods", gender: "male", imageUrl: FW("leveling-with-the-gods", "f/f8/Zeus_Younger.jpg/revision/latest/scale-to-width-down/350?cb=20240404034035"), ageNote: "Adult god" },
 
   // ── THE BEGINNING AFTER THE END (3) ─────────────────────────────────────────────────────────
   { name: "Arthur Leywin", universe: "The Beginning After the End", gender: "male", imageUrl: FW("thebate", "3/35/Arthur_Vol_10.png/revision/latest/scale-to-width-down/348?cb=20250318204554"), ageNote: "Adult (reincarnated)" },
-  { name: "Tessia Eralith", universe: "The Beginning After the End", gender: "female", imageUrl: FW("thebate", "9/9e/Tess_Full.png/revision/latest/scale-to-width-down/292?cb=20250318210009"), ageNote: "Adult (18+)" },
-  { name: "Sylvie", universe: "The Beginning After the End", gender: "female", imageUrl: FW("thebate", "f/f8/Sylvie_Human_Form.png/revision/latest/scale-to-width-down/294?cb=20241023225908"), ageNote: "Adult (ancient dragon)" },
+  { name: "Tessia Eralith", universe: "The Beginning After the End", gender: "female", imageUrl: FW("thebate", "9/9e/Tess_Full.png/revision/latest/scale-to-width-down/350?cb=20250318210009"), ageNote: "Adult (18+)" },
+  { name: "Sylvie", universe: "The Beginning After the End", gender: "female", imageUrl: FW("thebate", "f/f8/Sylvie_Human_Form.png/revision/latest/scale-to-width-down/350?cb=20241023225908"), ageNote: "Adult (ancient dragon)" },
 
 
   // ── ATTACK ON TITAN EXPANSION (+3) ──────────────────────────────────────────
@@ -463,9 +463,9 @@ const characters = [
   { name: "Itachi Uchiha", universe: "Naruto", gender: "male", imageUrl: "https://static.wikia.nocookie.net/naruto/images/8/89/App_Itachi.jpg/revision/latest/scale-to-width-down/500?cb=20150718093328", ageNote: "Adult (21)" },
 
   // ── JUJUTSU KAISEN EXPANSION (+3) ────────────────────────────────────────
-  { name: "Mei Mei", universe: "Jujutsu Kaisen", gender: "female", imageUrl: "https://static.wikia.nocookie.net/jujutsu-kaisen/images/a/a8/Mei_Mei_%28Anime_2%29.png/revision/latest/scale-to-width-down/290?cb=20231124134449", ageNote: "Adult (28)" },
-  { name: "Utahime Iori", universe: "Jujutsu Kaisen", gender: "female", imageUrl: "https://static.wikia.nocookie.net/jujutsu-kaisen/images/b/b0/Utahime_Iori_%28Anime_2%29.png/revision/latest/scale-to-width-down/274?cb=20231124133701", ageNote: "Adult (30s)" },
-  { name: "Kento Nanami", universe: "Jujutsu Kaisen", gender: "male", imageUrl: "https://static.wikia.nocookie.net/jujutsu-kaisen/images/b/b0/Kento_Nanami_%28Anime%29.png/revision/latest/scale-to-width-down/181?cb=20240618014214", ageNote: "Adult (28)" },
+  { name: "Mei Mei", universe: "Jujutsu Kaisen", gender: "female", imageUrl: "https://static.wikia.nocookie.net/jujutsu-kaisen/images/a/a8/Mei_Mei_%28Anime_2%29.png/revision/latest/scale-to-width-down/350?cb=20231124134449", ageNote: "Adult (28)" },
+  { name: "Utahime Iori", universe: "Jujutsu Kaisen", gender: "female", imageUrl: "https://static.wikia.nocookie.net/jujutsu-kaisen/images/b/b0/Utahime_Iori_%28Anime_2%29.png/revision/latest/scale-to-width-down/350?cb=20231124133701", ageNote: "Adult (30s)" },
+  { name: "Kento Nanami", universe: "Jujutsu Kaisen", gender: "male", imageUrl: "https://static.wikia.nocookie.net/jujutsu-kaisen/images/b/b0/Kento_Nanami_%28Anime%29.png/revision/latest/scale-to-width-down/350?cb=20240618014214", ageNote: "Adult (28)" },
 
   // ── ONE PUNCH MAN EXPANSION (+2) ─────────────────────────────────────────
   { name: "Saitama", universe: "One Punch Man", gender: "male", imageUrl: "https://static.wikia.nocookie.net/onepunchman/images/f/ff/Saitama_Manga_Profile.png/revision/latest/scale-to-width-down/426?cb=20220825051134", ageNote: "Adult (25)" },
@@ -503,7 +503,7 @@ const characters = [
   { name: "Edora", universe: "Second Life Ranker", gender: "female", imageUrl: "https://static.wikia.nocookie.net/second-life-ranker/images/b/b6/Edora-0.jpg/revision/latest/scale-to-width-down/400?cb=20201020091912", ageNote: "Adult" },
   { name: "Shanon", universe: "Second Life Ranker", gender: "male", imageUrl: "https://static.wikia.nocookie.net/second-life-ranker/images/0/08/Shanon_Chapter_70.jpg/revision/latest/scale-to-width-down/400?cb=20210430070919", ageNote: "Adult" },
   { name: "Cha Jeong-woo", universe: "Second Life Ranker", gender: "male", imageUrl: "https://static.wikia.nocookie.net/second-life-ranker/images/a/af/Cha_Jeong-Woo.png/revision/latest/scale-to-width-down/441?cb=20210903214706", ageNote: "Adult" },
-  { name: "Summer Queen", universe: "Second Life Ranker", gender: "female", imageUrl: "https://static.wikia.nocookie.net/second-life-ranker/images/d/d6/Summer_Queen_-_Dragon_Form_-_Chapter_83.jpg/revision/latest/scale-to-width-down/257?cb=20210503150656", ageNote: "Adult (ancient)" },
+  { name: "Summer Queen", universe: "Second Life Ranker", gender: "female", imageUrl: "https://static.wikia.nocookie.net/second-life-ranker/images/d/d6/Summer_Queen_-_Dragon_Form_-_Chapter_83.jpg/revision/latest/scale-to-width-down/350?cb=20210503150656", ageNote: "Adult (ancient)" },
   { name: "Galliard", universe: "Second Life Ranker", gender: "male", imageUrl: "https://static.wikia.nocookie.net/second-life-ranker/images/e/e3/Ch.129_-Galliard.jpg/revision/latest/scale-to-width-down/398?cb=20240728063659", ageNote: "Adult" },
   { name: "Ananta", universe: "Second Life Ranker", gender: "female", imageUrl: "https://static.wikia.nocookie.net/second-life-ranker/images/5/52/Chapter_136_-_Ananta.jpg/revision/latest/scale-to-width-down/352?cb=20221009061145", ageNote: "Adult (ancient)" },
 
