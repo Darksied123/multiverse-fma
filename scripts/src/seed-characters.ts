@@ -348,7 +348,7 @@ const characters = [
 
   // ── SMITE (12) ────────────────────────────────────────────────────────────
   { name: "Aphrodite", universe: "Smite", gender: "female", imageUrl: FW("smite_gamepedia", "f/fc/T_Aphrodite_Default_Card.png/revision/latest/scale-to-width-down/379?cb=20141115065249"), ageNote: "Adult goddess" },
-  { name: "Freya", universe: "Smite", gender: "female", imageUrl: "https://static.wikia.nocookie.net/dungeon-ni-deai-o-motomeru/images/f/f4/Freya_Anime_3.png/revision/latest/scale-to-width-down/500?cb=20240523192009", ageNote: "Adult goddess" },
+  { name: "Freya", universe: "Smite", gender: "female", imageUrl: "https://static.wikia.nocookie.net/smite_gamepedia/images/c/c9/SkinArt_Freya_Default_V2.jpg/revision/latest/scale-to-width-down/379?cb=20160713210036", ageNote: "Adult goddess" },
   { name: "Nox", universe: "Smite", gender: "female", imageUrl: FW("smite_gamepedia", "1/17/T_Nox_Default_Card.png/revision/latest/scale-to-width-down/379?cb=20141025053432"), ageNote: "Adult goddess" },
   { name: "Serqet", universe: "Smite", gender: "female", imageUrl: FW("smite_gamepedia", "9/91/T_Serqet_Default_Card.png/revision/latest/scale-to-width-down/379?cb=20140712121140"), ageNote: "Adult goddess" },
   { name: "Bellona (Smite)", universe: "Smite", gender: "female", imageUrl: FW("smite_gamepedia", "2/2c/T_Bellona_Default_Card.png/revision/latest/scale-to-width-down/379?cb=20150219020936"), ageNote: "Adult goddess" },
@@ -507,10 +507,12 @@ const characters = [
   { name: "Galliard", universe: "Second Life Ranker", gender: "male", imageUrl: "https://static.wikia.nocookie.net/second-life-ranker/images/e/e3/Ch.129_-Galliard.jpg/revision/latest/scale-to-width-down/398?cb=20240728063659", ageNote: "Adult" },
   { name: "Ananta", universe: "Second Life Ranker", gender: "female", imageUrl: "https://static.wikia.nocookie.net/second-life-ranker/images/5/52/Chapter_136_-_Ananta.jpg/revision/latest/scale-to-width-down/352?cb=20221009061145", ageNote: "Adult (ancient)" },
 
-  // ── RETURN OF THE MAD DEMON (2) ──────────────────────────────────────────
-  // Image source: MyAnimeList CDN (no Fandom wiki exists for this manhwa)
-  { name: "Jaha Lee", universe: "Return of the Mad Demon", gender: "female", imageUrl: "https://cdn.myanimelist.net/images/characters/12/480879.jpg", ageNote: "Adult" },
-  { name: "Cha Seongtae", universe: "Return of the Mad Demon", gender: "male", imageUrl: "https://cdn.myanimelist.net/images/characters/12/611933.jpg", ageNote: "Adult" },
+  // ── RETURN OF THE MAD DEMON (4) ──────────────────────────────────────────
+  // Image source: Anime-Planet CDN (Fandom wiki sparse; AP CDN verified 200)
+  { name: "Jaha Lee", universe: "Return of the Mad Demon", gender: "female", imageUrl: "https://cdn.anime-planet.com/characters/primary/jaha-lee-1-285x399.webp?t=1723166394", ageNote: "Adult" },
+  { name: "Cha Seongtae", universe: "Return of the Mad Demon", gender: "male", imageUrl: "https://cdn.anime-planet.com/characters/primary/seongtae-cha-1-285x399.webp?t=1698600110", ageNote: "Adult" },
+  { name: "Hongshin", universe: "Return of the Mad Demon", gender: "female", imageUrl: "https://cdn.anime-planet.com/characters/primary/hongshin-1-285x399.webp?t=1722655502", ageNote: "Adult" },
+  { name: "Geumhae", universe: "Return of the Mad Demon", gender: "female", imageUrl: "https://cdn.anime-planet.com/characters/primary/geumhae-1-285x400.webp?t=1722834037", ageNote: "Adult" },
 
   // ═══════════════════════════════════════════════════════════════════════════
   // VIDEO GAMES
@@ -528,10 +530,11 @@ const characters = [
   { name: "Lady Dimitrescu", universe: "Resident Evil", gender: "female", imageUrl: "https://static.wikia.nocookie.net/residentevil/images/f/f8/ADimitrescuFull.png/revision/latest/scale-to-width-down/400?cb=20210523144240", ageNote: "Adult" },
   { name: "Claire Redfield", universe: "Resident Evil", gender: "female", imageUrl: "https://static.wikia.nocookie.net/residentevil/images/9/9e/Claire_-_Death_Island_Render.png/revision/latest/scale-to-width-down/400?cb=20230703033607", ageNote: "Adult (19+)" },
 
-  // ── STREET FIGHTER (6) ─────────────────────────────────────────────────────
+  // ── STREET FIGHTER (7) ─────────────────────────────────────────────────────
   { name: "Chun-Li", universe: "Street Fighter", gender: "female", imageUrl: "https://static.wikia.nocookie.net/streetfighter/images/5/5b/Chun-Li_SF6_Render.png/revision/latest/scale-to-width-down/400?cb=20220603005535", ageNote: "Adult" },
   { name: "Cammy White", universe: "Street Fighter", gender: "female", imageUrl: "https://static.wikia.nocookie.net/streetfighter/images/9/9a/SF6_Cammy.png/revision/latest/scale-to-width-down/400?cb=20220610000000", ageNote: "Adult (22)" },
   { name: "Juri Han", universe: "Street Fighter", gender: "female", imageUrl: "https://static.wikia.nocookie.net/streetfighter/images/d/dc/Sf6-juri.png/revision/latest/scale-to-width-down/400?cb=20220808055222", ageNote: "Adult" },
+  { name: "Laura Matsuda", universe: "Street Fighter", gender: "female", imageUrl: "https://static.wikia.nocookie.net/streetfighter/images/9/9e/Lauraclean.png", ageNote: "Adult" },
   { name: "Ryu", universe: "Street Fighter", gender: "male", imageUrl: "https://static.wikia.nocookie.net/streetfighter/images/3/3a/Sf6-ryu.png/revision/latest/scale-to-width-down/400?cb=20220603010542", ageNote: "Adult" },
   { name: "Ken Masters", universe: "Street Fighter", gender: "male", imageUrl: "https://static.wikia.nocookie.net/streetfighter/images/1/14/Ken_SF6_Render.png/revision/latest/scale-to-width-down/400?cb=20220915164810", ageNote: "Adult" },
   { name: "Karin Kanzuki", universe: "Street Fighter", gender: "female", imageUrl: "https://static.wikia.nocookie.net/streetfighter/images/6/65/Karin_Kanzuki_%28SFV%29.png/revision/latest/scale-to-width-down/400?cb=20160321000000", ageNote: "Adult (18)" },

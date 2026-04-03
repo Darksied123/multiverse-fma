@@ -16,7 +16,7 @@ The leaderboard tracks the most married, most dated, and most avoided characters
 
 ## Characters
 
-**430 characters** across **61 universes**, all strictly 18+ adults:
+**433 characters** across **61 universes**, all strictly 18+ adults:
 
 | Category | Universes |
 |---|---|
@@ -28,7 +28,7 @@ The leaderboard tracks the most married, most dated, and most avoided characters
 | Cartoons | Avatar: Legend of Korra, Arcane, Castlevania |
 | TV / Books | Game of Thrones, The Witcher |
 
-**430 of 430** characters use real sourced images (Fandom wiki CDN, game CDNs). Zero placeholders.
+**433 of 433** characters use real sourced images (Fandom wiki CDN, game CDNs). Zero placeholders.
 
 ---
 
@@ -60,7 +60,7 @@ multiverse-fma/
 │   └── api-zod/             # Generated Zod schemas
 ├── scripts/
 │   └── src/
-│       └── seed-characters.ts   # Seeds all 430 characters
+│       └── seed-characters.ts   # Seeds all 433 characters
 ├── pnpm-workspace.yaml
 └── replit.md
 ```
