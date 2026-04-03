@@ -2,31 +2,29 @@
 
 An Electron desktop wrapper for Multiverse FMA that creates a native .exe / .dmg / .AppImage.
 
+The live app URL is pre-configured to `https://multiverse-fma.replit.app/`.  
+Icons are already included in `build/icon.png`, `build/icon.ico`, and `build/icon.icns`.
+
 ## Quick Start
 
-### 1. Configure the App URL
-
-Edit `main.js` and set `APP_URL` to your deployed app URL:
-
-```js
-const APP_URL = "https://your-deployed-app.replit.app/";
-```
-
-### 2. Install Dependencies
+### 1. Install Dependencies
 
 ```bash
+cd electron-app
 npm install
 ```
 
-### 3. Run in Development
+> Requires Node.js 18+.
+
+### 2. Run in Development
 
 ```bash
 npm start
 ```
 
-### 4. Build the Installer
+### 3. Build the Installer
 
-**Windows (.exe installer):**
+**Windows (.exe installer via NSIS):**
 ```bash
 npm run dist:win
 ```
@@ -41,22 +39,40 @@ npm run dist:mac
 npm run dist:linux
 ```
 
-**All platforms:**
+**All platforms at once:**
 ```bash
 npm run dist
 ```
 
-The installer is generated in the `dist/` folder.
+Installers are output to the `dist/` folder.
 
-## Icons (Optional)
+## Changing the App URL
 
-Place icon files in the `build/` folder:
-- `build/icon.ico` — Windows (256x256)
-- `build/icon.icns` — macOS
-- `build/icon.png` — Linux (512x512)
+The desktop app loads the web app from its deployed URL. To point it at a different deployment:
+
+1. Edit `main.js` and change:
+   ```js
+   const APP_URL = process.env.APP_URL || "https://multiverse-fma.replit.app/";
+   ```
+2. Or set the `APP_URL` environment variable before running.
+
+## Icons
+
+Pre-built icons are in `build/`:
+- `build/icon.ico` — Windows (multi-size: 16, 32, 48, 64, 128, 256 px)
+- `build/icon.icns` — macOS (all standard sizes up to 1024×1024)
+- `build/icon.png` — Linux / fallback (512×512)
+
+All icons were generated from `artifacts/multiverse-fma/public/images/logo-mark.png`.
+
+## Features
+
+- **Native menus** — Game, View, and fullscreen controls
+- **Zoom controls** — Ctrl/Cmd + / − / 0 to adjust zoom
+- **Offline detection** — Shows a retry page if the server is unreachable
+- **Cross-platform** — Windows (NSIS), macOS (DMG), Linux (AppImage)
 
 ## Notes
 
-- Requires internet connection (the app loads from the deployed URL)
-- Windows: Requires Node.js 18+ and wine for cross-platform builds
-- The app URL must be updated to your deployed Replit URL after publishing
+- Requires an internet connection (the app loads from the deployed URL).
+- Cross-platform builds from Windows to macOS/Linux may require additional tooling (e.g. `wine` for Windows builds on Linux).

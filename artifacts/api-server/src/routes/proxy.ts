@@ -36,6 +36,10 @@ const ALLOWED_HOSTS = [
   "d1u1mce87gyfbn.cloudfront.net",
   // Marvel Comics i.annihil.us — official CDN for Marvel character portrait images
   "i.annihil.us",
+  // MyAnimeList CDN — character images for manhwa not on Fandom
+  "cdn.myanimelist.net",
+  // Anime-Planet CDN — character images (used for Return of the Mad Demon)
+  "cdn.anime-planet.com",
 ];
 
 router.get("/proxy/image", (req, res) => {
