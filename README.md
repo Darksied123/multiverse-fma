@@ -72,35 +72,78 @@ multiverse-fma/
 
 ### Prerequisites
 
-- Node.js 20+
-- pnpm (`npm install -g pnpm`)
-- PostgreSQL database
+- **Node.js 24+** (run `node --version` to check)
+- **pnpm** — `npm install -g pnpm`
+- **PostgreSQL** database (local or remote)
 
-### Setup
+### 1. Install dependencies
 
 ```bash
-# Install dependencies
 pnpm install
+```
 
-# Set your database URL
-export DATABASE_URL="postgresql://user:password@localhost:5432/multiverse_fma"
+### 2. Configure environment variables
 
-# Push the schema to your database
+Create a `.env` file in the project root (or export these in your shell):
+
+```bash
+# Required — PostgreSQL connection string
+DATABASE_URL="postgresql://user:password@localhost:5432/multiverse_fma"
+
+# Required — port for the API server
+PORT=8080
+
+# Required for the frontend — URL of the running API server
+API_URL="http://localhost:8080"
+```
+
+### 3. Set up the database
+
+```bash
+# Push the Drizzle schema to your database
 pnpm --filter @workspace/db run push
 
-# Seed the characters
+# Seed all 500 characters
 pnpm --filter @workspace/scripts run seed-characters
+
+# (Optional) Verify all 500 image URLs return HTTP 200
+pnpm --filter @workspace/scripts run check-images
 ```
 
-### Start the servers
+### 4. Start both servers
+
+Run each in a separate terminal:
 
 ```bash
-# API server (port 8080 by default, or set PORT env var)
+# Terminal 1 — API server (listens on $PORT, default 8080)
 pnpm --filter @workspace/api-server run dev
 
-# Frontend (set API_URL to point to your API server)
+# Terminal 2 — Frontend (Vite dev server, reads $API_URL)
 pnpm --filter @workspace/multiverse-fma run dev
 ```
+
+Then open the URL printed by Vite (usually `http://localhost:5173`).
+
+---
+
+## Desktop App (Electron)
+
+The `electron-app/` directory wraps the hosted app as a native desktop app.
+
+```bash
+cd electron-app
+npm install
+
+# Run in development (opens the live Replit-hosted app)
+npm start
+
+# Build a distributable installer
+npm run dist:win    # Windows (.exe via NSIS)
+npm run dist:mac    # macOS (.dmg)
+npm run dist:linux  # Linux (.AppImage)
+```
+
+> Requires Node.js 18+. Icons are already included in `electron-app/build/`.
 
 ---
 
@@ -161,14 +204,6 @@ FW("kimetsu-no-yaiba", "path/to/image.png")  // Fandom wiki
 ```
 
 To reseed: `pnpm --filter @workspace/scripts run seed-characters`
-
----
-
-## Desktop App (Electron)
-
-The `electron-app/` directory contains a cross-platform desktop wrapper.
-
-See `electron-app/README.md` for build instructions.
 
 ---
 
