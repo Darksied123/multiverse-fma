@@ -1,6 +1,6 @@
 # Multiverse FMA
 
-A full-stack web game where you assign **Marry**, **Date**, or **Avoid** to three characters per round drawn from 61 universes — Marvel, DC, anime, manga, manhwa, video games, cartoons, and more.
+A full-stack web game where you assign **Marry**, **Date**, or **Avoid** to three characters per round drawn from 78 universes — Marvel, DC, anime, manga, manhwa, video games, cartoons, and more.
 
 ![Multiverse FMA](artifacts/multiverse-fma/public/opengraph.jpg)
 
@@ -16,7 +16,7 @@ The leaderboard tracks the most married, most dated, and most avoided characters
 
 ## Characters
 
-**433 characters** across **61 universes**, all strictly 18+ adults:
+**500 characters** across **78 universes**, all strictly 18+ adults:
 
 | Category | Universes |
 |---|---|
@@ -28,7 +28,7 @@ The leaderboard tracks the most married, most dated, and most avoided characters
 | Cartoons | Avatar: Legend of Korra, Arcane, Castlevania |
 | TV / Books | Game of Thrones, The Witcher |
 
-**433 of 433** characters use real sourced images (Fandom wiki CDN, game CDNs). Zero placeholders.
+**500 of 500** characters use real sourced images (Fandom wiki CDN, game CDNs). Zero placeholders.
 
 ---
 
@@ -60,7 +60,7 @@ multiverse-fma/
 │   └── api-zod/             # Generated Zod schemas
 ├── scripts/
 │   └── src/
-│       └── seed-characters.ts   # Seeds all 433 characters
+│       └── seed-characters.ts   # Seeds all 500 characters
 ├── pnpm-workspace.yaml
 └── replit.md
 ```
