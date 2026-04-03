@@ -92,7 +92,7 @@ router.get("/proxy/image", (req, res) => {
       }
 
       if (!proxyRes.statusCode || proxyRes.statusCode >= 400) {
-        res.status(proxyRes.statusCode || 500).end();
+        res.status(proxyRes.statusCode || 500).json({ error: "Upstream returned error", status: proxyRes.statusCode });
         return;
       }
 
@@ -106,14 +106,14 @@ router.get("/proxy/image", (req, res) => {
 
   proxyReq.on("error", () => {
     if (!res.headersSent) {
-      res.status(502).end();
+      res.status(502).json({ error: "Upstream request failed" });
     }
   });
 
   proxyReq.on("timeout", () => {
     proxyReq.destroy();
     if (!res.headersSent) {
-      res.status(504).end();
+      res.status(504).json({ error: "Upstream request timed out" });
     }
   });
 });
