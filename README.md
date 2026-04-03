@@ -1,6 +1,6 @@
 # Multiverse FMA
 
-A full-stack web game where you assign **Marry**, **Date**, or **Avoid** to three characters per round drawn from 60 universes — Marvel, DC, anime, manga, manhwa, video games, cartoons, and more.
+A full-stack web game where you assign **Marry**, **Date**, or **Avoid** to three characters per round drawn from 61 universes — Marvel, DC, anime, manga, manhwa, video games, cartoons, and more.
 
 ![Multiverse FMA](artifacts/multiverse-fma/public/opengraph.jpg)
 
@@ -16,20 +16,19 @@ The leaderboard tracks the most married, most dated, and most avoided characters
 
 ## Characters
 
-**425 characters** across **60 universes**, all strictly 18+ adults:
+**430 characters** across **61 universes**, all strictly 18+ adults:
 
 | Category | Universes |
 |---|---|
 | Western Comics | Marvel, DC, Invincible, The Boys |
-| Anime | One Piece, Attack on Titan, Naruto, Dragon Ball, My Hero Academia, Bleach, Fairy Tail, High School DxD, Jujutsu Kaisen, One Punch Man, Akame ga Kill, Demon Slayer, Chainsaw Man, Spy x Family, Sword Art Online, Black Clover, Tower of God |
+| Anime | One Piece, Attack on Titan, Naruto, Dragon Ball, My Hero Academia, Bleach, Fairy Tail, High School DxD, Jujutsu Kaisen, One Punch Man, Akame ga Kill, Demon Slayer, Chainsaw Man, Spy x Family, Sword Art Online, Black Clover, Tower of God, DanMachi |
 | Manga | Berserk, Fullmetal Alchemist, Tokyo Ghoul, Hunter x Hunter |
-| Manhwa | Omniscient Reader's Viewpoint, Second Life Ranker, Solo Leveling, Soul Land |
+| Manhwa | Omniscient Reader, Second Life Ranker, Solo Leveling, Soul Land, Return of the Mad Demon, Leveling with the Gods, The Beginning After the End |
 | Video Games | NieR: Automata, Resident Evil, Street Fighter, Devil May Cry, Tekken, League of Legends, Overwatch, Smite, Fire Emblem, Persona 5, Final Fantasy, Fate, Genshin Impact, Honkai Impact 3rd, Honkai: Star Rail, Zenless Zone Zero, Wuthering Waves, Arknights, NIKKE, Girls Frontline, Azur Lane, Epic Seven, AFK Journey |
-| JRPGs | Persona 5, Final Fantasy, Fate/Stay Night |
 | Cartoons | Avatar: Legend of Korra, Arcane, Castlevania |
 | TV / Books | Game of Thrones, The Witcher |
 
-**425 of 425** characters use real sourced images (Fandom wiki CDN, game CDNs). Zero placeholders.
+**430 of 430** characters use real sourced images (Fandom wiki CDN, game CDNs). Zero placeholders.
 
 ---
 
@@ -61,7 +60,7 @@ multiverse-fma/
 │   └── api-zod/             # Generated Zod schemas
 ├── scripts/
 │   └── src/
-│       └── seed-characters.ts   # Seeds all 425 characters
+│       └── seed-characters.ts   # Seeds all 430 characters
 ├── pnpm-workspace.yaml
 └── replit.md
 ```
@@ -113,7 +112,7 @@ All routes are mounted at `/api`:
 | `GET` | `/api/healthz` | Health check |
 | `GET` | `/api/characters` | Get 3 random characters for a round |
 | `GET` | `/api/characters/all` | Get all characters |
-| `POST` | `/api/stats/submit` | Submit votes `{ roundId, votes: [{characterId, choice}] }` |
+| `POST` | `/api/stats/submit` | Submit round choices `{ choices: [{characterId, choice}] }` — server generates `roundId` |
 | `GET` | `/api/stats/global` | Global leaderboard (top married/dated/avoided) |
 | `GET` | `/api/stats/character/:characterId` | Stats for a specific character |
 | `GET` | `/api/proxy/image?url=` | Proxy for external CDN images |

@@ -39,10 +39,10 @@ artifacts-monorepo/
 
 ## Multiverse FMA Game
 
-A full-stack web game where users assign Marry/Date/Avoid to 3 randomly selected characters per round across 60 universes.
+A full-stack web game where users assign Marry/Date/Avoid to 3 randomly selected characters per round across 61 universes.
 
 ### Features
-- **425 characters** across **60 universes** — all with real images, 0 placeholders
+- **430 characters** across **61 universes** — all with real images, 0 placeholders
 - Dark comic-book neon aesthetic (magenta, yellow, cyan accents)
 - Global stat tracking and leaderboard with 5-minute caching
 - Image proxy for external CDN images (Fandom wikis, game CDNs)
@@ -50,8 +50,14 @@ A full-stack web game where users assign Marry/Date/Avoid to 3 randomly selected
 - **i18n**: EN / 日本語 / ES (react-i18next, browser language detection)
 - **Electron desktop app** (`electron-app/`) — wraps deployed URL, buildable to .exe/.dmg
 
-### Universes (44)
-Marvel, DC, One Piece, Attack on Titan, Naruto, Dragon Ball, My Hero Academia, Bleach, Fairy Tail, High School DxD, Jujutsu Kaisen, One Punch Man, Akame ga Kill, Demon Slayer, Chainsaw Man, Spy x Family, Sword Art Online, Black Clover, Tower of God, Persona 5, Final Fantasy, Fate, Genshin Impact, Honkai Impact 3rd, Honkai: Star Rail, Azur Lane, Girls Frontline, Epic Seven, Solo Leveling, Game of Thrones, The Witcher, Soul Land, Fire Emblem, League of Legends, Overwatch, Smite, Arknights, Zenless Zone Zero, NIKKE, AFK Journey, Wuthering Waves, DanMachi, Leveling with the Gods, The Beginning After the End
+### Universes (61)
+**Western Comics:** Marvel, DC, Invincible, The Boys
+**Anime:** One Piece, Attack on Titan, Naruto, Dragon Ball, My Hero Academia, Bleach, Fairy Tail, High School DxD, Jujutsu Kaisen, One Punch Man, Akame ga Kill, Demon Slayer, Chainsaw Man, Spy x Family, Sword Art Online, Black Clover, Tower of God, DanMachi
+**Manga:** Berserk, Fullmetal Alchemist, Tokyo Ghoul, Hunter x Hunter
+**Manhwa:** Omniscient Reader, Second Life Ranker, Solo Leveling, Soul Land, Return of the Mad Demon, Leveling with the Gods, The Beginning After the End
+**Video Games:** NieR: Automata, Resident Evil, Street Fighter, Devil May Cry, Tekken, League of Legends, Overwatch, Smite, Fire Emblem, Persona 5, Final Fantasy, Fate, Genshin Impact, Honkai Impact 3rd, Honkai: Star Rail, Zenless Zone Zero, Wuthering Waves, Arknights, NIKKE, Girls Frontline, Azur Lane, Epic Seven, AFK Journey
+**Cartoons:** Avatar: Legend of Korra, Arcane, Castlevania
+**TV / Books:** Game of Thrones, The Witcher
 
 ### Important Notes
 - **NEVER create requirements.txt** — Replit treats it as Python and errors on `pip install`
@@ -145,4 +151,4 @@ Generated React Query hooks and fetch client from the OpenAPI spec.
 ### `scripts` (`@workspace/scripts`)
 
 Utility scripts package. Run via `pnpm --filter @workspace/scripts run <script>`.
-- `seed-characters` — Seeds 305 characters across 41 universes with real image URLs
+- `seed-characters` — Seeds 430 characters across 61 universes with real image URLs
