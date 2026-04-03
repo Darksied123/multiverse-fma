@@ -622,6 +622,110 @@ const characters = [
   { name: "Leorio Paradinight", universe: "Hunter x Hunter", gender: "male", imageUrl: "https://static.wikia.nocookie.net/hunterxhunter/images/7/73/HxH2011_EP145_Leorio_Portrait.png/revision/latest/scale-to-width-down/400?cb=20230902193715", ageNote: "Adult (19+)" },
   { name: "Biscuit Krueger", universe: "Hunter x Hunter", gender: "female", imageUrl: "https://static.wikia.nocookie.net/hunterxhunter/images/c/cd/Biscuit_Krueger_CA_Portrait.png/revision/latest/scale-to-width-down/400?cb=20190630140152", ageNote: "Adult (ancient)" },
 
+  // ═══════════════════════════════════════════════════════════════════════════
+  // MANHWA / MANGA / LIGHT NOVEL (NEW SERIES)
+  // ═══════════════════════════════════════════════════════════════════════════
+
+  // ── THE KNIGHT KING WHO RETURNED WITH A GOD (4) ───────────────────────────
+  { name: "Leon Dragonia Lionheart", universe: "The Knight King Who Returned with a God", gender: "male", imageUrl: "https://static.wikia.nocookie.net/scaling-and-info/images/d/d3/Leon_Lionheart.jpg/revision/latest/scale-to-width-down/400?cb=20230101000000", ageNote: "Adult" },
+  { name: "Yapi (Knight King)", universe: "The Knight King Who Returned with a God", gender: "male", imageUrl: "https://static.wikia.nocookie.net/scaling-and-info/images/b/bc/Park_Jinsong_Student_outfit.jpg/revision/latest/scale-to-width-down/400?cb=20230101000000", ageNote: "Adult" },
+  { name: "Beatrice (Knight King)", universe: "The Knight King Who Returned with a God", gender: "female", imageUrl: "https://static.wikia.nocookie.net/scaling-and-info/images/a/a2/Auren_the_Absolute.jpg/revision/latest/scale-to-width-down/400?cb=20230101000000", ageNote: "Adult" },
+  { name: "Hari Han", universe: "The Knight King Who Returned with a God", gender: "female", imageUrl: "https://static.wikia.nocookie.net/scaling-and-info/images/5/5f/STS.webp/revision/latest/scale-to-width-down/400?cb=20230101000000", ageNote: "Adult" },
+
+  // ── STAR-EMBRACING SWORDMASTER (4) ────────────────────────────────────────
+  { name: "Vlad (Star-Embracing)", universe: "Star-Embracing Swordmaster", gender: "male", imageUrl: "https://static.wikia.nocookie.net/starembracing-swordmaster/images/9/9f/Screenshot_%2820474%29.png/revision/latest/scale-to-width-down/400?cb=20240517000000", ageNote: "Adult" },
+  { name: "Zemina", universe: "Star-Embracing Swordmaster", gender: "female", imageUrl: "https://static.wikia.nocookie.net/starembracing-swordmaster/images/e/e6/2026-02-06_17-01-26.png/revision/latest/scale-to-width-down/400?cb=20260206000000", ageNote: "Adult" },
+  { name: "Mircea Dragulia", universe: "Star-Embracing Swordmaster", gender: "female", imageUrl: "https://static.wikia.nocookie.net/starembracing-swordmaster/images/1/12/2026-02-06_17-41-33.png/revision/latest/scale-to-width-down/400?cb=20260206000000", ageNote: "Adult" },
+  { name: "Joseph Bayezid", universe: "Star-Embracing Swordmaster", gender: "male", imageUrl: "https://static.wikia.nocookie.net/starembracing-swordmaster/images/e/e4/2026-02-06_21-00-16.png/revision/latest/scale-to-width-down/400?cb=20260206000000", ageNote: "Adult" },
+
+  // ── PERFECT HALF (3) ──────────────────────────────────────────────────────
+  { name: "Naru (Perfect Half)", universe: "Perfect Half", gender: "female", imageUrl: "https://static.wikia.nocookie.net/character-stats-and-profiles/images/5/52/Sahur2.webp/revision/latest/scale-to-width-down/400?cb=20230101000000", ageNote: "Adult" },
+  { name: "Seira (Perfect Half)", universe: "Perfect Half", gender: "female", imageUrl: "https://static.wikia.nocookie.net/asurascans/images/f/f9/E974143edae6bddebedd0081f9ce8c55.jpg/revision/latest/scale-to-width-down/400?cb=20230101000000", ageNote: "Adult" },
+  { name: "Heyram (Perfect Half)", universe: "Perfect Half", gender: "male", imageUrl: "https://static.wikia.nocookie.net/asurascans/images/2/2d/Ye_Tian_Profile_Picture.png/revision/latest/scale-to-width-down/400?cb=20230101000000", ageNote: "Adult" },
+
+  // ── PLAYER WHO RETURNED 10,000 YEARS LATER (4) ────────────────────────────
+  { name: "Kang Oh-Kang", universe: "Player Who Returned 10,000 Years Later", gender: "male", imageUrl: "https://static.wikia.nocookie.net/player-who-returned-10000-years-later/images/3/3d/06-348.jpeg/revision/latest/scale-to-width-down/400?cb=20230101000000", ageNote: "Adult" },
+  { name: "Han Seol-Ah", universe: "Player Who Returned 10,000 Years Later", gender: "female", imageUrl: "https://static.wikia.nocookie.net/player-who-returned-10000-years-later/images/f/f0/Han_Seol-Ah.PNG/revision/latest/scale-to-width-down/400?cb=20230101000000", ageNote: "Adult" },
+  { name: "Lilith (Player 10000)", universe: "Player Who Returned 10,000 Years Later", gender: "female", imageUrl: "https://static.wikia.nocookie.net/player-who-returned-10000-years-later/images/6/6b/Lilith.PNG/revision/latest/scale-to-width-down/400?cb=20230101000000", ageNote: "Adult" },
+  { name: "Yeong-Ju", universe: "Player Who Returned 10,000 Years Later", gender: "female", imageUrl: "https://static.wikia.nocookie.net/player-who-returned-10000-years-later/images/3/34/Yeong-ju.png/revision/latest/scale-to-width-down/400?cb=20230101000000", ageNote: "Adult" },
+
+  // ── THE PLAYER THAT CAN'T LEVEL UP (4) ────────────────────────────────────
+  { name: "Kim Gi-Gyu", universe: "The Player That Can't Level Up", gender: "male", imageUrl: "https://static.wikia.nocookie.net/the-player-who-cant-level-up/images/d/d7/1_-_Gigyu.jpg/revision/latest/scale-to-width-down/400?cb=20230101000000", ageNote: "Adult" },
+  { name: "Demon King (Player)", universe: "The Player That Can't Level Up", gender: "female", imageUrl: "https://static.wikia.nocookie.net/the-player-who-cant-level-up/images/1/17/14_-_Demon_King.png/revision/latest/scale-to-width-down/400?cb=20230101000000", ageNote: "Adult" },
+  { name: "Lou (Player)", universe: "The Player That Can't Level Up", gender: "female", imageUrl: "https://static.wikia.nocookie.net/the-player-who-cant-level-up/images/a/ab/4_-_Lou.jpg/revision/latest/scale-to-width-down/400?cb=20230101000000", ageNote: "Adult" },
+  { name: "Elle (Player)", universe: "The Player That Can't Level Up", gender: "female", imageUrl: "https://static.wikia.nocookie.net/the-player-who-cant-level-up/images/f/f8/8_-_ElleBubble.jpg/revision/latest/scale-to-width-down/400?cb=20230101000000", ageNote: "Adult" },
+
+  // ── SWORDMASTER'S YOUNGEST SON (4) ────────────────────────────────────────
+  { name: "Jin Runcandel", universe: "Swordmaster's Youngest Son", gender: "male", imageUrl: "https://static.wikia.nocookie.net/swordmasters-youngest-son/images/8/82/Jin_Runcandel.png/revision/latest/scale-to-width-down/400?cb=20220101000000", ageNote: "Adult" },
+  { name: "Valeria Hister", universe: "Swordmaster's Youngest Son", gender: "female", imageUrl: "https://static.wikia.nocookie.net/swordmasters-youngest-son/images/0/0c/Valeria_hister.png/revision/latest/scale-to-width-down/400?cb=20220101000000", ageNote: "Adult" },
+  { name: "Rosa Runcandel", universe: "Swordmaster's Youngest Son", gender: "female", imageUrl: "https://static.wikia.nocookie.net/swordmasters-youngest-son/images/8/86/Rosa.png/revision/latest/scale-to-width-down/400?cb=20220101000000", ageNote: "Adult" },
+  { name: "Chiron (Swordmaster)", universe: "Swordmaster's Youngest Son", gender: "male", imageUrl: "https://static.wikia.nocookie.net/swordmasters-youngest-son/images/0/02/Chiron.png/revision/latest/scale-to-width-down/400?cb=20220101000000", ageNote: "Adult" },
+
+  // ── SOLO LEVELING: RAGNAROK (4) ───────────────────────────────────────────
+  { name: "Suho Sung", universe: "Solo Leveling: Ragnarok", gender: "male", imageUrl: "https://static.wikia.nocookie.net/solo-leveling/images/b/ba/Suho6.jpg/revision/latest/scale-to-width-down/400?cb=20230101000000", ageNote: "Adult" },
+  { name: "Baek Miho", universe: "Solo Leveling: Ragnarok", gender: "female", imageUrl: "https://static.wikia.nocookie.net/solo-leveling-ragnarok/images/3/35/Baek_Miho.jpg/revision/latest/scale-to-width-down/400?cb=20230101000000", ageNote: "Adult" },
+  { name: "Sirka (Ragnarok)", universe: "Solo Leveling: Ragnarok", gender: "female", imageUrl: "https://static.wikia.nocookie.net/solo-leveling-ragnarok/images/e/eb/Sirka.jpg/revision/latest/scale-to-width-down/400?cb=20230101000000", ageNote: "Adult" },
+  { name: "Esil Radiru (Ragnarok)", universe: "Solo Leveling: Ragnarok", gender: "female", imageUrl: "https://static.wikia.nocookie.net/solo-leveling-ragnarok/images/0/0b/Esil_Radiru_1.jpg/revision/latest/scale-to-width-down/400?cb=20230101000000", ageNote: "Adult" },
+
+  // ── ACADEMY'S GENIUS SWORDSMAN (4) ────────────────────────────────────────
+  { name: "Ronan Ile", universe: "Academy's Genius Swordsman", gender: "male", imageUrl: "https://static.wikia.nocookie.net/academys-genius-swordmaster/images/5/55/Ronan_Manhwa.jpg/revision/latest/scale-to-width-down/400?cb=20240101000000", ageNote: "Adult" },
+  { name: "Adeshan", universe: "Academy's Genius Swordsman", gender: "female", imageUrl: "https://static.wikia.nocookie.net/academys-genius-swordmaster/images/7/74/Adeshan_Manhwa.jpg/revision/latest/scale-to-width-down/400?cb=20231205000906", ageNote: "Adult" },
+  { name: "Navirose", universe: "Academy's Genius Swordsman", gender: "female", imageUrl: "https://static.wikia.nocookie.net/academys-genius-swordmaster/images/f/f8/Navirose_Manhwa.jpg/revision/latest/scale-to-width-down/400?cb=20240101000000", ageNote: "Adult" },
+  { name: "Aselle", universe: "Academy's Genius Swordsman", gender: "female", imageUrl: "https://static.wikia.nocookie.net/academys-genius-swordmaster/images/a/ab/Aselle_novel.png/revision/latest/scale-to-width-down/400?cb=20241030010755", ageNote: "Adult" },
+
+  // ── TRASH OF THE COUNT'S FAMILY (4) ───────────────────────────────────────
+  { name: "Cale Henituse", universe: "Trash of the Count's Family", gender: "male", imageUrl: "https://static.wikia.nocookie.net/trash-of-the-counts-family/images/6/6d/Cale-0.jpg/revision/latest/scale-to-width-down/400?cb=20220101000000", ageNote: "Adult (20)" },
+  { name: "Choi Han", universe: "Trash of the Count's Family", gender: "male", imageUrl: "https://static.wikia.nocookie.net/trash-of-the-counts-family/images/1/12/Choihan_manhwa_ch113.png/revision/latest/scale-to-width-down/400?cb=20220101000000", ageNote: "Adult" },
+  { name: "Rosalyn (TCF)", universe: "Trash of the Count's Family", gender: "female", imageUrl: "https://static.wikia.nocookie.net/trash-of-the-counts-family/images/b/ba/Rosalyn5.jpg/revision/latest/scale-to-width-down/400?cb=20220101000000", ageNote: "Adult" },
+  { name: "Alberu Crossman", universe: "Trash of the Count's Family", gender: "male", imageUrl: "https://static.wikia.nocookie.net/trash-of-the-counts-family/images/a/a2/Alberu_crossman_ch114.png/revision/latest/scale-to-width-down/400?cb=20220101000000", ageNote: "Adult" },
+
+  // ── MATO SEIHEI NO SLAVE (4) ──────────────────────────────────────────────
+  { name: "Yuuki Wakura", universe: "Mato Seihei no Slave", gender: "male", imageUrl: "https://static.wikia.nocookie.net/mato-seihei-no-slave/images/c/c8/Yuuki_Profile.png/revision/latest/scale-to-width-down/400?cb=20230526031611", ageNote: "Adult (18)" },
+  { name: "Kyouka Uzen", universe: "Mato Seihei no Slave", gender: "female", imageUrl: "https://static.wikia.nocookie.net/mato-seihei-no-slave/images/6/64/Kyouka_Uzen_anime_design.png/revision/latest/scale-to-width-down/400?cb=20221217124823", ageNote: "Adult (23)" },
+  { name: "Konomi Yotsushiro", universe: "Mato Seihei no Slave", gender: "female", imageUrl: "https://static.wikia.nocookie.net/mato-seihei-no-slave/images/c/cf/Konomi_Mug.png/revision/latest/scale-to-width-down/400?cb=20230526031628", ageNote: "Adult" },
+  { name: "Ren Yamashiro", universe: "Mato Seihei no Slave", gender: "female", imageUrl: "https://static.wikia.nocookie.net/mato-seihei-no-slave/images/9/9b/Ren_Yamashiro_S2.webp/revision/latest/scale-to-width-down/400?cb=20230526031700", ageNote: "Adult" },
+
+  // ── MILF HUNTING IN ANOTHER WORLD (4) ─────────────────────────────────────
+  { name: "Geum Taeyang", universe: "MILF Hunting in Another World", gender: "male", imageUrl: "https://static.wikia.nocookie.net/milf-hunting-another-world/images/6/67/GAJGChQPjb2TTIy28GAyiDqAJqHvwFXhfiRugcuSJrFWAsPcoXYmhWGCZH4GmGUTvwbEDYEjskc1KO0idTCI93ZGFqWeUaZBX13Vv8ZINTJE1yMtdGNy8e8kOIpaCWg4DHqXFzZUIrUtSmvAQpRm5FHkxhf3HVZN7fa6X-YVnf0.webp/revision/latest/scale-to-width-down/400?cb=20250419215235", ageNote: "Adult" },
+  { name: "Verdia Chartreuse", universe: "MILF Hunting in Another World", gender: "female", imageUrl: "https://static.wikia.nocookie.net/milf-hunting-another-world/images/6/61/Verdia-Chartreuse-Version-Webtoon.png/revision/latest/scale-to-width-down/400?cb=20250420071328", ageNote: "Adult" },
+  { name: "Belita Grace", universe: "MILF Hunting in Another World", gender: "female", imageUrl: "https://static.wikia.nocookie.net/milf-hunting-another-world/images/6/6c/Belita_Grace.jpg/revision/latest/scale-to-width-down/400?cb=20250730074952", ageNote: "Adult" },
+  { name: "Ariella Raven", universe: "MILF Hunting in Another World", gender: "female", imageUrl: "https://static.wikia.nocookie.net/milf-hunting-another-world/images/d/d4/Ariella-RavenVersion-Webtoon.png/revision/latest/scale-to-width-down/400?cb=20250420075104", ageNote: "Adult" },
+
+  // ── SHUUMATSU NO HAREM: FANTASIA (4) ─────────────────────────────────────
+  { name: "Ark de Rezare Nagara", universe: "Shuumatsu no Harem: Fantasia", gender: "male", imageUrl: "https://cdn.anime-planet.com/characters/primary/ark-de-rezare-nagara-1-190x266.jpg?t=1626011502", ageNote: "Adult" },
+  { name: "Celine Weskey", universe: "Shuumatsu no Harem: Fantasia", gender: "female", imageUrl: "https://cdn.anime-planet.com/characters/primary/celine-worlds-end-harem-fantasia-1-190x266.jpg?t=1626011502", ageNote: "Adult" },
+  { name: "Latifa Leozard", universe: "Shuumatsu no Harem: Fantasia", gender: "female", imageUrl: "https://cdn.anime-planet.com/characters/primary/latifa-leozard-1-195x273.webp?t=1727474810", ageNote: "Adult" },
+  { name: "Wenne", universe: "Shuumatsu no Harem: Fantasia", gender: "female", imageUrl: "https://cdn.anime-planet.com/characters/primary/wenne-1-190x266.jpg?t=1626012335", ageNote: "Adult" },
+
+  // ── MOBY DICK (MANHWA) (4) ─────────────────────────────────────────────────────────
+  { name: "Hunsang Go", universe: "Moby Dick (manhwa)", gender: "male", imageUrl: "https://cdn.anime-planet.com/characters/primary/hunsang-go-1-285x399.webp?t=1714417654", ageNote: "Adult" },
+  { name: "Dahye Lee", universe: "Moby Dick (manhwa)", gender: "female", imageUrl: "https://cdn.anime-planet.com/characters/primary/dahye-lee-moby-dick-1-285x399.webp?t=1714417804", ageNote: "Adult" },
+  { name: "Heeju Oh", universe: "Moby Dick (manhwa)", gender: "female", imageUrl: "https://cdn.anime-planet.com/characters/primary/heeju-oh-1-285x399.webp?t=1751911435", ageNote: "Adult" },
+  { name: "In-ah Jo", universe: "Moby Dick (manhwa)", gender: "female", imageUrl: "https://cdn.anime-planet.com/characters/primary/in-ah-jo-1-285x399.webp?t=1744559173", ageNote: "Adult" },
+
+  // ── A SECRET LESSON WITH MY YOUNGER SISTER (4) ────────────────────────────
+  { name: "Jinyoung", universe: "A Secret Lesson With My Younger Sister", gender: "male", imageUrl: "https://cdn.anime-planet.com/characters/primary/jinyoung-1-285x398.webp?t=1719231714", ageNote: "Adult" },
+  { name: "Bom", universe: "A Secret Lesson With My Younger Sister", gender: "female", imageUrl: "https://cdn.anime-planet.com/characters/primary/bom-a-secret-lesson-with-my-younger-sister-1-224x314.webp?t=1727455290", ageNote: "Adult (20)" },
+  { name: "Sohee Kang", universe: "A Secret Lesson With My Younger Sister", gender: "female", imageUrl: "https://cdn.anime-planet.com/characters/primary/sohee-kang-1-220x309.webp?t=1745766743", ageNote: "Adult" },
+  { name: "Bom's Mother", universe: "A Secret Lesson With My Younger Sister", gender: "female", imageUrl: "https://cdn.anime-planet.com/characters/primary/boms-mother-1-281x393.webp?t=1745766657", ageNote: "Adult" },
+
+  // ── REFORMATION OF THE DEADBEAT NOBLE (4) ────────────────────────────────
+  { name: "Airen Parreira", universe: "Reformation of the Deadbeat Noble", gender: "male", imageUrl: "https://static.wikia.nocookie.net/rofd/images/e/ea/Airen1.png/revision/latest/scale-to-width-down/400?cb=20220101000000", ageNote: "Adult" },
+  { name: "Judith Zeron", universe: "Reformation of the Deadbeat Noble", gender: "female", imageUrl: "https://static.wikia.nocookie.net/rofd/images/4/49/Judith_Zeron_chapter_6.png/revision/latest/scale-to-width-down/400?cb=20220101000000", ageNote: "Adult" },
+  { name: "Ilya Lindsay", universe: "Reformation of the Deadbeat Noble", gender: "female", imageUrl: "https://static.wikia.nocookie.net/rofd/images/a/a4/Ilya_Lindsay_chapter_5.png/revision/latest/scale-to-width-down/400?cb=20220101000000", ageNote: "Adult" },
+  { name: "Ignet Crescentia", universe: "Reformation of the Deadbeat Noble", gender: "female", imageUrl: "https://static.wikia.nocookie.net/rofd/images/b/bb/Ignet1.png/revision/latest/scale-to-width-down/400?cb=20220101000000", ageNote: "Adult" },
+
+  // ── RETURN OF THE DISASTER-CLASS HERO (4) ────────────────────────────────
+  { name: "Lee Geon", universe: "Return of the Disaster-Class Hero", gender: "male", imageUrl: "https://static.wikia.nocookie.net/resurrection-of-the-catastrophic-hero/images/0/0a/Lee_Geon.jpg/revision/latest/scale-to-width-down/400?cb=20230101000000", ageNote: "Adult" },
+  { name: "Hailey Orga", universe: "Return of the Disaster-Class Hero", gender: "female", imageUrl: "https://static.wikia.nocookie.net/resurrection-of-the-catastrophic-hero/images/2/2d/Hailey_Orga.jpg/revision/latest/scale-to-width-down/400?cb=20230101000000", ageNote: "Adult" },
+  { name: "Libra Saint", universe: "Return of the Disaster-Class Hero", gender: "female", imageUrl: "https://static.wikia.nocookie.net/resurrection-of-the-catastrophic-hero/images/5/53/Librasaint.jpeg/revision/latest/scale-to-width-down/400?cb=20230101000000", ageNote: "Adult (deity)" },
+  { name: "Carly Collins", universe: "Return of the Disaster-Class Hero", gender: "female", imageUrl: "https://static.wikia.nocookie.net/resurrection-of-the-catastrophic-hero/images/a/a0/Carly_Collins.jpg/revision/latest/scale-to-width-down/400?cb=20230101000000", ageNote: "Adult" },
+
+  // ── PICK ME UP, INFINITE GACHA (4) ───────────────────────────────────────
+  { name: "Han Islet", universe: "Pick Me Up, Infinite Gacha", gender: "male", imageUrl: "https://static.wikia.nocookie.net/infinite-gacha/images/7/7f/Main_character_-_Han_Islat.jpg/revision/latest/scale-to-width-down/400?cb=20230101000000", ageNote: "Adult" },
+  { name: "Jenna (Gacha)", universe: "Pick Me Up, Infinite Gacha", gender: "female", imageUrl: "https://static.wikia.nocookie.net/infinite-gacha/images/d/d5/Jenna1.png/revision/latest/scale-to-width-down/400?cb=20230101000000", ageNote: "Adult" },
+  { name: "Liese (Gacha)", universe: "Pick Me Up, Infinite Gacha", gender: "female", imageUrl: "https://static.wikia.nocookie.net/infinite-gacha/images/6/6b/Master.png/revision/latest/scale-to-width-down/400?cb=20230101000000", ageNote: "Adult" },
+  { name: "Sirres (Gacha)", universe: "Pick Me Up, Infinite Gacha", gender: "female", imageUrl: "https://static.wikia.nocookie.net/infinite-gacha/images/4/4a/Sirres.png/revision/latest/scale-to-width-down/400?cb=20230101000000", ageNote: "Adult" },
 
 ];
 
