@@ -72,21 +72,53 @@ multiverse-fma/
 
 ### Prerequisites
 
-- **Node.js 24+** (run `node --version` to check)
+- **Node.js 24+** — use [nvm](https://github.com/nvm-sh/nvm) (macOS/Linux) or [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows) to manage versions
 - **pnpm** — `npm install -g pnpm`
 - **PostgreSQL** database (local or remote)
 
-### 1. Install dependencies
+### 0. Install Node.js 24 via nvm
 
+**macOS / Linux (bash/zsh):**
 ```bash
+# Install nvm (skip if already installed)
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+source ~/.bashrc   # or ~/.zshrc
+
+# Install and use Node 24
+nvm install 24
+nvm use 24
+node --version     # should print v24.x.x
+```
+
+**Windows (PowerShell) — requires [nvm-windows](https://github.com/coreybutler/nvm-windows/releases):**
+```powershell
+# Install and use Node 24
+nvm install 24
+nvm use 24
+node --version     # should print v24.x.x
+```
+
+### 1. Clone and install dependencies
+
+**bash:**
+```bash
+git clone https://github.com/Darksied123/multiverse-fma.git
+cd multiverse-fma
+pnpm install
+```
+
+**PowerShell:**
+```powershell
+git clone https://github.com/Darksied123/multiverse-fma.git
+Set-Location multiverse-fma
 pnpm install
 ```
 
 ### 2. Configure environment variables
 
-Create a `.env` file in the project root (or export these in your shell):
+Create a `.env` file in the project root — this works on all platforms:
 
-```bash
+```env
 # Required — PostgreSQL connection string
 DATABASE_URL="postgresql://user:password@localhost:5432/multiverse_fma"
 
@@ -95,6 +127,22 @@ PORT=8080
 
 # Required for the frontend — URL of the running API server
 API_URL="http://localhost:8080"
+```
+
+Or set them inline in your shell for the current session:
+
+**bash:**
+```bash
+export DATABASE_URL="postgresql://user:password@localhost:5432/multiverse_fma"
+export PORT=8080
+export API_URL="http://localhost:8080"
+```
+
+**PowerShell:**
+```powershell
+$env:DATABASE_URL = "postgresql://user:password@localhost:5432/multiverse_fma"
+$env:PORT = "8080"
+$env:API_URL = "http://localhost:8080"
 ```
 
 ### 3. Set up the database
@@ -110,15 +158,27 @@ pnpm --filter @workspace/scripts run seed-characters
 pnpm --filter @workspace/scripts run check-images
 ```
 
+> These `pnpm` commands work the same in PowerShell.
+
 ### 4. Start both servers
 
 Run each in a separate terminal:
 
+**bash:**
 ```bash
-# Terminal 1 — API server (listens on $PORT, default 8080)
+# Terminal 1 — API server
 pnpm --filter @workspace/api-server run dev
 
-# Terminal 2 — Frontend (Vite dev server, reads $API_URL)
+# Terminal 2 — Frontend
+pnpm --filter @workspace/multiverse-fma run dev
+```
+
+**PowerShell:**
+```powershell
+# Terminal 1 — API server
+pnpm --filter @workspace/api-server run dev
+
+# Terminal 2 — Frontend
 pnpm --filter @workspace/multiverse-fma run dev
 ```
 
